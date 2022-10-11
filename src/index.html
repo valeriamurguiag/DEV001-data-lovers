@@ -19,10 +19,11 @@
            </ul>  
         </nav>
 
-        <div>
+      <br><br><br><br>
+      <div>
 
-       <h1> CONOCE A LOS 
-                    CAMPEONES </h1>
+       <h1 id="titulo1"> CONOCE A LOS </h1>
+       <h2 id="titulo2"> CAMPEONES </h2>
 
         </div>
 
@@ -31,7 +32,26 @@
             <ul>
            <li class="barraCentral">TODOS</li>
            <li class="separador2"> | </li>
-           <li class="barraCentral">ASESINOS</li>
+           <li class="barraCentral">
+            <select class="filtros">
+              <option disabled selected>
+                ASESINOS
+              </option>
+              <option value="1">
+                NIVEL DE ATAQUE (MAYOR A MENOR) 
+              </option>
+              <option value="2">
+                NIVEL DE DEFENSA (MAYOR A MENOR)
+              </option>
+              <option value="3">
+                PODER MÁGICO (MAYOR A MENOR) 
+              </option>
+              <option value="4">
+                DIFICULTAD (MAYOR A MENOR)
+              </option>
+            
+          </select>
+          </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">LUCHADORES</li>
            <li class="separador2"> | </li>
@@ -43,6 +63,26 @@
            <li class="separador2"> | </li>
            <li class="barraCentral">TANQUES</li>
              </ul>  
+          </nav>
+        </div>
+        <div>
+          <nav id="filtrar">
+            <ul>
+              <li class="textoFiltrar">
+                <select class="filtros">
+                  <option disabled selected >
+                    FILTRAR
+                  </option>
+                  <option value="1">
+                    A-Z 
+                  </option>
+                  <option value="2">
+                    Z-A 
+                  </option>
+                </select>
+              </li>
+            </ul>
+
           </nav>
         </div>
         <div id="root"></div>

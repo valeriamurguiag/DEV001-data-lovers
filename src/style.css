@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
 * {
     margin:0;
     padding:0;
@@ -9,6 +11,7 @@
     align-items: center;
     color: black;
     font-size: 16px;
+    text-shadow: 5px 4px 5px black;
     font-family: Trebuchet MS, Helvetica, sans-serif;
     background-image: url("img/fondo\ ashe.jpg");
     width: 100%;
@@ -31,6 +34,7 @@
    font-size: 16px;
    color: #fff;
    font-weight: bold;
+   margin-top: 20px;
 }
 
 .barra {
@@ -44,7 +48,8 @@
 
    .img{
     width: 220px;
-    margin-top: -15px;
+    margin-top: -35px;
+    margin-right: 300px;
 
 }
 
@@ -52,6 +57,8 @@
     background-color: #3D3B3B;
     width: 100%;
     height: 80px;
+    box-shadow: 5px 4px 5px black;
+    opacity: 90%;
 }
 
 #menuCentral ul {
@@ -63,11 +70,12 @@
 #menuCentral li {
    float: left;
    display: block;
-   padding: 12px 20px;
+   padding: 12px 15px;
    font-family: sans-serif;
    font-size: 15px;
    color: #fff;
    font-weight: bold;
+   margin-left: 20px;
 }
 
  .separador2 {
@@ -79,8 +87,78 @@
     width: 80%;
     height: 40px;
     border-radius: 25px;
-    margin-top: 205px;
+    margin-top: 190px;
+    box-shadow: 5px 4px 5px black;
+    margin-left: 60px;
 }
+
+#filtrar {
+    background-color: #3D3B3B;
+    width: 10%;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 5px 4px 5px black;
+    margin-right: 60px;
+    float: right;
+    margin-top: -40px;
+}
+
+#filtrar li {
+   display: block;
+   padding: 12px 15px;
+   font-family: sans-serif;
+   font-size: 15px;
+   color: #fff;
+   font-weight: bold;
+   margin-left: 20px;
+}
+
+#titulo1 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 5px 4px 5px black;
+    background-color: #3D3B3B;
+    width: 36%;
+    display: block;
+    margin-left: 450px;
+    opacity: 90%;
+    box-shadow: 5px 4px 5px black;
+    border-radius: 15px;
+
+}
+
+#titulo2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 80px;
+    text-align: right;
+    color: white;
+    text-shadow: 5px 4px 5px black;
+    background-color: #3D3B3B;
+    width: 36%;
+    display: block;
+    float: right;
+    margin-right: 300px;
+    opacity: 90%;
+    box-shadow: 5px 4px 5px black;
+    border-radius: 15px;
+
+}
+
+.filtros {
+   font-family: sans-serif;
+   font-size: 15px;
+   color: #fff;
+   font-weight: bold;
+   background-color: #3D3B3B;
+   border: none;
+   
+}
+
+
+
 
 
 
