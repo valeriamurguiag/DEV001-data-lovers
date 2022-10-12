@@ -1,9 +1,18 @@
-// estas funciones son de ejemplo
+//Importar la data
+import lol from './data/lol/lol.js';
 
-export const example = () => {
-  return 'example';
-};
+//Crear un objeto que almacene la información de data
+const obj = lol;
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+//Crear un objeto con una función que almacene en un arreglo los nombres de data
+const dataLol = {
+    allNames: function(){
+    const names = obj.names
+    let namesArr = [...names]
+    
+    console.log(namesArr)
+  }
+}
+
+//Exportar data
+export default dataLol
