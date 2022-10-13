@@ -1,12 +1,11 @@
 //Importar la data
 import data from './data/lol/lol.js';
+import filtrarAsesinos from './data.js';
 
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
-// console.log(allChampion);
-// console.log(arrObject);
 
-// MOSTRAR DATA
+//Mostrar TODOS
 const container = document.getElementById('container');
 
 const traerData = (arr) => {
@@ -24,5 +23,35 @@ const traerData = (arr) => {
     container.appendChild(newElement);
   });
 };
+
 traerData(arrObject);
+
+//Mostrar ASESINOS
+const x = document.getElementById('asesinos');
+
+const containerAsesinos = document.getElementById('containerAsesinos');
+
+function mostrarAsesinos(arr) {
+  arr.forEach((assassin) => {
+              const newElement2 = document.createElement('div');
+              const img = document.createElement('img');
+              const p = document.createElement('p');
+              newElement2.classList.add('class-divData');
+              img.classList.add('class-img');
+              p.classList.add('class-name');
+              img.src = `${assassin.splash}`;
+              p.innerHTML = `${assassin.name}`;
+              newElement2.appendChild(img);
+              newElement2.appendChild(p);
+              containerAsesinos.appendChild(newElement2);
+})
+}
+
+const asesinosMostrados = filtrarAsesinos(arrObject);
+
+mostrarAsesinos(asesinosMostrados)
+//Añadir evento
+x.addEventListener("click", mostrarAsesinos(asesinosMostrados))
+
+
 

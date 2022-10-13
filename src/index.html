@@ -10,27 +10,19 @@
           <ul>
         <li><img class="img" src="img/League of Legends logo gde.png" alt= ""></li> 
          <li class="barra">
-          <a href="sobre-el-juego.html" style="text-decoration:none">
-            <font color="white">SOBRE EL JUEGO</font>
-          </a>
+          <button class="button" onclick=mostrarSobreElJuego()>SOBRE EL JUEGO</button>
         </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <a href="index.html" style="text-decoration:none">
-            <font color="white">CAMPEONES</font>
-          </a>
+          <button class="button" onclick=mostrarCampeones()>CAMPEONES</button>
          </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <a href="nuevos-jugadores.html" style="text-decoration:none">
-              <font color="white">NUEVOS JUGADORES</font>
-          </a>
-      </li>
+          <button class="button" onclick=mostrarNuevosJugadores()>NUEVOS JUGADORES</button>
+         </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <a href="sobre-nosotras.html" style="text-decoration:none">
-            <font color="white">SOBRE NOSOTRAS</font>
-          </a>
+          <button class="button" onclick=mostrarNosotras()>SOBRE NOSOTRAS</button>
          </li>
            </ul>  
         </nav>
@@ -39,143 +31,45 @@
       <div>
 
        <h1 id="titulo1"> CONOCE A LOS </h1>
-       <h2 id="titulo2"> CAMPEONES </h2>
+       <h2 id="titulo2">CAMPEONES</h2>
+
 
         </div>
 
         <div>
           <nav id="menuCentral">
             <ul>
-           <li class="barraCentral">TODOS</li>
+           <li class="barraCentral">
+            <button class="button" click=mostrarTodos()>TODOS</button>
+           </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <select class="filtros">
-              <option disabled selected>
-                ASESINOS
-              </option>
-              <option value="1">
-                ATAQUE
-              </option>
-              <option value="2">
-                DEFENSA
-              </option>
-              <option value="3">
-                MAGIA 
-              </option>
-              <option value="4">
-                DIFICULTAD
-              </option>
-            
-          </select>
+            <button class="button" id="asesinos" click=mostrarAsesinos()>ASESINOS</button>
           </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <select class="filtros">
-              <option disabled selected>
-                LUCHADORES
-              </option>
-              <option value="1">
-                ATAQUE
-              </option>
-              <option value="2">
-                DEFENSA
-              </option>
-              <option value="3">
-                MAGIA 
-              </option>
-              <option value="4">
-                DIFICULTAD
-              </option>
-            
-          </select>
+            <button class="button" click=mostrarLuchadores()>LUCHADORES</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <select class="filtros">
-              <option disabled selected>
-                MAGOS
-              </option>
-              <option value="1">
-                ATAQUE
-              </option>
-              <option value="2">
-                DEFENSA
-              </option>
-              <option value="3">
-                MAGIA 
-              </option>
-              <option value="4">
-                DIFICULTAD
-              </option>
-            
-          </select>
+            <button class="button" click=mostrarMagos()>MAGOS</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <select class="filtros">
-              <option disabled selected>
-                TIRADORES
-              </option>
-              <option value="1">
-                ATAQUE
-              </option>
-              <option value="2">
-                DEFENSA
-              </option>
-              <option value="3">
-                MAGIA 
-              </option>
-              <option value="4">
-                DIFICULTAD
-              </option>
-            
-          </select>
+            <button class="button" click=mostrarTiradores()>TIRADORES</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <select class="filtros">
-              <option disabled selected>
-                APOYOS
-              </option>
-              <option value="1">
-                ATAQUE
-              </option>
-              <option value="2">
-                DEFENSA
-              </option>
-              <option value="3">
-                MAGIA 
-              </option>
-              <option value="4">
-                DIFICULTAD
-              </option>
-            
-          </select>
+            <button class="button" click=mostrarApoyos()>APOYOS</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <select class="filtros">
-              <option disabled selected>
-                TANQUES
-              </option>
-              <option value="1">
-                ATAQUE
-              </option>
-              <option value="2">
-                DEFENSA
-              </option>
-              <option value="3">
-                MAGIA 
-              </option>
-              <option value="4">
-                DIFICULTAD
-              </option>
-            
-          </select>
+            <button class="button" click=mostrarTanques()>TANQUES</button>
            </li>
              </ul>  
           </nav>
         </div>
+
         <div>
           <nav id="filtrar">
             <ul>
@@ -196,18 +90,10 @@
 
           </nav>
         </div>
-
-        <div id="myModal" class="modal hide">
-          <div class="modalContent">
-            <span class="close" id="close">&times;</span>
-            <div class="modalInfo" id="modalInfo">
-            </div>
-          </div>
-        </div>
     
         <main>
-          <section id="average"></section>
-          <section id="container"></section>
+          <section  id="container"></section>
+          <section  id="containerAsesinos"></section>
         </main>  
 
         <div id="root"></div>
