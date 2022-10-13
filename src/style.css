@@ -293,3 +293,49 @@
 
 }
 
+.class-divData {
+    background-color: rgb(6, 28, 37);;
+    display: inline-block;
+    position: relative;
+    margin-top: 1%;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border: 1px solid #937341;;
+  }
+  
+  .class-divData:hover{
+   transform: scale(0.96);
+   background: rgba(243, 168, 5, 0.842);
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  .class-img {
+    margin: 0;
+    width: 307px;
+    height: 200px;
+  }
+  
+  .class-name {
+    font-size: 1.2em;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -0.2em;
+    padding: 0.10em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6% 8%;
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+  }
+
