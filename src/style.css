@@ -207,7 +207,7 @@
   max-width: 850px;
   height: auto;
   border: 2px solid gray;
-  margin: 100px auto;
+  margin: 30px 50px;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 15px;
@@ -217,12 +217,12 @@
   opacity: 90%;
 }
 
-#containerAsesinos {
+.contenedorImagenes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
-  margin: 30px auto;
+  margin: 30px 50px;
 }
 
 .container2 {

@@ -10,19 +10,19 @@
           <ul>
         <li><img class="img" src="img/League of Legends logo gde.png" alt= ""></li> 
          <li class="barra">
-          <button class="button" onclick=mostrarSobreElJuego()>SOBRE EL JUEGO</button>
+          <button class="button" click="mostrarSobreElJuego()">SOBRE EL JUEGO</button>
         </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <button class="button" onclick=mostrarCampeones()>CAMPEONES</button>
+          <button class="button" click="mostrarCampeones()">CAMPEONES</button>
          </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <button class="button" onclick=mostrarNuevosJugadores()>NUEVOS JUGADORES</button>
+          <button class="button" click="mostrarNuevosJugadores()">NUEVOS JUGADORES</button>
          </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <button class="button" onclick=mostrarNosotras()>SOBRE NOSOTRAS</button>
+          <button class="button" click="mostrarNosotras()">SOBRE NOSOTRAS</button>
          </li>
            </ul>  
         </nav>
@@ -40,31 +40,31 @@
           <nav id="menuCentral">
             <ul>
            <li class="barraCentral">
-            <button class="button" click=mostrarTodos()>TODOS</button>
+            <button class="button" id="todos" click="mostrarTodos2()">TODOS</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <button class="button" id="asesinos" click=mostrarAsesinos()>ASESINOS</button>
+            <button class="button" id="asesinos" click="mostrarAsesinos2()">ASESINOS</button>
           </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <button class="button" click=mostrarLuchadores()>LUCHADORES</button>
+            <button class="button" id="luchadores" click="mostrarLuchadores2()">LUCHADORES</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <button class="button" click=mostrarMagos()>MAGOS</button>
+            <button class="button" id="magos" click="mostrarMagos2()">MAGOS</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <button class="button" click=mostrarTiradores()>TIRADORES</button>
+            <button class="button" id="tiradores" click="mostrarTiradores2()">TIRADORES</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <button class="button" click=mostrarApoyos()>APOYOS</button>
+            <button class="button" id="apoyos" click="mostrarApoyos2()">APOYOS</button>
            </li>
            <li class="separador2"> | </li>
            <li class="barraCentral">
-            <button class="button" click=mostrarTanques()>TANQUES</button>
+            <button class="button" id="tanques" click="mostrarTanques2()">TANQUES</button>
            </li>
              </ul>  
           </nav>
@@ -92,8 +92,13 @@
         </div>
     
         <main>
-          <section  id="container"></section>
-          <section  id="containerAsesinos"></section>
+          <section class="contenedorImagenes" id="container"></section>
+          <section class="contenedorImagenes" id="containerAsesinos"></section>
+          <section class="contenedorImagenes" id="containerLuchadores"></section>
+          <section class="contenedorImagenes" id="containerMagos"></section>
+          <section class="contenedorImagenes" id="containerTiradores"></section>
+          <section class="contenedorImagenes" id="containerApoyos"></section>
+          <section class="contenedorImagenes" id="containerTanques"></section>
         </main>  
 
         <div id="root"></div>
