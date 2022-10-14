@@ -1,6 +1,6 @@
 //Importar la data
 import data from './data/lol/lol.js';
-import {filtrarAsesinos, filtrarLuchadores} from './data.js';
+import {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques} from './data.js';
 
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
@@ -27,6 +27,7 @@ const mostrarTodos = (arr) => {
 
 mostrarTodos(arrObject);
 
+//Añadir evento al click de TODOS
 todos.addEventListener("click", mostrarTodos2);
 
 function mostrarTodos2(){
@@ -42,9 +43,9 @@ function mostrarTodos2(){
   }
 
 //Mostrar ASESINOS
+const containerAsesinos = document.getElementById('containerAsesinos');
 const asesinos = document.getElementById('asesinos');
 
-const containerAsesinos = document.getElementById('containerAsesinos');
 
 function mostrarAsesinos(arr) {
   arr.forEach((assassin) => {
@@ -63,9 +64,9 @@ function mostrarAsesinos(arr) {
 }
 
 const asesinosMostrados = filtrarAsesinos(arrObject);
-
 mostrarAsesinos(asesinosMostrados)
-//Añadir evento
+
+//Añadir evento al click de ASESINOS
 asesinos.addEventListener("click", mostrarAsesinos2);
 
 function mostrarAsesinos2(){
@@ -80,10 +81,9 @@ function mostrarAsesinos2(){
     
   }
 
-  //Mostrar LUCHADORES
-const luchadores = document.getElementById('luchadores');
-
+//Mostrar LUCHADORES
 const containerLuchadores = document.getElementById('containerLuchadores');
+const luchadores = document.getElementById('luchadores');
 
 function mostrarLuchadores(arr) {
   arr.forEach((fighter) => {
@@ -102,9 +102,9 @@ function mostrarLuchadores(arr) {
 }
 
 const luchadoresMostrados = filtrarLuchadores(arrObject);
-
 mostrarLuchadores(luchadoresMostrados)
-//Añadir evento
+
+//Añadir evento al click de LUCHADORES
 luchadores.addEventListener("click", mostrarLuchadores2);
 
 function mostrarLuchadores2(){
@@ -119,3 +119,155 @@ function mostrarLuchadores2(){
     
   }
 
+//Mostrar MAGOS
+const containerMagos = document.getElementById('containerMagos');
+const magos = document.getElementById('magos');
+
+function mostrarMagos(arr) {
+  arr.forEach((mage) => {
+              const newElement4 = document.createElement('div');
+              const img = document.createElement('img');
+              const p = document.createElement('p');
+              newElement4.classList.add('class-divData');
+              img.classList.add('class-img');
+              p.classList.add('class-name');
+              img.src = `${mage.splash}`;
+              p.innerHTML = `${mage.name}`;
+              newElement4.appendChild(img);
+              newElement4.appendChild(p);
+              containerMagos.appendChild(newElement4);
+})
+}
+
+const magosMostrados = filtrarMagos(arrObject);
+mostrarMagos(magosMostrados)
+
+//Añadir evento al click de MAGOS
+magos.addEventListener("click", mostrarMagos2);
+
+function mostrarMagos2(){
+
+  document.getElementById('container').style.display = "none";
+  document.getElementById('containerAsesinos').style.display = "none";
+  document.getElementById('containerTiradores').style.display = "none";
+  document.getElementById('containerApoyos').style.display = "none";
+  document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('containerLuchadores').style.display = "none";
+  document.getElementById('containerMagos').style.display = "block";
+    
+  }
+
+  //Mostrar TIRADORES
+  const containerTiradores = document.getElementById('containerTiradores');
+  const tiradores = document.getElementById('tiradores');
+
+  function mostrarTiradores(arr) {
+    arr.forEach((marksman) => {
+      const newElement5 = document.createElement('div');
+      const img = document.createElement('img');
+      const p = document.createElement('p');
+      newElement5.classList.add('class-divData');
+      img.classList.add('class-img');
+      p.classList.add('class-name');
+      img.src = `${marksman.splash}`;
+      p.innerHTML = `${marksman.name}`;
+      newElement5.appendChild(img);
+      newElement5.appendChild(p);
+      containerTiradores.appendChild(newElement5);
+    })
+  }
+
+  const tiradoresMostrados = filtrarTiradores(arrObject);
+  mostrarTiradores(tiradoresMostrados)
+
+  //Añadir evento al click TIRADORES
+  tiradores.addEventListener("click", mostrarTiradores2);
+
+  function mostrarTiradores2(){
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "block";
+  }
+
+  //Filtrar APOYOS
+  const apoyos = document.getElementById('apoyos');
+  const containerApoyos = document.getElementById('containerApoyos');
+
+  function mostrarApoyos(arr){
+    arr.forEach((support) => {
+      const newElement6 = document.createElement('div');
+      const img = document.createElement('img');
+      const p = document.createElement('p');
+      newElement6.classList.add('class-divData');
+      img.classList.add('class-img');
+      p.classList.add('class-name');
+      img.src = `${support.splash}`;
+      p.innerHTML = `${support.name}`;
+      newElement6.appendChild(img);
+      newElement6.appendChild(p);
+      containerApoyos.appendChild(newElement6);
+    })
+  }
+
+  const apoyosMostrados = filtrarApoyos(arrObject);
+  mostrarApoyos(apoyosMostrados);
+
+  //Añadir evento al click APOYOS
+  apoyos.addEventListener("click", mostrarApoyos2);
+
+  function mostrarApoyos2(){
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "block";
+
+  }
+  
+  //Mostrar TANQUES
+  const containerTanques = document.getElementById('containerTanques');
+  const tanques = document.getElementById('tanques');
+
+  function mostrarTanques(arr) {
+    arr.forEach((tank) => {
+      const newElement7 = document.createElement('div');
+      const img = document.createElement('img');
+      const p = document.createElement('p');
+      newElement7.classList.add('class-divData');
+      img.classList.add('class-img');
+      p.classList.add('class-name');
+      img.src = `${tank.splash}`;
+      p.innerHTML = `${tank.name}`
+      newElement7.appendChild(img);
+      newElement7.appendChild(p);
+      containerTanques.appendChild(newElement7);
+    } )
+  }
+
+  const tanquesMostrados = filtrarTanques(arrObject);
+  mostrarTanques(tanquesMostrados);
+
+  //Añadir evento al click TANQUES
+  tanques.addEventListener("click", mostrarTanques2)
+
+  function mostrarTanques2(){
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "block";
+
+  }
+
+
+
+
+  
