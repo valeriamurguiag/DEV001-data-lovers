@@ -267,7 +267,42 @@ function mostrarMagos2(){
 
   }
 
+  const sobreJuego= document.getElementById('sobreJuego');
+  sobreJuego.addEventListener("click", mostrarSobreElJuego);
 
+function mostrarSobreElJuego(){
 
+  document.getElementById('container').style.display = "none";
+  document.getElementById('tituloPrincipal').style.display = "none";
+  document.getElementById('menuCentral').style.display = "none";
+  document.getElementById('filtrar').style.display = "none";
+  document.getElementById('containerAsesinos').style.display = "none";
+  document.getElementById('containerLuchadores').style.display = "none";
+  document.getElementById('containerMagos').style.display = "none";
+  document.getElementById('containerTiradores').style.display = "none";
+  document.getElementById('containerApoyos').style.display = "none";
+  document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('sobreJuegoDiv').style.display = "block";
+    
+  }
+
+  const campeones= document.getElementById('campeones');
+  campeones.addEventListener("click", mostrarCampeones);
+
+function mostrarCampeones(){
+
+  document.getElementById('containerAsesinos').style.display = "none";
+  document.getElementById('containerLuchadores').style.display = "none";
+  document.getElementById('containerMagos').style.display = "none";
+  document.getElementById('containerTiradores').style.display = "none";
+  document.getElementById('containerApoyos').style.display = "none";
+  document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('sobreJuegoDiv').style.display = "none";
+  document.getElementById('container').style.display = "block";
+  document.getElementById('tituloPrincipal').style.display = "block";
+  document.getElementById('menuCentral').style.display = "block";
+  document.getElementById('filtrar').style.display = "block";
+    
+  }
 
   

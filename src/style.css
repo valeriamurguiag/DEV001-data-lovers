@@ -202,23 +202,8 @@
 
 }
 
-.container {
-  position: relative;
-  max-width: 850px;
-  height: auto;
-  border: 2px solid gray;
-  margin: 30px 50px;
-  padding: 30px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  color: white;
-  font-size: 20px;
-  background-color: #3D3B3B;
-  opacity: 90%;
-}
-
 .contenedorImagenes {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -346,11 +331,9 @@
   }
   
   #container {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin: 30px auto;
+    margin: 30px 60px;
 
   }
   
@@ -376,3 +359,42 @@
     padding-left: 8%;
   }
 
+  .sobreJuegoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    text-shadow: 5px 4px 5px black;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/neutrolol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -150px;
+  }
+
+  .containerSobreJuego {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 850px;
+    height: auto;
+    border: 2px solid gray;
+    margin: 100px 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    background-color: #3D3B3B;
+    opacity: 90%;
+  }
+
+  .imagenes{
+    display: inline-flex;
+  }
+
+
+  

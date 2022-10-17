@@ -10,11 +10,11 @@
           <ul>
         <li><img class="img" src="img/League of Legends logo gde.png" alt= ""></li> 
          <li class="barra">
-          <button class="button" click="mostrarSobreElJuego()">SOBRE EL JUEGO</button>
+          <button class="button" id="sobreJuego" click="mostrarSobreElJuego()">SOBRE EL JUEGO</button>
         </li>
          <li class="separador"> | </li>
          <li class="barra">
-          <button class="button" click="mostrarCampeones()">CAMPEONES</button>
+          <button class="button" id="campeones" click="mostrarCampeones()">CAMPEONES</button>
          </li>
          <li class="separador"> | </li>
          <li class="barra">
@@ -28,12 +28,10 @@
         </nav>
 
       <br><br><br><br>
-      <div>
+      <div id="tituloPrincipal">
 
        <h1 id="titulo1"> CONOCE A LOS </h1>
        <h2 id="titulo2">CAMPEONES</h2>
-
-
         </div>
 
         <div>
@@ -90,15 +88,30 @@
 
           </nav>
         </div>
-    
-        <main>
+        <section id="sobreJuegoDiv" class="sobreJuegoDiv" style="display:none">
+
+          <div>
+            <br><br><br><br><br><br>
+          <h1 id="titulo3">¿QUE ES LEAGUE</h1>
+          <h2 id="titulo4">OF LEGENDS?</h2>
+
+          </div>
+   
+           <div class="containerSobreJuego">
+               <h3>League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco
+                   campeones se enfrentan para ver quién destruye antes la base del otro. Elige de entre un
+                   elenco de 140 campeones para realizar jugadas épicas, asesinar rivales y derribar torretas 
+                   para alzarte con la victoria.</h3>
+           </div>
+        </section>
+        <main class="imagenes">
           <section class="contenedorImagenes" id="container"></section>
-          <section class="contenedorImagenes" id="containerAsesinos"></section>
-          <section class="contenedorImagenes" id="containerLuchadores"></section>
-          <section class="contenedorImagenes" id="containerMagos"></section>
-          <section class="contenedorImagenes" id="containerTiradores"></section>
-          <section class="contenedorImagenes" id="containerApoyos"></section>
-          <section class="contenedorImagenes" id="containerTanques"></section>
+          <section class="contenedorImagenes" id="containerAsesinos" style="display:none"></section>
+          <section class="contenedorImagenes" id="containerLuchadores" style="display:none"></section>
+          <section class="contenedorImagenes" id="containerMagos" style="display:none"></section>
+          <section class="contenedorImagenes" id="containerTiradores" style="display:none"></section>
+          <section class="contenedorImagenes" id="containerApoyos" style="display:none"></section>
+          <section class="contenedorImagenes" id="containerTanques" style="display:none"></section>
         </main>  
 
         <div id="root"></div>
