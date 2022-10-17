@@ -267,11 +267,11 @@ function mostrarMagos2(){
 
   }
 
+  //Mostrar SOBRE EL JUEGO
   const sobreJuego= document.getElementById('sobreJuego');
   sobreJuego.addEventListener("click", mostrarSobreElJuego);
 
 function mostrarSobreElJuego(){
-
   document.getElementById('container').style.display = "none";
   document.getElementById('tituloPrincipal').style.display = "none";
   document.getElementById('menuCentral').style.display = "none";
@@ -282,27 +282,75 @@ function mostrarSobreElJuego(){
   document.getElementById('containerTiradores').style.display = "none";
   document.getElementById('containerApoyos').style.display = "none";
   document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('sobreNosotrasDiv').style.display = "none";
+  document.getElementById('nuevosJugadoresDiv').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "block";
-    
   }
 
+  //Mostrar CAMPEONES
   const campeones= document.getElementById('campeones');
   campeones.addEventListener("click", mostrarCampeones);
 
 function mostrarCampeones(){
-
   document.getElementById('containerAsesinos').style.display = "none";
   document.getElementById('containerLuchadores').style.display = "none";
   document.getElementById('containerMagos').style.display = "none";
   document.getElementById('containerTiradores').style.display = "none";
   document.getElementById('containerApoyos').style.display = "none";
   document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('sobreNosotrasDiv').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "none";
+  document.getElementById('nuevosJugadoresDiv').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('tituloPrincipal').style.display = "block";
   document.getElementById('menuCentral').style.display = "block";
   document.getElementById('filtrar').style.display = "block";
-    
+
   }
+
+  //Mostrar NUEVOS JUGADORES
+  const nuevosJugadores = document.getElementById('nuevosJugadores');
+  nuevosJugadores.addEventListener("click", mostrarNuevosJugadores);
+
+  function mostrarNuevosJugadores(){
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('sobreJuegoDiv').style.display = "none";
+    document.getElementById('container').style.display = "none";
+    document.getElementById('tituloPrincipal').style.display = "none";
+    document.getElementById('menuCentral').style.display = "none";
+    document.getElementById('filtrar').style.display = "none";
+    document.getElementById('sobreNosotrasDiv').style.display = "none";
+    document.getElementById('nuevosJugadoresDiv').style.display = "block";
+    
+    }
+
+    //Mostrar SOBRE NOSOTRAS
+    const sobreNosotras = document.getElementById('sobreNosotras');
+    sobreNosotras.addEventListener("click", mostrarSobreNosotras);
+
+    function mostrarSobreNosotras(){
+      document.getElementById('containerAsesinos').style.display = "none";
+      document.getElementById('containerLuchadores').style.display = "none";
+      document.getElementById('containerMagos').style.display = "none";
+      document.getElementById('containerTiradores').style.display = "none";
+      document.getElementById('containerApoyos').style.display = "none";
+      document.getElementById('containerTanques').style.display = "none";
+      document.getElementById('sobreJuegoDiv').style.display = "none";
+      document.getElementById('container').style.display = "none";
+      document.getElementById('tituloPrincipal').style.display = "none";
+      document.getElementById('menuCentral').style.display = "none";
+      document.getElementById('filtrar').style.display = "none";
+      document.getElementById('nuevosJugadoresDiv').style.display = "none";
+      document.getElementById('sobreNosotrasDiv').style.display = "block";
+      }
+
+
+
+
 
   

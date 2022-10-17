@@ -176,7 +176,7 @@
     color: white;
     text-shadow: 5px 4px 5px black;
     background-color: #3D3B3B;
-    width: 35%;
+    width: 40%;
     display: block;
     margin-left: 450px;
     opacity: 90%;
@@ -212,7 +212,7 @@
 
 .container2 {
     position: relative;
-    max-width: 450px;
+    max-width: 700px;
     height: auto;
     border: 2px solid gray;
     margin: 100px auto;
@@ -220,7 +220,7 @@
     box-sizing: border-box;
     border-radius: 15px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #3D3B3B;
     opacity: 90%;
   }
@@ -229,7 +229,7 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size: 65px;
     text-align: center;
-    margin-top:30px;
+    margin-top: 30px;
     color: white;
     text-shadow: 5px 4px 5px black;
     background-color: #3D3B3B;
@@ -301,7 +301,6 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
     color: white;
     text-shadow: 5px 4px 5px black;
     background-color: #3D3B3B;
@@ -310,7 +309,10 @@
     box-shadow: 5px 4px 5px black;
     border-radius: 15px;
     border-style: dashed;
-
+    margin: 100px auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 15px;
 }
 
 .class-divData {
