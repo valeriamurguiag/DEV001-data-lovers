@@ -1,6 +1,6 @@
 //Importar la data
 import data from './data/lol/lol.js';
-import {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques} from './data.js';
+import {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa} from './data.js';
 
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
@@ -38,6 +38,8 @@ function mostrarTodos2(){
   document.getElementById('containerTiradores').style.display = "none";
   document.getElementById('containerApoyos').style.display = "none";
   document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('container').style.display = "block";
     
   }
@@ -77,6 +79,8 @@ function mostrarAsesinos2(){
   document.getElementById('containerTiradores').style.display = "none";
   document.getElementById('containerApoyos').style.display = "none";
   document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('containerAsesinos').style.display = "block";
     
   }
@@ -115,6 +119,8 @@ function mostrarLuchadores2(){
   document.getElementById('containerTiradores').style.display = "none";
   document.getElementById('containerApoyos').style.display = "none";
   document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('containerLuchadores').style.display = "block";
     
   }
@@ -153,6 +159,8 @@ function mostrarMagos2(){
   document.getElementById('containerApoyos').style.display = "none";
   document.getElementById('containerTanques').style.display = "none";
   document.getElementById('containerLuchadores').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('containerMagos').style.display = "block";
     
   }
@@ -190,6 +198,8 @@ function mostrarMagos2(){
     document.getElementById('containerTanques').style.display = "none";
     document.getElementById('containerLuchadores').style.display = "none";
     document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+   document.getElementById('containerTodosZa').style.display = "none";
     document.getElementById('containerTiradores').style.display = "block";
   }
 
@@ -226,6 +236,8 @@ function mostrarMagos2(){
     document.getElementById('containerLuchadores').style.display = "none";
     document.getElementById('containerMagos').style.display = "none";
     document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
     document.getElementById('containerApoyos').style.display = "block";
 
   }
@@ -263,6 +275,8 @@ function mostrarMagos2(){
     document.getElementById('containerMagos').style.display = "none";
     document.getElementById('containerTiradores').style.display = "none";
     document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
     document.getElementById('containerTanques').style.display = "block";
 
   }
@@ -284,6 +298,8 @@ function mostrarSobreElJuego(){
   document.getElementById('containerTanques').style.display = "none";
   document.getElementById('sobreNosotrasDiv').style.display = "none";
   document.getElementById('nuevosJugadoresDiv').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "block";
   }
 
@@ -301,6 +317,8 @@ function mostrarCampeones(){
   document.getElementById('sobreNosotrasDiv').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "none";
   document.getElementById('nuevosJugadoresDiv').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('tituloPrincipal').style.display = "block";
   document.getElementById('menuCentral').style.display = "block";
@@ -325,6 +343,8 @@ function mostrarCampeones(){
     document.getElementById('menuCentral').style.display = "none";
     document.getElementById('filtrar').style.display = "none";
     document.getElementById('sobreNosotrasDiv').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
     document.getElementById('nuevosJugadoresDiv').style.display = "block";
     
     }
@@ -346,28 +366,87 @@ function mostrarCampeones(){
       document.getElementById('menuCentral').style.display = "none";
       document.getElementById('filtrar').style.display = "none";
       document.getElementById('nuevosJugadoresDiv').style.display = "none";
+      document.getElementById('containerTodosAz').style.display = "none";
+      document.getElementById('containerTodosZa').style.display = "none";
       document.getElementById('sobreNosotrasDiv').style.display = "block";
       }
 
       
-      
-      function ordenAlf(){
-        const ordenar = document.getElementById ("ordenar")
-        const filtro = ordenar.value
-      alert (filtro)
+      //Funciones TODOS orden alfabético
+      const containerTodosAz = document.getElementById('containerTodosAz');
+      const containerTodosZa = document.getElementById('containerTodosZa');
+      const ordenar = document.querySelector('#ordenar');
 
-       }
+      function mostrarTodosAz(todosAz) {
+            for(let i = 0; i < todosAz.length; i++){
+              const newElement8 = document.createElement('div');
+              const img = document.createElement('img');
+              const p = document.createElement('p');
+              newElement8.classList.add('class-divData');
+              img.classList.add('class-img');
+              p.classList.add('class-name');
+              img.src = `${todosAz.splash}`;
+              p.innerHTML = `${todosAz.name}`
+              newElement8.appendChild(img);
+              newElement8.appendChild(p);
+              containerTodosAz.appendChild(newElement8);
+            }
+          }
 
-      // const valor= document.querySelector('ordenar');
+          const todosAzMostrados = acomodarTodosAz(arrObject);
+          mostrarTodosAz(todosAzMostrados);
 
-      //  ordenar.addEventListener('change', (e) => {
-      //   if (ordenar.valor = "1") {
-      //   alert ("funciona");
-      //   }
-      //   else if (ordenar.valor = "2") {
-      //   alert ("tambien funciona");
-      //   }
-      // });
+          function mostrarTodosZa(todosZa) {
+            for(let i = 0; i < todosZa.length; i++){
+              const newElement9 = document.createElement('div');
+              const img = document.createElement('img');
+              const p = document.createElement('p');
+              newElement9.classList.add('class-divData');
+              img.classList.add('class-img');
+              p.classList.add('class-name');
+              img.src = `${todosZa.splash}`;
+              p.innerHTML = `${todosZa.name}`
+              newElement9.appendChild(img);
+              newElement9.appendChild(p);
+              containerTodosZa.appendChild(newElement9);
+            }
+          }
+
+          const todosZaMostrados = acomodarTodosZa(arrObject);
+          mostrarTodosZa(todosZaMostrados);
+
+      ordenar.addEventListener('change', () => {
+        const filtro = ordenar.value;
+         if (filtro === "1"){
+            document.getElementById('container').style.display = "none";
+            document.getElementById('containerAsesinos').style.display = "none";
+            document.getElementById('containerLuchadores').style.display = "none";
+            document.getElementById('containerMagos').style.display = "none";
+            document.getElementById('containerTiradores').style.display = "none";
+            document.getElementById('containerApoyos').style.display = "none";
+            document.getElementById('containerTanques').style.display = "none";
+            document.getElementById('containerTodosZa').style.display = "none";
+            document.getElementById('containerTodosAz').style.display = "block";
+          } else if (filtro === "2") {
+            document.getElementById('container').style.display = "none";
+            document.getElementById('containerAsesinos').style.display = "none";
+            document.getElementById('containerLuchadores').style.display = "none";
+            document.getElementById('containerMagos').style.display = "none";
+            document.getElementById('containerTiradores').style.display = "none";
+            document.getElementById('containerApoyos').style.display = "none";
+            document.getElementById('containerTanques').style.display = "none";
+            document.getElementById('containerTodosAz').style.display = "none";
+            document.getElementById('containerTodosZa').style.display = "block";
+          }
+        });
+           
+
+
+        
+          
+
+
+
 
 
 
