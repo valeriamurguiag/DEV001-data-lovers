@@ -349,7 +349,25 @@ function mostrarCampeones(){
       document.getElementById('sobreNosotrasDiv').style.display = "block";
       }
 
+      
+      
+      function ordenAlf(){
+        const ordenar = document.getElementById ("ordenar")
+        const filtro = ordenar.value
+      alert (filtro)
 
+       }
+
+      // const valor= document.querySelector('ordenar');
+
+      //  ordenar.addEventListener('change', (e) => {
+      //   if (ordenar.valor = "1") {
+      //   alert ("funciona");
+      //   }
+      //   else if (ordenar.valor = "2") {
+      //   alert ("tambien funciona");
+      //   }
+      // });
 
 
 
