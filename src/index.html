@@ -70,7 +70,8 @@
     </nav>
   </div>
 
-  <div>
+  <!--Botón de ordenado TODOS-->
+  <div id="ordenarTodos">
     <nav id="filtrar">
       <ul>
         <li class="textoFiltrar">
@@ -78,11 +79,39 @@
             <option disabled selected>
               FILTRAR
             </option>
-            <option value = "1">
+            <option value="1">
               A-Z
             </option>
-            <option value ="2">
+            <option value="2">
               Z-A
+            </option>
+          </select>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+  <!--Botón de niveles ASESINOS-->
+  <div id="ordenarNivelesAsesinos" style="display:none">
+    <nav id="filtrar">
+      <ul>
+        <li class="textoFiltrar">
+          <select name="ordenar" id="ordenar" class="filtros">
+            <option disabled selected>
+              ESTADÍSTICAS
+            </option>
+            <option value="1">
+              Nivel de ataque
+            </option>
+            <option value="2">
+              Nivel de defensa
+            </option>
+            <option value="3">
+              Nivel de magia
+            </option>
+            <option value="4">
+              Nivel de dificultad
             </option>
           </select>
         </li>
@@ -212,7 +241,7 @@
       <h2 id="titulo6">SOMOS?</h2>
     </div>
     <div class="container2">
-      <h3>Somos estudiantes de Desarrollo Web y nos especializamos en el Desarrollo Front-End. 
+      <h3>Somos estudiantes de Desarrollo Web y nos especializamos en el Desarrollo Front-End.
         Nos apasiona crear proyectos valiosos, funcionales y atractivos para los usuarios.
       </h3>
     </div>

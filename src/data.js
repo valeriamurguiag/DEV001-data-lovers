@@ -1,5 +1,3 @@
-import data from './data/lol/lol.js';
-
 //Filtrar ASESINOS
 const filtrarAsesinos = (arr) => {
   return arr.filter(function (champion){ return champion.tags.includes('Assassin')})
@@ -31,33 +29,33 @@ const filtrarTanques = (arr) => {
 }
 
 //Acomodar TODOS A-Z
-const allChampion = data.data;
-const arrObject2 = Object.values(allChampion);
 
-function acomodarTodosAz () {
-arrObject2.sort( (a, b) => {
-  if(a.name < b.name) {
-    return -1;
-  } else if (a.name > b.name) {
-    return 1;
-  } else {
-    return 0;
-  }
-  })
-}
-
-//Acomodar TODOS Z-A
-function acomodarTodosZa () {
-  arrObject2.sort( (a, b) => {
-    if(a.name > b.name) {
-      return 1;
-    } else if (a.name < b.name) {
+function acomodarTodosAz (champions) {
+  let sortedAz = champions.sort( (a, b) => {
+    if(a.name < b.name) {
       return -1;
+    } else if (a.name > b.name) {
+      return 1;
     } else {
       return 0;
     }
     })
-  }
+ return sortedAz;
+}
+
+//Acomodar TODOS Z-A
+function acomodarTodosZa (champions) {
+  let sortedZa = champions.sort( (a, b) => {
+    if(a.name > b.name) {
+      return -1;
+    } else if (a.name < b.name) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return sortedZa;
+}
 
 
 export {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa}
