@@ -8,9 +8,10 @@
 </head>
 
 <body>
+  <section class="flex-container">
   <nav id="menuSuperior">
     <ul>
-      <li><img class="img" src="img/League of Legends logo gde.png" alt=""></li>
+      <li class="imgLi"><img class="img" src="img/League of Legends logo gde.png" alt=""></li>
       <li class="barra">
         <button class="button" id="sobreJuego" click="mostrarSobreElJuego()">SOBRE EL JUEGO</button>
       </li>
@@ -28,12 +29,12 @@
       </li>
     </ul>
   </nav>
+</section>
 
   <br><br><br><br>
   <div id="tituloPrincipal">
 
-    <h1 id="titulo1"> CONOCE A LOS </h1>
-    <h2 id="titulo2">CAMPEONES</h2>
+    <h1 id="titulo1"> CONOCE A LOS <br> CAMPEONES</h1>
   </div>
 
   <div>
@@ -72,17 +73,17 @@
 
   <!--Botón de ordenado TODOS-->
   <div id="ordenarTodos">
-    <nav id="filtrar">
+    <nav id="filtrar" class="filtrar">
       <ul>
         <li class="textoFiltrar">
           <select name="ordenar" id="ordenar" class="filtros">
             <option disabled selected>
               FILTRAR
             </option>
-            <option value="1">
+            <option class="filtrar" value="1">
               A-Z
             </option>
-            <option value="2">
+            <option class="filtrar" value="2">
               Z-A
             </option>
           </select>
