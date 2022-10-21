@@ -59,16 +59,16 @@ function acomodarTodosZa (champions) {
 
 //Estadisticas por Niveles
 
-function nivelAtaqueAsesinos (champions) {
-  let ataqueAsesinos = (function (champions){ return champions.info.includes('attack')}).reduce((acc , item) => {
-    console.log(ataqueAsesinos)
-  return Math.max(acc , item)
-  });
+// function nivelAtaqueAsesinos (champions) {
+//   let ataqueAsesinos = (function (champions){ return champions.info.includes('attack')}).reduce((acc , item) => {
+//     console.log(ataqueAsesinos)
+//   return Math.max(acc , item)
+//   });
   
-  return ataqueAsesinos
-}
+//   return ataqueAsesinos
+// }
 
 
 
 
-export {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa, nivelAtaqueAsesinos}
+export {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa}

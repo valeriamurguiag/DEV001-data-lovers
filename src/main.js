@@ -1,6 +1,6 @@
 //Importar la data
 import data from './data/lol/lol.js';
-import { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa, nivelAtaqueAsesinos} from './data.js';
+import { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa} from './data.js';
 
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
@@ -450,7 +450,7 @@ function mostrarTodosAz(todosAz) {
   }
 }
 
-const todosAzMostrados = acomodarTodosAz(arrObject);
+export const todosAzMostrados = acomodarTodosAz(arrObject);
 mostrarTodosAz(todosAzMostrados);
 
 function mostrarTodosZa(todosZa) {
@@ -469,7 +469,7 @@ function mostrarTodosZa(todosZa) {
   }
 }
 
-const todosZaMostrados = acomodarTodosZa(arrObject);
+export const todosZaMostrados = acomodarTodosZa(arrObject);
 mostrarTodosZa(todosZaMostrados);
 
 ordenar.addEventListener('change', () => {
@@ -501,28 +501,28 @@ ordenar.addEventListener('change', () => {
 
 // Mostrar nivel de ataque ASESINOS
 
-const containerNivelAtaqueAsesinos = document.getElementById('containerNivelAtaqueAsesinos');
-const nivelAtaqueAsesinos2 = document.querySelector('#nivelAtaqueAsesinos2');
+// const containerNivelAtaqueAsesinos = document.getElementById('containerNivelAtaqueAsesinos');
+// const nivelAtaqueAsesinos2 = document.querySelector('#nivelAtaqueAsesinos2');
 
-function mostrarNivelAtaqueAsesinos(ataqueAsesinos) {
-  for (let i = 0; i < ataqueAsesinos.length; i++) {
-    const newElement10 = document.createElement('div');
-    const img = document.createElement('img');
-    const p = document.createElement('p');
-    newElement10.classList.add('class-divData');
-    img.classList.add('class-img');
-    p.classList.add('class-name');
-    img.src = `${ataqueAsesinos[i].splash}`;
-    p.innerHTML = `${ataqueAsesinos[i].name}`
-    p.innerHTML = `${ataqueAsesinos[i].attack}`
-    newElement10.appendChild(img);
-    newElement10.appendChild(p);
-    containerTodosAz.appendChild(newElement10);
-  }
-}
+// function mostrarNivelAtaqueAsesinos(ataqueAsesinos) {
+//   for (let i = 0; i < ataqueAsesinos.length; i++) {
+//     const newElement10 = document.createElement('div');
+//     const img = document.createElement('img');
+//     const p = document.createElement('p');
+//     newElement10.classList.add('class-divData');
+//     img.classList.add('class-img');
+//     p.classList.add('class-name');
+//     img.src = `${ataqueAsesinos[i].splash}`;
+//     p.innerHTML = `${ataqueAsesinos[i].name}`
+//     p.innerHTML = `${ataqueAsesinos[i].attack}`
+//     newElement10.appendChild(img);
+//     newElement10.appendChild(p);
+//     containerTodosAz.appendChild(newElement10);
+//   }
+// }
 
-const nivelAtaqueAsesinosMostrados = nivelAtaqueAsesinos(arrObject);
-mostrarNivelAtaqueAsesinos(nivelAtaqueAsesinosMostrados);
+// const nivelAtaqueAsesinosMostrados = nivelAtaqueAsesinos(arrObject);
+// mostrarNivelAtaqueAsesinos(nivelAtaqueAsesinosMostrados);
 
 
 
