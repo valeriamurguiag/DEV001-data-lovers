@@ -8,10 +8,9 @@
 </head>
 
 <body>
-  <section class="flex-container">
   <nav id="menuSuperior">
     <ul>
-      <li class="imgLi"><img class="img" src="img/League of Legends logo gde.png" alt=""></li>
+      <li><img class="img" src="img/League of Legends logo gde.png" alt=""></li>
       <li class="barra">
         <button class="button" id="sobreJuego" click="mostrarSobreElJuego()">SOBRE EL JUEGO</button>
       </li>
@@ -29,12 +28,10 @@
       </li>
     </ul>
   </nav>
-</section>
 
-  <br><br><br><br>
   <div id="tituloPrincipal">
-
-    <h1 id="titulo1"> CONOCE A LOS <br> CAMPEONES</h1>
+<br><br><br><br>
+    <h1 class="titulo1"> CONOCE A LOS <br> CAMPEONES</h1>
   </div>
 
   <div>
@@ -73,18 +70,18 @@
 
   <!--Botón de ordenado TODOS-->
   <div id="ordenarTodos">
-    <nav id="filtrar" class="filtrar">
+    <nav class="ordenar">
       <ul>
-        <li class="textoFiltrar">
-          <select name="ordenar" id="ordenar" class="filtros">
-            <option disabled selected>
-              FILTRAR
+        <li>
+          <select name="ordenar" id="ordenar" class="selectOrden">
+            <option class="ordenar" disabled selected>
+              ORDENAR
             </option>
-            <option class="filtrar" value="1">
-              A-Z
+            <option class="ordenar" value="1">
+             ASCEDENTE (A-Z)
             </option>
-            <option class="filtrar" value="2">
-              Z-A
+            <option class="ordenar" value="2">
+             DESCENDENTE (Z-A)
             </option>
           </select>
         </li>
@@ -95,24 +92,164 @@
 
   <!--Botón de niveles ASESINOS-->
   <div id="ordenarNivelesAsesinos" style="display:none">
-    <nav id="filtrar">
+    <nav class="ordenar">
       <ul>
-        <li class="textoFiltrar">
-          <select name="ordenar" id="ordenar" class="filtros">
-            <option disabled selected>
+        <li>
+          <select name="ordenar" id="nivelAtaqueAsesinos2" class="selectOrden">
+            <option class="ordenar" disabled selected>
               ESTADÍSTICAS
             </option>
-            <option value="1">
-              Nivel de ataque
+            <option class="ordenar" value="1">
+              NIVEL DE ATAQUE
             </option>
-            <option value="2">
-              Nivel de defensa
+            <option class="ordenar" value="2">
+              NIVEL DE DEFENSA
             </option>
-            <option value="3">
-              Nivel de magia
+            <option class="ordenar" value="3">
+              NIVEL DE MAGIA
             </option>
-            <option value="4">
-              Nivel de dificultad
+            <option class="ordenar" value="4">
+              NIVEL DE DIFICULTAD
+            </option>
+          </select>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+   <!--Botón de niveles LUCHADORES-->
+   <div id="ordenarNivelesLuchadores" style="display:none">
+    <nav class="ordenar">
+      <ul>
+        <li>
+          <select name="ordenar" id="ordenar3" class="selectOrden">
+            <option class="ordenar" disabled selected>
+              ESTADÍSTICAS
+            </option>
+            <option class="ordenar" value="1">
+              NIVEL DE ATAQUE
+            </option>
+            <option class="ordenar" value="2">
+              NIVEL DE DEFENSA
+            </option>
+            <option class="ordenar" value="3">
+              NIVEL DE MAGIA
+            </option>
+            <option class="ordenar" value="4">
+              NIVEL DE DIFICULTAD
+            </option>
+          </select>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+   <!--Botón de niveles MAGOS-->
+   <div id="ordenarNivelesMagos" style="display:none">
+    <nav class="ordenar">
+      <ul>
+        <li>
+          <select name="ordenar" id="ordenar4" class="selectOrden">
+            <option class="ordenar" disabled selected>
+              ESTADÍSTICAS
+            </option>
+            <option class="ordenar" value="1">
+              NIVEL DE ATAQUE
+            </option>
+            <option class="ordenar" value="2">
+              NIVEL DE DEFENSA
+            </option>
+            <option class="ordenar" value="3">
+              NIVEL DE MAGIA
+            </option>
+            <option class="ordenar" value="4">
+              NIVEL DE DIFICULTAD
+            </option>
+          </select>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+   <!--Botón de niveles TIRADORES-->
+   <div id="ordenarNivelesTiradores" style="display:none">
+    <nav class="ordenar">
+      <ul>
+        <li>
+          <select name="ordenar" id="ordenar5" class="selectOrden">
+            <option class="ordenar" disabled selected>
+              ESTADÍSTICAS
+            </option>
+            <option class="ordenar" value="1">
+              NIVEL DE ATAQUE
+            </option>
+            <option class="ordenar" value="2">
+              NIVEL DE DEFENSA
+            </option>
+            <option class="ordenar" value="3">
+              NIVEL DE MAGIA
+            </option>
+            <option class="ordenar" value="4">
+              NIVEL DE DIFICULTAD
+            </option>
+          </select>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+   <!--Botón de niveles APOYOS-->
+   <div id="ordenarNivelesApoyos" style="display:none">
+    <nav class="ordenar">
+      <ul>
+        <li>
+          <select name="ordenar" id="ordenar6" class="selectOrden">
+            <option class="ordenar" disabled selected>
+              ESTADÍSTICAS
+            </option>
+            <option class="ordenar" value="1">
+              NIVEL DE ATAQUE
+            </option>
+            <option class="ordenar" value="2">
+              NIVEL DE DEFENSA
+            </option>
+            <option class="ordenar" value="3">
+              NIVEL DE MAGIA
+            </option>
+            <option class="ordenar" value="4">
+              NIVEL DE DIFICULTAD
+            </option>
+          </select>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+   <!--Botón de niveles TANQUES-->
+   <div id="ordenarNivelesTanques" style="display:none">
+    <nav class="ordenar">
+      <ul>
+        <li>
+          <select name="ordenar" id="ordenar7" class="selectOrden">
+            <option class="ordenar" disabled selected>
+              ESTADÍSTICAS
+            </option>
+            <option class="ordenar" value="1">
+              NIVEL DE ATAQUE
+            </option>
+            <option class="ordenar" value="2">
+              NIVEL DE DEFENSA
+            </option>
+            <option class="ordenar" value="3">
+              NIVEL DE MAGIA
+            </option>
+            <option class="ordenar" value="4">
+              NIVEL DE DIFICULTAD
             </option>
           </select>
         </li>
@@ -124,9 +261,8 @@
   <section id="sobreJuegoDiv" class="sobreJuegoDiv" style="display:none">
 
     <div>
-      <br><br><br><br><br><br>
-      <h1 id="titulo3">¿QUE ES LEAGUE</h1>
-      <h2 id="titulo4">OF LEGENDS?</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <h1 class="titulo1">¿QUE ES LEAGUE <br> OF LEGENDS?</h1>
 
     </div>
 
@@ -141,9 +277,8 @@
   <section id="nuevosJugadoresDiv" class="nuevosJugadoresDiv" style="display:none">
     <div>
 
-      <br><br><br><br><br><br>
-      <h1 id="titulo3">BIENVENIDOS</h1>
-      <h2 id="titulo4">A LA GRIETA</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <h1 class="titulo1">BIENVENIDOS <br> A LA GRIETA </h1>
 
       <div id="fundamentos">
         <h1>APRENDE LOS FUNDAMENTOS</h1>
@@ -233,13 +368,13 @@
           consigan asesinatos, así como en proteger a su compañero de la calle inferior hasta que se vuelva más fuerte.
         </h3>
       </div>
+    </div>
   </section>
 
   <section id="sobreNosotrasDiv" class="sobreNosotrasDiv" style="display:none">
     <div>
-      <br><br><br><br><br><br>
-      <h1 id="titulo5">¿QUIENES</h1>
-      <h2 id="titulo6">SOMOS?</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <h1 class="titulo1">¿QUIENES <br> SOMOS? </h1>
     </div>
     <div class="container2">
       <h3>Somos estudiantes de Desarrollo Web y nos especializamos en el Desarrollo Front-End.
@@ -248,16 +383,17 @@
     </div>
   </section>
 
-  <main class="imagenes">
-    <section class="contenedorImagenes" id="container"></section>
-    <section class="contenedorImagenes" id="containerAsesinos" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerLuchadores" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerMagos" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerTiradores" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerApoyos" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerTanques" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerTodosAz" style="display:none"></section>
-    <section class="contenedorImagenes" id="containerTodosZa" style="display:none"></section>
+  <main class="contenedorImagenes">
+    <section id="container"></section>
+    <section id="containerAsesinos" style="display:none"></section>
+    <section id="containerLuchadores" style="display:none"></section>
+    <section id="containerMagos" style="display:none"></section>
+    <section id="containerTiradores" style="display:none"></section>
+    <section id="containerApoyos" style="display:none"></section>
+    <section id="containerTanques" style="display:none"></section>
+    <section id="containerTodosAz" style="display:none"></section>
+    <section id="containerTodosZa" style="display:none"></section>
+    <section id="containerNivelAtaqueAsesinos" style="display:none"></section>
   </main>
 
   <div id="root"></div>

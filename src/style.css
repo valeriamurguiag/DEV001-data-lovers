@@ -44,6 +44,7 @@ body {
   justify-content: center;
   flex-flow: row wrap;
   align-content: center;
+  flex-direction: row;
 }
 
 #menuSuperior li {
@@ -52,12 +53,14 @@ body {
   justify-content: center;
   flex-flow: row wrap;
   align-content: center;
-  padding: 12px 26px;
+  padding: 0 40px;
   font-family: sans-serif;
   font-size: 16px;
   color: #fff;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  flex-direction: row;
 }
 
 .barra {
@@ -69,15 +72,6 @@ body {
   margin-top: 30px;
 }
 
-.imgLi {
-  width: 220px;
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: initial;
-  align-content: flex-start;
-  margin-top: -20px;
-}
-
 .img {
   width: 220px;
 }
@@ -85,14 +79,15 @@ body {
 
 #menuSuperior {
   background-color: #3D3B3B;
-  width: 100%;
-  height: 80px;
+  width: 100% auto;
+  height: 100% auto;
   box-shadow: 5px 4px 5px black;
   opacity: 90%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-content: center;
+  flex-direction: row;
 }
 
 #menuCentral ul {
@@ -140,7 +135,7 @@ body {
   flex-direction: row;
 }
 
-.filtrar {
+.ordenar {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -148,13 +143,14 @@ body {
   background-color: #3D3B3B;
   border-radius: 25px;
   box-shadow: 5px 4px 5px black;
-  margin-top: 50px;
-  margin-right: 450px;
-  margin-left: 450px;
+  margin: 100px auto;
+  max-width: 30%;
   padding: 4px 20px;
+  margin-bottom: -75px;
+  margin-top: 40px;
 }
 
-.filtrar li {
+.ordenar li {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -166,15 +162,16 @@ body {
   font-weight: bold;
 }
 
-#titulo1 {
+.titulo1 {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 65px;
   text-align: center;
-  margin-top: 30px;
+  margin: 100px auto;
+  max-width: 750px;
+  height: auto;
   color: white;
   text-shadow: 5px 4px 5px black;
   background-color: #3D3B3B;
-  width: 100% auto;
   opacity: 90%;
   box-shadow: 5px 4px 5px black;
   border-radius: 15px;
@@ -186,7 +183,7 @@ body {
 
 }
 
-.filtros {
+.selectOrden {
   font-family: sans-serif;
   font-size: 18px;
   color: #fff;
@@ -197,47 +194,14 @@ body {
 
 }
 
-#titulo3 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 60px;
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-  text-shadow: 5px 4px 5px black;
-  background-color: #3D3B3B;
-  width: 40%;
-  display: block;
-  margin-left: 450px;
-  opacity: 90%;
-  box-shadow: 5px 4px 5px black;
-  border-radius: 15px;
-
-}
-
-#titulo4 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 65px;
-  text-align: center;
-  margin-top: 0px;
-  color: white;
-  text-shadow: 5px 4px 5px black;
-  background-color: #3D3B3B;
-  width: 30%;
-  display: block;
-  margin-left: 650px;
-  opacity: 90%;
-  box-shadow: 5px 4px 5px black;
-  border-radius: 15px;
-
-}
-
 .contenedorImagenes {
-  display: inline-block;
-  justify-content: center;
+  display: flex;
+  max-width: 90%;
   flex-wrap: wrap;
   flex-grow: 1;
-  margin: 30px 50px;
+  margin: 100px auto;
 }
+
 
 .container2 {
   position: relative;
@@ -252,57 +216,6 @@ body {
   font-size: 18px;
   background-color: #3D3B3B;
   opacity: 90%;
-}
-
-#titulo5 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 65px;
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-  text-shadow: 5px 4px 5px black;
-  background-color: #3D3B3B;
-  width: 25%;
-  display: block;
-  margin-left: 500px;
-  opacity: 90%;
-  box-shadow: 5px 4px 5px black;
-  border-radius: 15px;
-
-}
-
-#titulo6 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 65px;
-  text-align: center;
-  margin-top: 0px;
-  color: white;
-  text-shadow: 5px 4px 5px black;
-  background-color: #3D3B3B;
-  width: 25%;
-  display: block;
-  margin-left: 650px;
-  opacity: 90%;
-  box-shadow: 5px 4px 5px black;
-  border-radius: 15px;
-
-}
-
-#titulo7 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 65px;
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-  text-shadow: 5px 4px 5px black;
-  background-color: #3D3B3B;
-  width: 26%;
-  display: block;
-  margin-left: 550px;
-  opacity: 90%;
-  box-shadow: 5px 4px 5px black;
-  border-radius: 15px;
-
 }
 
 .containerVarios {
@@ -346,16 +259,12 @@ body {
 
 .class-divData {
   background-color: rgb(6, 28, 37);
-  ;
   display: inline-block;
   position: relative;
   margin-top: 1%;
-  transform-style: preserve-3d;
-  transition: 1.5s;
-  transition: all 0.3s linear;
   cursor: pointer;
   border: 1px solid #937341;
-  ;
+  margin-left: 60px;
 }
 
 .class-divData:hover {
@@ -363,12 +272,6 @@ body {
   background: rgba(243, 168, 5, 0.842);
 }
 
-#container {
-  display: inline-flex;
-  justify-content: center;
-  margin: 30px 60px;
-
-}
 
 .class-img {
   margin: 0;
@@ -400,11 +303,11 @@ body {
   font-size: 16px;
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
-  width: 100%;
-  height: 1000px;
+  height: 200em;
   background-image: url(img/neutrolol.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: -150px;
 }
 
@@ -412,10 +315,11 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-direction: row;
   max-width: 850px;
   height: auto;
   border: 2px solid gray;
-  margin: 100px 500px;
+  margin: 100px auto;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 15px;
@@ -423,10 +327,6 @@ body {
   font-size: 20px;
   background-color: #3D3B3B;
   opacity: 90%;
-}
-
-.imagenes {
-  display: inline-flex;
 }
 
 .nuevosJugadoresDiv {
@@ -439,6 +339,8 @@ body {
   background-image: url("img/lol2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  height: 200em;
   margin-top: -150px;
 }
 
@@ -450,10 +352,10 @@ body {
   font-size: 16px;
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
-  width: 100%;
-  height: 1000px;
+  height: 200em;
   background-image: url(img/fondo-codigo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: -150px;
 }

@@ -1,6 +1,6 @@
 //Importar la data
 import data from './data/lol/lol.js';
-import { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa } from './data.js';
+import { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa, nivelAtaqueAsesinos} from './data.js';
 
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
@@ -41,6 +41,11 @@ function mostrarTodos2() {
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('ordenarTodos').style.display = "block";
 
@@ -84,6 +89,11 @@ function mostrarAsesinos2() {
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('containerAsesinos').style.display = "block";
   document.getElementById('ordenarNivelesAsesinos').style.display = "block";
 
@@ -127,7 +137,12 @@ function mostrarLuchadores2() {
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('containerLuchadores').style.display = "block";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "block";
 
 }
 
@@ -169,7 +184,12 @@ function mostrarMagos2() {
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('containerMagos').style.display = "block";
+  document.getElementById('ordenarNivelesMagos').style.display = "block";
 
 }
 
@@ -210,6 +230,11 @@ function mostrarTiradores2() {
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "block";
   document.getElementById('containerTiradores').style.display = "block";
 }
 
@@ -250,6 +275,11 @@ function mostrarApoyos2() {
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "block";
   document.getElementById('containerApoyos').style.display = "block";
 
 }
@@ -291,6 +321,11 @@ function mostrarTanques2() {
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "block";
   document.getElementById('containerTanques').style.display = "block";
 
 }
@@ -303,7 +338,7 @@ function mostrarSobreElJuego() {
   document.getElementById('container').style.display = "none";
   document.getElementById('tituloPrincipal').style.display = "none";
   document.getElementById('menuCentral').style.display = "none";
-  document.getElementById('filtrar').style.display = "none";
+  document.getElementById('ordenar').style.display = "none";
   document.getElementById('containerAsesinos').style.display = "none";
   document.getElementById('containerLuchadores').style.display = "none";
   document.getElementById('containerMagos').style.display = "none";
@@ -335,12 +370,12 @@ function mostrarCampeones() {
   document.getElementById('nuevosJugadoresDiv').style.display = "none";
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
-  document.getElementById('ordenarTodos').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('tituloPrincipal').style.display = "block";
   document.getElementById('menuCentral').style.display = "block";
-  document.getElementById('filtrar').style.display = "block";
+  document.getElementById('ordenar').style.display = "block";
+  document.getElementById('ordenarTodos').style.display = "block";
 
 }
 
@@ -359,7 +394,7 @@ function mostrarNuevosJugadores() {
   document.getElementById('container').style.display = "none";
   document.getElementById('tituloPrincipal').style.display = "none";
   document.getElementById('menuCentral').style.display = "none";
-  document.getElementById('filtrar').style.display = "none";
+  document.getElementById('ordenar').style.display = "none";
   document.getElementById('sobreNosotrasDiv').style.display = "none";
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
@@ -384,7 +419,7 @@ function mostrarSobreNosotras() {
   document.getElementById('container').style.display = "none";
   document.getElementById('tituloPrincipal').style.display = "none";
   document.getElementById('menuCentral').style.display = "none";
-  document.getElementById('filtrar').style.display = "none";
+  document.getElementById('ordenar').style.display = "none";
   document.getElementById('nuevosJugadoresDiv').style.display = "none";
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
@@ -464,9 +499,30 @@ ordenar.addEventListener('change', () => {
   }
 });
 
+// Mostrar nivel de ataque ASESINOS
 
+const containerNivelAtaqueAsesinos = document.getElementById('containerNivelAtaqueAsesinos');
+const nivelAtaqueAsesinos2 = document.querySelector('#nivelAtaqueAsesinos2');
 
+function mostrarNivelAtaqueAsesinos(ataqueAsesinos) {
+  for (let i = 0; i < ataqueAsesinos.length; i++) {
+    const newElement10 = document.createElement('div');
+    const img = document.createElement('img');
+    const p = document.createElement('p');
+    newElement10.classList.add('class-divData');
+    img.classList.add('class-img');
+    p.classList.add('class-name');
+    img.src = `${ataqueAsesinos[i].splash}`;
+    p.innerHTML = `${ataqueAsesinos[i].name}`
+    p.innerHTML = `${ataqueAsesinos[i].attack}`
+    newElement10.appendChild(img);
+    newElement10.appendChild(p);
+    containerTodosAz.appendChild(newElement10);
+  }
+}
 
+const nivelAtaqueAsesinosMostrados = nivelAtaqueAsesinos(arrObject);
+mostrarNivelAtaqueAsesinos(nivelAtaqueAsesinosMostrados);
 
 
 
