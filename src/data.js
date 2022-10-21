@@ -57,18 +57,121 @@ function acomodarTodosZa (champions) {
   return sortedZa;
 }
 
-//Estadisticas por Niveles
+//Ordenar ASESINOS ATAQUE mayor a menor
+function nivelAtaqueAsesinos (champions) {
+  let nivelAtaqueAsesinosMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.attack > b.info.attack) {
+      return -1;
+    } else if (a.info.attack < b.info.attack) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelAtaqueAsesinosMayoraMenor;
+}
 
-// function nivelAtaqueAsesinos (champions) {
-//   let ataqueAsesinos = (function (champions){ return champions.info.includes('attack')}).reduce((acc , item) => {
-//     console.log(ataqueAsesinos)
-//   return Math.max(acc , item)
-//   });
-  
-//   return ataqueAsesinos
-// }
+//Ordenar ASESINOS DEFENSA mayor a menor
+function nivelDefensaAsesinos (champions) {
+  let nivelDefensaAsesinosMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.defense > b.info.defense) {
+      return -1;
+    } else if (a.info.defense < b.info.defense) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelDefensaAsesinosMayoraMenor;
+}
+
+//Ordenar ASESINOS MAGIA mayor a menor
+function nivelMagiaAsesinos (champions) {
+  let nivelMagiaAsesinosMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.magic > b.info.magic) {
+      return -1;
+    } else if (a.info.magic < b.info.magic) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelMagiaAsesinosMayoraMenor;
+}
+
+//Ordenar ASESINOS DIFICULTAD mayor a menor
+function nivelDificultadAsesinos (champions) {
+  let nivelDificultadAsesinosMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.difficulty > b.info.difficulty) {
+      return -1;
+    } else if (a.info.difficulty < b.info.difficulty) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelDificultadAsesinosMayoraMenor;
+}
 
 
+//Ordenar LUCHADORES ATAQUE mayor a menor
+function nivelAtaqueLuchadores (champions) {
+  let nivelAtaqueLuchadoresMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.attack > b.info.attack) {
+      return -1;
+    } else if (a.info.attack < b.info.attack) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelAtaqueLuchadoresMayoraMenor;
+}
+
+//Ordenar LUCHADORES DEFENSA mayor a menor
+function nivelDefensaLuchadores (champions) {
+  let nivelDefensaLuchadoresMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.defense > b.info.defense) {
+      return -1;
+    } else if (a.info.defense < b.info.defense) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelDefensaLuchadoresMayoraMenor;
+}
+
+//Ordenar LUCHADORES MAGIA mayor a menor
+function nivelMagiaLuchadores (champions) {
+  let nivelMagiaLuchadoresMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.magic > b.info.magic) {
+      return -1;
+    } else if (a.info.magic < b.info.magic) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelMagiaLuchadoresMayoraMenor;
+}
+
+//Ordenar LUCHADORES DIFICULTAD mayor a menor
+function nivelDificultadLuchadores (champions) {
+  let nivelDificultadLuchadoresMayoraMenor = champions.sort( (a, b) => {
+    if(a.info.difficulty > b.info.difficulty) {
+      return -1;
+    } else if (a.info.difficulty < b.info.difficulty) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return nivelDificultadLuchadoresMayoraMenor;
+}
 
 
-export {filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, acomodarTodosAz, acomodarTodosZa}
+export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, 
+  acomodarTodosAz, acomodarTodosZa, 
+  nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos,
+  nivelAtaqueLuchadores, nivelDefensaLuchadores, nivelMagiaLuchadores, nivelDificultadLuchadores }

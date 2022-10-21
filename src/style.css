@@ -187,7 +187,6 @@ body {
   font-family: sans-serif;
   font-size: 18px;
   color: #fff;
-  font-weight: bold;
   background-color: #3D3B3B;
   border: none;
   text-shadow: 5px 4px 5px black;
@@ -284,6 +283,22 @@ body {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bolder;
   text-align: center;
+  margin-top: -0.2em;
+  padding: 0.10em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 6% 8%;
+  padding-top: 2%;
+  padding-right: 8%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+}
+
+.class-level {
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
   margin-top: -0.2em;
   padding: 0.10em;
   text-transform: uppercase;
