@@ -394,6 +394,44 @@ function nivelDificultadTanques (champions) {
   return nivelDificultadTanquesMayoraMenor;
 }
 
+// import data from './data/lol/lol.js';
+
+// // Estadisticas de ASESINOS
+
+// const allChampion = data.data;
+// const arrObject = Object.values(allChampion);
+
+// function estAsesinos (champions) {
+//   return champions.reduce ((acc , obj ) => {
+//   // (acc[obj] ? acc[obj] += 1 : acc[obj] = 1, acc)
+//   const keys = obj.tags
+//   keys.forEach(element => {
+//     let acumulado = acc[element] ?? []
+//     console.log (acumulado)
+    
+//   });
+//   console.log(keys)
+//   }, {})
+  
+// }
+// console.log(estAsesinos(arrObject))
+
+
+// EJEMPLO ALPI 
+
+// function estAsesinos (champions) {
+//   return champions.reduce ((acc , obj ) => {
+//   const keys = obj.tags
+//   keys.forEach(element => {
+//     let acumulado = acc[element] ?? []
+//     console.log (acumulado)
+    
+//   });
+//   console.log(keys)
+//   }, {})
+  
+// }
+// console.log(estAsesinos(arrObject))
 
 export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, 
   acomodarTodosAz, acomodarTodosZa, 
@@ -402,4 +440,5 @@ export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, fil
   nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos, 
   nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
   nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
-  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques }
+  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques,
+  estAsesinos}

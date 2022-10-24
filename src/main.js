@@ -12,7 +12,7 @@ import {
 } from './data.js';
 
 const allChampion = data.data;
-const arrObject = Object.values(allChampion);
+export const arrObject = Object.values(allChampion);
 
 //Mostrar TODOS
 const container = document.getElementById('container');
@@ -79,6 +79,7 @@ function mostrarTodos2() {
   document.getElementById('containerNivelDefensaTanques').style.display = "none";
   document.getElementById('containerNivelMagiaTanques').style.display = "none";
   document.getElementById('containerNivelDificultadTanques').style.display = "none";
+  document.getElementById('estadisticasDiv').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('ordenarTodos').style.display = "block";
 
@@ -527,6 +528,7 @@ function mostrarSobreElJuego() {
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
   document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('estadisticasDiv').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "block";
 }
 
@@ -544,6 +546,7 @@ function mostrarCampeones() {
   document.getElementById('sobreNosotrasDiv').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "none";
   document.getElementById('nuevosJugadoresDiv').style.display = "none";
+  document.getElementById('estadisticasDiv').style.display = "none";
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
@@ -577,6 +580,7 @@ function mostrarNuevosJugadores() {
   document.getElementById('menuCentral').style.display = "none";
   document.getElementById('ordenar').style.display = "none";
   document.getElementById('sobreNosotrasDiv').style.display = "none";
+  document.getElementById('estadisticasDiv').style.display = "none";
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarTodos').style.display = "none";
@@ -588,6 +592,36 @@ function mostrarNuevosJugadores() {
   document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('nuevosJugadoresDiv').style.display = "block";
 
+}
+
+//Mostrar ESTADISTICAS
+const estadisticas = document.getElementById('estadisticas');
+estadisticas.addEventListener("click", botonEstadisticas);
+
+function botonEstadisticas() {
+  document.getElementById('containerAsesinos').style.display = "none";
+  document.getElementById('containerLuchadores').style.display = "none";
+  document.getElementById('containerMagos').style.display = "none";
+  document.getElementById('containerTiradores').style.display = "none";
+  document.getElementById('containerApoyos').style.display = "none";
+  document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('sobreJuegoDiv').style.display = "none";
+  document.getElementById('container').style.display = "none";
+  document.getElementById('tituloPrincipal').style.display = "none";
+  document.getElementById('menuCentral').style.display = "none";
+  document.getElementById('ordenar').style.display = "none";
+  document.getElementById('nuevosJugadoresDiv').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
+  document.getElementById('ordenarTodos').style.display = "none";
+  document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('sobreNosotrasDiv').style.display = "none";
+  document.getElementById('estadisticasDiv').style.display = "block";
 }
 
 //Mostrar SOBRE NOSOTRAS
@@ -616,6 +650,7 @@ function mostrarSobreNosotras() {
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
   document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('estadisticasDiv').style.display = "none";
   document.getElementById('sobreNosotrasDiv').style.display = "block";
 }
 
