@@ -271,6 +271,24 @@ body {
   background: rgba(243, 168, 5, 0.842);
 }
 
+.class-divNosotras {
+  background-color: rgb(6, 28, 37);
+  display: inline-block;
+  position: relative;
+  margin-top: 1%;
+  cursor: pointer;
+  border: 1px solid #937341;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-divNosotras:hover {
+  transform: scale(0.96);
+  background: rgba(243, 168, 5, 0.842);
+}
+
+
 
 .class-img {
   margin: 0;
@@ -319,7 +337,7 @@ body {
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   height: 200em;
-  background-image: url(img/neutrolol.jpg);
+  background-image: url(img/fondo-ioina.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -351,11 +369,11 @@ body {
   text-align: center;
   font-size: 16px;
   font-family: Trebuchet MS, Helvetica, sans-serif;
-  background-image: url("img/lol2.jpg");
+  background-image: url("img/fondolol-ruinas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 200em;
+  height: 150em;
   margin-top: -150px;
 }
 
@@ -368,7 +386,7 @@ body {
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   height: 200em;
-  background-image: url(img/fondo-codigo.jpg);
+  background-image: url(img/fondo-targon.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

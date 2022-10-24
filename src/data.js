@@ -394,6 +394,7 @@ function nivelDificultadTanques (champions) {
   return nivelDificultadTanquesMayoraMenor;
 }
 
+
 export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, 
   acomodarTodosAz, acomodarTodosZa, 
   nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos,

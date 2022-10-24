@@ -1,13 +1,15 @@
 //Importar la data
 import data from './data/lol/lol.js';
-import { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques, 
-  acomodarTodosAz, acomodarTodosZa, 
+import {
+  filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques,
+  acomodarTodosAz, acomodarTodosZa,
   nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos,
   nivelAtaqueLuchadores, nivelDefensaLuchadores, nivelMagiaLuchadores, nivelDificultadLuchadores,
-  nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos, 
+  nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos,
   nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
   nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
-  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques} from './data.js';
+  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques
+} from './data.js';
 
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
@@ -52,6 +54,7 @@ function mostrarTodos2() {
   document.getElementById('ordenarNivelesMagos').style.display = "none";
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
   document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
   document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
@@ -64,7 +67,18 @@ function mostrarTodos2() {
   document.getElementById('containerNivelDefensaMagos').style.display = "none";
   document.getElementById('containerNivelMagiaMagos').style.display = "none";
   document.getElementById('containerNivelDificultadMagos').style.display = "none";
-  document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+  document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+  document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('ordenarTodos').style.display = "block";
 
@@ -125,6 +139,18 @@ function mostrarAsesinos2() {
   document.getElementById('containerNivelDefensaMagos').style.display = "none";
   document.getElementById('containerNivelMagiaMagos').style.display = "none";
   document.getElementById('containerNivelDificultadMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+  document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+  document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('containerAsesinos').style.display = "block";
   document.getElementById('ordenarNivelesAsesinos').style.display = "block";
 
@@ -172,18 +198,30 @@ function mostrarLuchadores2() {
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
   document.getElementById('ordenarNivelesTanques').style.display = "none";
-  document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
-  document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
-  document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
-  document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
   document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
   document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
   document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
   document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
+  document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+  document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+  document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+  document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
   document.getElementById('containerNivelAtaqueMagos').style.display = "none";
   document.getElementById('containerNivelDefensaMagos').style.display = "none";
   document.getElementById('containerNivelMagiaMagos').style.display = "none";
   document.getElementById('containerNivelDificultadMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+  document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+  document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('containerLuchadores').style.display = "block";
   document.getElementById('ordenarNivelesLuchadores').style.display = "block";
 
@@ -243,6 +281,18 @@ function mostrarMagos2() {
   document.getElementById('containerNivelDefensaMagos').style.display = "none";
   document.getElementById('containerNivelMagiaMagos').style.display = "none";
   document.getElementById('containerNivelDificultadMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+  document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+  document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('containerMagos').style.display = "block";
   document.getElementById('ordenarNivelesMagos').style.display = "block";
 
@@ -301,6 +351,14 @@ function mostrarTiradores2() {
   document.getElementById('containerNivelDefensaMagos').style.display = "none";
   document.getElementById('containerNivelMagiaMagos').style.display = "none";
   document.getElementById('containerNivelDificultadMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+  document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+  document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('ordenarNivelesTiradores').style.display = "block";
   document.getElementById('containerTiradores').style.display = "block";
 }
@@ -362,8 +420,18 @@ function mostrarApoyos2() {
   document.getElementById('containerNivelDefensaTiradores').style.display = "none";
   document.getElementById('containerNivelMagiaTiradores').style.display = "none";
   document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "block";
   document.getElementById('containerApoyos').style.display = "block";
+
+
 
 }
 
@@ -420,6 +488,14 @@ function mostrarTanques2() {
   document.getElementById('containerNivelDefensaMagos').style.display = "none";
   document.getElementById('containerNivelMagiaMagos').style.display = "none";
   document.getElementById('containerNivelDificultadMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
   document.getElementById('ordenarNivelesTanques').style.display = "block";
   document.getElementById('containerTanques').style.display = "block";
 
@@ -450,6 +526,7 @@ function mostrarSobreElJuego() {
   document.getElementById('ordenarNivelesMagos').style.display = "none";
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('sobreJuegoDiv').style.display = "block";
 }
 
@@ -470,6 +547,11 @@ function mostrarCampeones() {
   document.getElementById('containerTodosAz').style.display = "none";
   document.getElementById('containerTodosZa').style.display = "none";
   document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('container').style.display = "block";
   document.getElementById('tituloPrincipal').style.display = "block";
   document.getElementById('menuCentral').style.display = "block";
@@ -503,6 +585,7 @@ function mostrarNuevosJugadores() {
   document.getElementById('ordenarNivelesMagos').style.display = "none";
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('nuevosJugadoresDiv').style.display = "block";
 
 }
@@ -532,6 +615,7 @@ function mostrarSobreNosotras() {
   document.getElementById('ordenarNivelesMagos').style.display = "none";
   document.getElementById('ordenarNivelesTiradores').style.display = "none";
   document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
   document.getElementById('sobreNosotrasDiv').style.display = "block";
 }
 
@@ -722,7 +806,7 @@ nivelAsesinosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('containerNivelAtaqueAsesinos').style.display = "block";
     document.getElementById('ordenarNivelesAsesinos').style.display = "block";
-  } 
+  }
   else if (filtroAsesinos === "2") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -738,7 +822,7 @@ nivelAsesinosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "block";
     document.getElementById('containerNivelDefensaAsesinos').style.display = "block";
-   
+
   }
   else if (filtroAsesinos === "3") {
     document.getElementById('container').style.display = "none";
@@ -755,9 +839,9 @@ nivelAsesinosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('containerNivelMagiaAsesinos').style.display = "block";
     document.getElementById('ordenarNivelesAsesinos').style.display = "block";
-    
+
   }
-  
+
   else if (filtroAsesinos === "4") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -892,12 +976,28 @@ nivelLuchadoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
     document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "block";
     document.getElementById('containerNivelAtaqueLuchadores').style.display = "block";
-  } 
+  }
   else if (filtroLuchadores === "2") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -913,12 +1013,28 @@ nivelLuchadoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
     document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
     document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "block";
     document.getElementById('containerNivelDefensaLuchadores').style.display = "block";
-   
+
   }
   else if (filtroLuchadores === "3") {
     document.getElementById('container').style.display = "none";
@@ -935,14 +1051,30 @@ nivelLuchadoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
     document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "block";
     document.getElementById('containerNivelMagiaLuchadores').style.display = "block";
-    
+
   }
-  
+
   else if (filtroLuchadores === "4") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -957,6 +1089,22 @@ nivelLuchadoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
     document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
@@ -1087,13 +1235,25 @@ nivelMagosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "none";
     document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDefensaMagos').style.display = "none";
     document.getElementById('containerNivelMagiaMagos').style.display = "none";
     document.getElementById('containerNivelDificultadMagos').style.display = "none";
     document.getElementById('ordenarNivelesMagos').style.display = "block";
     document.getElementById('containerNivelAtaqueMagos').style.display = "block";
 
-  } 
+  }
   else if (filtroMagos === "2") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -1114,12 +1274,24 @@ nivelMagosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "none";
     document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueMagos').style.display = "none";
     document.getElementById('containerNivelMagiaMagos').style.display = "none";
     document.getElementById('containerNivelDificultadMagos').style.display = "none";
     document.getElementById('ordenarNivelesMagos').style.display = "block";
     document.getElementById('containerNivelDefensaMagos').style.display = "block";
-   
+
   }
   else if (filtroMagos === "3") {
     document.getElementById('container').style.display = "none";
@@ -1140,6 +1312,18 @@ nivelMagosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
     document.getElementById('containerNivelAtaqueMagos').style.display = "none";
     document.getElementById('containerNivelDefensaMagos').style.display = "none";
@@ -1147,7 +1331,7 @@ nivelMagosSelect.addEventListener("change", () => {
     document.getElementById('ordenarNivelesMagos').style.display = "block";
     document.getElementById('containerNivelMagiaMagos').style.display = "block";
   }
-  
+
   else if (filtroMagos === "4") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -1168,6 +1352,18 @@ nivelMagosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
     document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueMagos').style.display = "none";
     document.getElementById('containerNivelDefensaMagos').style.display = "none";
     document.getElementById('containerNivelMagiaMagos').style.display = "none";
@@ -1298,12 +1494,28 @@ nivelTiradoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
     document.getElementById('containerNivelDefensaTiradores').style.display = "none";
     document.getElementById('containerNivelMagiaTiradores').style.display = "none";
     document.getElementById('containerNivelAtaqueTiradores').style.display = "block";
     document.getElementById('ordenarNivelesTiradores').style.display = "block";
-  } 
+  }
   else if (filtroTiradores === "2") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -1319,6 +1531,22 @@ nivelTiradoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
     document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
     document.getElementById('containerNivelMagiaTiradores').style.display = "none";
@@ -1340,13 +1568,29 @@ nivelTiradoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
     document.getElementById('containerNivelDefensaTiradores').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
     document.getElementById('containerNivelMagiaTiradores').style.display = "block";
     document.getElementById('ordenarNivelesTiradores').style.display = "block";
   }
-  
+
   else if (filtroTiradores === "4") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -1361,6 +1605,22 @@ nivelTiradoresSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
     document.getElementById('containerNivelDefensaTiradores').style.display = "none";
@@ -1490,6 +1750,18 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('ordenarNivelesLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesTiradores').style.display = "none";
     document.getElementById('ordenarNivelesMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
     document.getElementById('containerNivelDefensaTiradores').style.display = "none";
     document.getElementById('containerNivelMagiaTiradores').style.display = "none";
@@ -1499,7 +1771,7 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelMagiaApoyos').style.display = "none";
     document.getElementById('containerNivelAtaqueApoyos').style.display = "block";
     document.getElementById('ordenarNivelesApoyos').style.display = "block";
-  } 
+  }
   else if (filtroApoyos === "2") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -1514,6 +1786,18 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
     document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
@@ -1528,7 +1812,7 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('ordenarNivelesApoyos').style.display = "block";
     document.getElementById('containerNivelDefensaApoyos').style.display = "block";
   }
-  else if (filtroApoyos=== "3") {
+  else if (filtroApoyos === "3") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
     document.getElementById('containerLuchadores').style.display = "none";
@@ -1543,6 +1827,18 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
     document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
     document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
     document.getElementById('containerNivelDefensaTiradores').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
@@ -1556,7 +1852,7 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('ordenarNivelesApoyos').style.display = "block";
     document.getElementById('containerNivelMagiaApoyos').style.display = "block";
   }
-  
+
   else if (filtroApoyos === "4") {
     document.getElementById('container').style.display = "none";
     document.getElementById('containerAsesinos').style.display = "none";
@@ -1576,6 +1872,18 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDefensaTiradores').style.display = "none";
     document.getElementById('containerNivelMagiaTiradores').style.display = "none";
     document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
     document.getElementById('ordenarNivelesLuchadores').style.display = "none";
     document.getElementById('ordenarNivelesTiradores').style.display = "none";
     document.getElementById('ordenarNivelesMagos').style.display = "none";
@@ -1586,6 +1894,356 @@ nivelApoyosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadApoyos').style.display = "block";
   }
 });
+
+// Mostrar niveles TANQUES
+const containerNivelAtaqueTanques = document.getElementById('containerNivelAtaqueTanques');
+const containerNivelDefensaTanques = document.getElementById('containerNivelDefensaTanques');
+const containerNivelMagiaTanques = document.getElementById('containerNivelMagiaTanques');
+const containerNivelDificultadTanques = document.getElementById('containerNivelDificultadTanques');
+const nivelTanquesSelect = document.querySelector('#nivelTanquesSelect');
+
+function mostrarNivelAtaqueTanques(tanques) {
+  for (let i = 0; i < tanques.length; i++) {
+    const newElement30 = document.createElement('div');
+    const img = document.createElement('img');
+    const p = document.createElement('p');
+    const p1 = document.createElement('p1');
+    newElement30.classList.add('class-divData');
+    img.classList.add('class-img');
+    p.classList.add('class-name');
+    p1.classList.add('class-level');
+    img.src = `${tanques[i].splash}`;
+    p.innerHTML = `${tanques[i].name}`
+    p1.innerHTML = `NIVEL DE ATAQUE: ${tanques[i].info.attack}`;
+    newElement30.appendChild(img);
+    newElement30.appendChild(p);
+    newElement30.appendChild(p1);
+    containerNivelAtaqueTanques.appendChild(newElement30);
+  }
+}
+
+function mostrarNivelDefensaTanques(tanques) {
+  for (let i = 0; i < tanques.length; i++) {
+    const newElement31 = document.createElement('div');
+    const img = document.createElement('img');
+    const p = document.createElement('p');
+    const p1 = document.createElement('p1');
+    newElement31.classList.add('class-divData');
+    img.classList.add('class-img');
+    p.classList.add('class-name');
+    p1.classList.add('class-level');
+    img.src = `${tanques[i].splash}`;
+    p.innerHTML = `${tanques[i].name}`
+    p1.innerHTML = `NIVEL DE DEFENSA: ${tanques[i].info.defense}`
+    newElement31.appendChild(img);
+    newElement31.appendChild(p);
+    newElement31.appendChild(p1);
+    containerNivelDefensaTanques.appendChild(newElement31);
+  }
+}
+
+function mostrarNivelMagiaTanques(tanques) {
+  for (let i = 0; i < tanques.length; i++) {
+    const newElement32 = document.createElement('div');
+    const img = document.createElement('img');
+    const p = document.createElement('p');
+    const p1 = document.createElement('p1');
+    newElement32.classList.add('class-divData');
+    img.classList.add('class-img');
+    p.classList.add('class-name');
+    p1.classList.add('class-level');
+    img.src = `${tanques[i].splash}`;
+    p.innerHTML = `${tanques[i].name}`
+    p1.innerHTML = `NIVEL DE MAGIA: ${tanques[i].info.magic}`;
+    newElement32.appendChild(img);
+    newElement32.appendChild(p);
+    newElement32.appendChild(p1);
+    containerNivelMagiaTanques.appendChild(newElement32);
+  }
+}
+
+function mostrarNivelDificultadTanques(tanques) {
+  for (let i = 0; i < tanques.length; i++) {
+    const newElement33 = document.createElement('div');
+    const img = document.createElement('img');
+    const p = document.createElement('p');
+    const p1 = document.createElement('p1');
+    newElement33.classList.add('class-divData');
+    img.classList.add('class-img');
+    p.classList.add('class-name');
+    p1.classList.add('class-level');
+    img.src = `${tanques[i].splash}`;
+    p.innerHTML = `${tanques[i].name}`
+    p1.innerHTML = `NIVEL DE DIFICULTAD: ${tanques[i].info.difficulty}`;
+    newElement33.appendChild(img);
+    newElement33.appendChild(p);
+    newElement33.appendChild(p1);
+    containerNivelDificultadTanques.appendChild(newElement33);
+  }
+}
+
+const nivelAtaqueTanquesMostrados = nivelAtaqueTanques(filtrarTanques(arrObject));
+mostrarNivelAtaqueTanques(nivelAtaqueTanquesMostrados);
+
+const nivelDefensaTanquesMostrados = nivelDefensaTanques(filtrarTanques(arrObject));
+mostrarNivelDefensaTanques(nivelDefensaTanquesMostrados);
+
+const nivelMagiaTanquesMostrados = nivelMagiaTanques(filtrarTanques(arrObject));
+mostrarNivelMagiaTanques(nivelMagiaTanquesMostrados);
+
+const nivelDificultadTanquesMostrados = nivelDificultadTanques(filtrarTanques(arrObject));
+mostrarNivelDificultadTanques(nivelDificultadTanquesMostrados);
+
+nivelTanquesSelect.addEventListener("change", () => {
+  const filtroTanques = nivelTanquesSelect.value;
+  if (filtroTanques === "1") {
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
+    document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+    document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+    document.getElementById('ordenarNivelesTiradores').style.display = "none";
+    document.getElementById('ordenarNivelesMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('ordenarNivelesApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "block";
+    document.getElementById('ordenarNivelesTanques').style.display = "block";
+  }
+  else if (filtroTanques === "2") {
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
+    document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
+    document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
+    document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
+    document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+    document.getElementById('ordenarNivelesTiradores').style.display = "none";
+    document.getElementById('ordenarNivelesMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('ordenarNivelesApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
+    document.getElementById('ordenarNivelesTanques').style.display = "block";
+    document.getElementById('containerNivelDefensaTanques').style.display = "block";
+
+  }
+  else if (filtroTanques === "3") {
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
+    document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
+    document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+    document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
+    document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
+    document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+    document.getElementById('ordenarNivelesTiradores').style.display = "none";
+    document.getElementById('ordenarNivelesMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('ordenarNivelesApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelDificultadTanques').style.display = "none";
+    document.getElementById('ordenarNivelesTanques').style.display = "block";
+    document.getElementById('containerNivelMagiaTanques').style.display = "block";
+  }
+
+  else if (filtroTanques === "4") {
+    document.getElementById('container').style.display = "none";
+    document.getElementById('containerAsesinos').style.display = "none";
+    document.getElementById('containerLuchadores').style.display = "none";
+    document.getElementById('containerMagos').style.display = "none";
+    document.getElementById('containerTiradores').style.display = "none";
+    document.getElementById('containerApoyos').style.display = "none";
+    document.getElementById('containerTanques').style.display = "none";
+    document.getElementById('containerTodosAz').style.display = "none";
+    document.getElementById('containerTodosZa').style.display = "none";
+    document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
+    document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+    document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
+    document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+    document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+    document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+    document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+    document.getElementById('containerNivelDificultadMagos').style.display = "none";
+    document.getElementById('containerNivelDefensaMagos').style.display = "none";
+    document.getElementById('containerNivelMagiaMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+    document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+    document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+    document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+    document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+    document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+    document.getElementById('ordenarNivelesTiradores').style.display = "none";
+    document.getElementById('ordenarNivelesMagos').style.display = "none";
+    document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+    document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+    document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+    document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+    document.getElementById('ordenarNivelesApoyos').style.display = "none";
+    document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+    document.getElementById('containerNivelDefensaTanques').style.display = "none";
+    document.getElementById('containerNivelMagiaTanques').style.display = "none";
+    document.getElementById('ordenarNivelesTanques').style.display = "block";
+    document.getElementById('containerNivelDificultadTanques').style.display = "block";
+
+  }
+});
+
+//Mostrar NOSOTRAS
+const containerNosotras = document.getElementById('containerNosotras');
+const nosotras = document.getElementById('sobreNosotras');
+
+
+function mostrarSilvia() {
+  const newElement34 = document.createElement('div');
+  const img = document.createElement('img');
+  const p = document.createElement('p');
+  newElement34.classList.add('class-divNosotras');
+  img.classList.add('class-img');
+  p.classList.add('class-name');
+  img.src = "https://i.postimg.cc/Wz8LXfgp/foto-silvia.jpg"
+  p.innerHTML = `Silvia Falcon`;
+  newElement34.appendChild(img);
+  newElement34.appendChild(p);
+  containerNosotras.appendChild(newElement34);
+}
+mostrarSilvia();
+
+function mostrarValeria() {
+  const newElement35 = document.createElement('div');
+  const img = document.createElement('img');
+  const p = document.createElement('p');
+  newElement35.classList.add('class-divNosotras');
+  img.classList.add('class-img');
+  p.classList.add('class-name');
+  img.src = "https://i.postimg.cc/GhMnDVbq/foto-valeria.jpg"
+  p.innerHTML = `Valeria Murguia`;
+  newElement35.appendChild(img);
+  newElement35.appendChild(p);
+  containerNosotras.appendChild(newElement35);
+}
+mostrarValeria();
+
+nosotras.addEventListener("click", () => {
+  document.getElementById('container').style.display = "none";
+  document.getElementById('containerAsesinos').style.display = "none";
+  document.getElementById('containerLuchadores').style.display = "none";
+  document.getElementById('containerMagos').style.display = "none";
+  document.getElementById('containerTiradores').style.display = "none";
+  document.getElementById('containerApoyos').style.display = "none";
+  document.getElementById('containerTanques').style.display = "none";
+  document.getElementById('containerTodosAz').style.display = "none";
+  document.getElementById('containerTodosZa').style.display = "none";
+  document.getElementById('containerNivelAtaqueAsesinos').style.display = "none";
+  document.getElementById('containerNivelDefensaAsesinos').style.display = "none";
+  document.getElementById('containerNivelMagiaAsesinos').style.display = "none";
+  document.getElementById('ordenarNivelesAsesinos').style.display = "none";
+  document.getElementById('containerNivelDificultadAsesinos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTiradores').style.display = "none";
+  document.getElementById('containerNivelDefensaTiradores').style.display = "none";
+  document.getElementById('containerNivelMagiaTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadTiradores').style.display = "none";
+  document.getElementById('containerNivelDificultadMagos').style.display = "none";
+  document.getElementById('containerNivelDefensaMagos').style.display = "none";
+  document.getElementById('containerNivelMagiaMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueMagos').style.display = "none";
+  document.getElementById('containerNivelDificultadLuchadores').style.display = "none";
+  document.getElementById('containerNivelDefensaLuchadores').style.display = "none";
+  document.getElementById('containerNivelMagiaLuchadores').style.display = "none";
+  document.getElementById('containerNivelAtaqueLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesLuchadores').style.display = "none";
+  document.getElementById('ordenarNivelesTiradores').style.display = "none";
+  document.getElementById('ordenarNivelesMagos').style.display = "none";
+  document.getElementById('containerNivelAtaqueApoyos').style.display = "none";
+  document.getElementById('containerNivelDefensaApoyos').style.display = "none";
+  document.getElementById('containerNivelMagiaApoyos').style.display = "none";
+  document.getElementById('containerNivelDificultadApoyos').style.display = "none";
+  document.getElementById('ordenarNivelesApoyos').style.display = "none";
+  document.getElementById('containerNivelAtaqueTanques').style.display = "none";
+  document.getElementById('containerNivelDefensaTanques').style.display = "none";
+  document.getElementById('containerNivelMagiaTanques').style.display = "none";
+  document.getElementById('ordenarNivelesTanques').style.display = "none";
+  document.getElementById('containerNivelDificultadTanques').style.display = "none";
+  document.getElementById('containerNosotras').style.display = "block";
+})
+
+
 
 
 
