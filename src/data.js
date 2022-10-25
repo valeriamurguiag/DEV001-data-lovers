@@ -396,18 +396,25 @@ function nivelDificultadTanques (champions) {
 
 import data from './data/lol/lol.js';
 
-// // Estadisticas de ASESINOS
-
+// Estadisticas CONTEO TIPOS
 const allChampion = data.data;
 const arrObject = Object.values(allChampion);
 
-function estAsesinos (champions) {
- const result= champions.reduce(function (acc , obj){
-  return [...acc, ...obj.tags]
- }, [])
- console.log(result);
+function conteoTipos (champions) {
+ return champions.reduce(function (acc , champion){
+  const { tags } = champion;
+  tags.forEach(tag => {
+    
+    if(acc[tag]) {
+      acc[tag] += 1;
+    } else {
+      acc[tag] = 1;
+    }
+  })
+  return acc
+}, {})
 }
-(estAsesinos(arrObject))
+conteoTipos(arrObject)
 
 
 

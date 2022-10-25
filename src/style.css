@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   width: 100%;
@@ -26,7 +27,7 @@ body {
   text-align: justify;
   text-align: center;
   font-family: Trebuchet MS, Helvetica, sans-serif;
-  font-size: 21px;
+  font-size: 19px;
   color: white;
   background-color: #3D3B3B;
   border: none;
@@ -53,9 +54,9 @@ body {
   justify-content: center;
   flex-flow: row wrap;
   align-content: center;
-  padding: 0 32px;
+  padding: 0 30px;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   font-weight: bold;
   margin-top: 5px;
@@ -102,9 +103,9 @@ body {
 }
 
 #menuCentral li {
-  padding: 12px 18px;
+  padding: 12px 16px;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #fff;
   font-weight: bold;
   margin-left: 20px;
@@ -157,14 +158,14 @@ body {
   align-content: center;
   padding: 4px 20px;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #fff;
   font-weight: bold;
 }
 
 .titulo1 {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 65px;
+  font-size: 63px;
   text-align: center;
   margin: 100px auto;
   max-width: 750px;
@@ -185,7 +186,7 @@ body {
 
 .selectOrden {
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   background-color: #3D3B3B;
   border: none;
@@ -213,7 +214,7 @@ body {
   box-sizing: border-box;
   border-radius: 15px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #3D3B3B;
   opacity: 90%;
   margin-top: -100px;
@@ -224,25 +225,28 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  width: 300px;
-  height: 550px;
+  width: 550px;
+  height: 650px;
   border: 5px solid rgb(22, 21, 21);
-  margin: 10px 20px;
+  margin: 10px;
   padding: 30px;
   border-radius: 15px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 2em;
   background-color: #3D3B3B;
   opacity: 90%;
   margin-right: 15px;
   margin-left: 10px;
+  margin-top: 80px;
   border-style: dashed;
   box-shadow: 5px 4px 5px black;
 }
 
 #fundamentos {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: white;
   text-shadow: 5px 4px 5px black;
@@ -265,7 +269,8 @@ body {
   margin-top: 1%;
   cursor: pointer;
   border: 1px solid #937341;
-  margin-left: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 18px;
 }
 
@@ -285,6 +290,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 18px;
+  width: 310px;
+  height: 350px;
 }
 
 .class-divNosotras:hover {
@@ -296,28 +303,34 @@ body {
   margin: 0;
   width: 307px;
   height: 200px;
+  border-radius: 15px;
+
 }
 
 .class-imgSilvia {
-  margin: 5px;
+  margin: 0px;
   width: 307px;
-  height: 200px;
+  height: 290px;
   display: flex;
   justify-content: center;
   align-content: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .class-imgValeria {
-  margin: 5px;
-  width: 307px;
-  height: 200px;
+  margin: 0px;
+  width: 308px;
+  height: 290px;
   display: flex;
   justify-content: center;
   align-content: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .class-name {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bolder;
   text-align: center;
@@ -333,7 +346,7 @@ body {
 }
 
 .class-level {
-  font-size: 15px;
+  font-size: 13px;
   font-family: sans-serif;
   text-align: center;
   justify-content: center;
@@ -353,15 +366,22 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   height: 200em;
-  background-image: url(img/fondo-ioina.webp);
+  background-image: url(img/fondo-ixtal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin-top: -150px;
+}
+
+.class-gifSobreJuego {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 5000px;
 }
 
 .containerNosotras {
@@ -389,9 +409,131 @@ body {
   box-sizing: border-box;
   border-radius: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #3D3B3B;
   opacity: 90%;
+}
+
+.estadisticasTexto {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  color: white;
+  font-size: 18px;
+}
+
+.class-grafico {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: flex-end;
+  width: 570px;
+  height: 350px;
+  margin-top: 45px;
+}
+
+.class-gifGrieta {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 5000px;
+}
+
+.class-gifNexo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-gifInhibidores {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-gifCalle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-gifJungla {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-gifCalleInferior {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-gifApoyo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.gifApoyos {
+  width: 350px;
+  height: 200px;
+}
+
+.gifCalleInferior {
+  width: 350px;
+  height: 200px;
+}
+
+.gifJungla {
+  width: 350px;
+  height: 200px;
+}
+
+.gifCalle {
+  width: 300px;
+  height: 250px;
+}
+
+.gifInhibidores {
+  width: 350px;
+  height: 200px;
+}
+
+.gifGrieta {
+  width: 450px;
+  height: 300px;
+}
+
+.gifNexo {
+  width: 350px;
+  height: 220px;
+}
+
+.gifTorretas {
+  width: 350px;
+  height: 220px;
+}
+
+.gifSobrejuego {
+  width: 450px;
+  height: 290px;
+}
+
+.containerTextoyGrafico {
+  display: flex;
+  background-color: #3D3B3B;
+  opacity: 90%;
+  max-width: 1000px;
+  height: 500px;
+  border: 2px solid gray;
+  margin: 100px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .nuevosJugadoresDiv {
@@ -399,13 +541,13 @@ body {
   align-items: center;
   color: rgb(245, 243, 243);
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   background-image: url("img/fondolol-ruinas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 150em;
+  height: 300em;
   margin-top: -150px;
 }
 
@@ -414,7 +556,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   height: 200em;
@@ -429,8 +571,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   height: 200em;
-  background-image: url(img/fondo-targon.webp);
+  background-image: url(img/fondo-ioina.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
