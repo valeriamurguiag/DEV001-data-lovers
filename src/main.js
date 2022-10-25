@@ -2210,7 +2210,7 @@ function mostrarSilvia() {
   const img = document.createElement('img');
   const p = document.createElement('p');
   newElement34.classList.add('class-divNosotras');
-  img.classList.add('class-img');
+  img.classList.add('class-imgSilvia');
   p.classList.add('class-name');
   img.src = "https://i.postimg.cc/Wz8LXfgp/foto-silvia.jpg"
   p.innerHTML = `Silvia Falcon`;
@@ -2225,7 +2225,7 @@ function mostrarValeria() {
   const img = document.createElement('img');
   const p = document.createElement('p');
   newElement35.classList.add('class-divNosotras');
-  img.classList.add('class-img');
+  img.classList.add('class-imgValeria');
   p.classList.add('class-name');
   img.src = "https://i.postimg.cc/GhMnDVbq/foto-valeria.jpg"
   p.innerHTML = `Valeria Murguia`;

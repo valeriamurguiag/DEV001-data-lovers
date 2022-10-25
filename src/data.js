@@ -440,5 +440,4 @@ export { filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, fil
   nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos, 
   nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
   nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
-  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques,
-  estAsesinos}
+  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques}

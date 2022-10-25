@@ -216,6 +216,7 @@ body {
   font-size: 18px;
   background-color: #3D3B3B;
   opacity: 90%;
+  margin-top: -100px;
 }
 
 .containerVarios {
@@ -297,6 +298,24 @@ body {
   height: 200px;
 }
 
+.class-imgSilvia {
+  margin: 5px;
+  width: 307px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-imgValeria {
+  margin: 5px;
+  width: 307px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .class-name {
   font-size: 1.2em;
   font-family: 'Nanum Myeongjo', serif;
@@ -343,6 +362,18 @@ body {
   background-size: cover;
   background-attachment: fixed;
   margin-top: -150px;
+}
+
+.containerNosotras {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 850px;
+  height: auto;
+  margin: 100px auto;
+  padding: 30px;
+  margin-top: -100px;
 }
 
 .containerSobreJuego {
