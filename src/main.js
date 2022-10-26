@@ -744,7 +744,7 @@ function mostrarNivelAtaqueAsesinos(asesinos) {
     p1.classList.add('class-level');
     img.src = `${asesinos[i].splash}`;
     p.innerHTML = `${asesinos[i].name}`
-    p1.innerHTML = `NIVEL DE ATAQUE: ${asesinos[i].info.attack}`;
+    p1.innerHTML = `ATTACK LEVEL: ${asesinos[i].info.attack}`;
     newElement10.appendChild(img);
     newElement10.appendChild(p);
     newElement10.appendChild(p1);
@@ -764,7 +764,7 @@ function mostrarNivelDefensaAsesinos(asesinos) {
     p1.classList.add('class-level');
     img.src = `${asesinos[i].splash}`;
     p.innerHTML = `${asesinos[i].name}`
-    p1.innerHTML = `NIVEL DE DEFENSA: ${asesinos[i].info.defense}`
+    p1.innerHTML = `DEFENSE LEVEL: ${asesinos[i].info.defense}`
     newElement11.appendChild(img);
     newElement11.appendChild(p);
     newElement11.appendChild(p1);
@@ -784,7 +784,7 @@ function mostrarNivelMagiaAsesinos(asesinos) {
     p1.classList.add('class-level');
     img.src = `${asesinos[i].splash}`;
     p.innerHTML = `${asesinos[i].name}`
-    p1.innerHTML = `NIVEL DE MAGIA: ${asesinos[i].info.magic}`;
+    p1.innerHTML = `MAGIC LEVEL: ${asesinos[i].info.magic}`;
     newElement12.appendChild(img);
     newElement12.appendChild(p);
     newElement12.appendChild(p1);
@@ -804,7 +804,7 @@ function mostrarNivelDificultadAsesinos(asesinos) {
     p1.classList.add('class-level');
     img.src = `${asesinos[i].splash}`;
     p.innerHTML = `${asesinos[i].name}`
-    p1.innerHTML = `NIVEL DE DIFICULTAD: ${asesinos[i].info.difficulty}`;
+    p1.innerHTML = `DIFFICULTY LEVEL: ${asesinos[i].info.difficulty}`;
     newElement13.appendChild(img);
     newElement13.appendChild(p);
     newElement13.appendChild(p1);
@@ -914,7 +914,7 @@ function mostrarNivelAtaqueLuchadores(luchadores) {
     p1.classList.add('class-level')
     img.src = `${luchadores[i].splash}`;
     p.innerHTML = `${luchadores[i].name}`;
-    p1.innerHTML = `NIVEL DE ATAQUE: ${luchadores[i].info.attack}`;
+    p1.innerHTML = `ATTACK LEVEL: ${luchadores[i].info.attack}`;
     newElement14.appendChild(img);
     newElement14.appendChild(p);
     newElement14.appendChild(p1);
@@ -934,7 +934,7 @@ function mostrarNivelDefensaLuchadores(luchadores) {
     p1.classList.add('class-level');
     img.src = `${luchadores[i].splash}`;
     p.innerHTML = `${luchadores[i].name}`;
-    p1.innerHTML = `NIVEL DE DEFENSA: ${luchadores[i].info.defense}`;
+    p1.innerHTML = `DEFENSE LEVEL: ${luchadores[i].info.defense}`;
     newElement15.appendChild(img);
     newElement15.appendChild(p);
     newElement15.appendChild(p1);
@@ -954,7 +954,7 @@ function mostrarNivelMagiaLuchadores(luchadores) {
     p1.classList.add('class-level');
     img.src = `${luchadores[i].splash}`;
     p.innerHTML = `${luchadores[i].name}`;
-    p1.innerHTML = `NIVEL DE MAGIA: ${luchadores[i].info.magic}`;
+    p1.innerHTML = `MAGIC LEVEL: ${luchadores[i].info.magic}`;
     newElement16.appendChild(img);
     newElement16.appendChild(p);
     newElement16.appendChild(p1);
@@ -974,7 +974,7 @@ function mostrarNivelDificultadLuchadores(luchadores) {
     p1.classList.add('class-level');
     img.src = `${luchadores[i].splash}`;
     p.innerHTML = `${luchadores[i].name}`;
-    p1.innerHTML = `NIVEL DE DIFICULTAD: ${luchadores[i].info.difficulty}`;
+    p1.innerHTML = `DIFFICULTY LEVEL: ${luchadores[i].info.difficulty}`;
     newElement17.appendChild(img);
     newElement17.appendChild(p);
     newElement17.appendChild(p1);
@@ -1168,7 +1168,7 @@ function mostrarNivelAtaqueMagos(magos) {
     p1.classList.add('class-level')
     img.src = `${magos[i].splash}`;
     p.innerHTML = `${magos[i].name}`;
-    p1.innerHTML = `NIVEL DE ATAQUE: ${magos[i].info.attack}`;
+    p1.innerHTML = `ATTACK LEVEL: ${magos[i].info.attack}`;
     newElement18.appendChild(img);
     newElement18.appendChild(p);
     newElement18.appendChild(p1);
@@ -1188,7 +1188,7 @@ function mostrarNivelDefensaMagos(magos) {
     p1.classList.add('class-level');
     img.src = `${magos[i].splash}`;
     p.innerHTML = `${magos[i].name}`;
-    p1.innerHTML = `NIVEL DE DEFENSA: ${magos[i].info.defense}`;
+    p1.innerHTML = `DEFENSE LEVEL: ${magos[i].info.defense}`;
     newElement19.appendChild(img);
     newElement19.appendChild(p);
     newElement19.appendChild(p1);
@@ -1208,7 +1208,7 @@ function mostrarNivelMagiaMagos(magos) {
     p1.classList.add('class-level');
     img.src = `${magos[i].splash}`;
     p.innerHTML = `${magos[i].name}`;
-    p1.innerHTML = `NIVEL DE MAGIA: ${magos[i].info.magic}`;
+    p1.innerHTML = `MAGIC LEVEL: ${magos[i].info.magic}`;
     newElement20.appendChild(img);
     newElement20.appendChild(p);
     newElement20.appendChild(p1);
@@ -1228,7 +1228,7 @@ function mostrarNivelDificultadMagos(magos) {
     p1.classList.add('class-level');
     img.src = `${magos[i].splash}`;
     p.innerHTML = `${magos[i].name}`;
-    p1.innerHTML = `NIVEL DE DIFICULTAD: ${magos[i].info.difficulty}`;
+    p1.innerHTML = `DIFFICULTY LEVEL: ${magos[i].info.difficulty}`;
     newElement21.appendChild(img);
     newElement21.appendChild(p);
     newElement21.appendChild(p1);
@@ -1432,7 +1432,7 @@ function mostrarNivelAtaqueTiradores(tiradores) {
     p1.classList.add('class-level');
     img.src = `${tiradores[i].splash}`;
     p.innerHTML = `${tiradores[i].name}`
-    p1.innerHTML = `NIVEL DE ATAQUE: ${tiradores[i].info.attack}`;
+    p1.innerHTML = `ATTACK LEVEL: ${tiradores[i].info.attack}`;
     newElement22.appendChild(img);
     newElement22.appendChild(p);
     newElement22.appendChild(p1);
@@ -1452,7 +1452,7 @@ function mostrarNivelDefensaTiradores(tiradores) {
     p1.classList.add('class-level');
     img.src = `${tiradores[i].splash}`;
     p.innerHTML = `${tiradores[i].name}`
-    p1.innerHTML = `NIVEL DE DEFENSA: ${tiradores[i].info.defense}`
+    p1.innerHTML = `DEFENSE LEVEL: ${tiradores[i].info.defense}`
     newElement23.appendChild(img);
     newElement23.appendChild(p);
     newElement23.appendChild(p1);
@@ -1472,7 +1472,7 @@ function mostrarNivelMagiaTiradores(tiradores) {
     p1.classList.add('class-level');
     img.src = `${tiradores[i].splash}`;
     p.innerHTML = `${tiradores[i].name}`
-    p1.innerHTML = `NIVEL DE MAGIA: ${tiradores[i].info.magic}`;
+    p1.innerHTML = `MAGIC LEVEL: ${tiradores[i].info.magic}`;
     newElement24.appendChild(img);
     newElement24.appendChild(p);
     newElement24.appendChild(p1);
@@ -1492,7 +1492,7 @@ function mostrarNivelDificultadTiradores(tiradores) {
     p1.classList.add('class-level');
     img.src = `${tiradores[i].splash}`;
     p.innerHTML = `${tiradores[i].name}`
-    p1.innerHTML = `NIVEL DE DIFICULTAD: ${tiradores[i].info.difficulty}`;
+    p1.innerHTML = `DIFFICULTY LEVEL: ${tiradores[i].info.difficulty}`;
     newElement25.appendChild(img);
     newElement25.appendChild(p);
     newElement25.appendChild(p1);
@@ -1685,7 +1685,7 @@ function mostrarNivelAtaqueApoyos(apoyos) {
     p1.classList.add('class-level');
     img.src = `${apoyos[i].splash}`;
     p.innerHTML = `${apoyos[i].name}`
-    p1.innerHTML = `NIVEL DE ATAQUE: ${apoyos[i].info.attack}`;
+    p1.innerHTML = `ATTACK LEVEL: ${apoyos[i].info.attack}`;
     newElement26.appendChild(img);
     newElement26.appendChild(p);
     newElement26.appendChild(p1);
@@ -1705,7 +1705,7 @@ function mostrarNivelDefensaApoyos(apoyos) {
     p1.classList.add('class-level');
     img.src = `${apoyos[i].splash}`;
     p.innerHTML = `${apoyos[i].name}`
-    p1.innerHTML = `NIVEL DE DEFENSA: ${apoyos[i].info.defense}`
+    p1.innerHTML = `DEFENSE LEVEL: ${apoyos[i].info.defense}`
     newElement27.appendChild(img);
     newElement27.appendChild(p);
     newElement27.appendChild(p1);
@@ -1725,7 +1725,7 @@ function mostrarNivelMagiaApoyos(apoyos) {
     p1.classList.add('class-level');
     img.src = `${apoyos[i].splash}`;
     p.innerHTML = `${apoyos[i].name}`
-    p1.innerHTML = `NIVEL DE MAGIA: ${apoyos[i].info.magic}`;
+    p1.innerHTML = `MAGIC LEVEL: ${apoyos[i].info.magic}`;
     newElement28.appendChild(img);
     newElement28.appendChild(p);
     newElement28.appendChild(p1);
@@ -1745,7 +1745,7 @@ function mostrarNivelDificultadApoyos(apoyos) {
     p1.classList.add('class-level');
     img.src = `${apoyos[i].splash}`;
     p.innerHTML = `${apoyos[i].name}`
-    p1.innerHTML = `NIVEL DE DIFICULTAD: ${apoyos[i].info.difficulty}`;
+    p1.innerHTML = `DIFFICULTY LEVEL: ${apoyos[i].info.difficulty}`;
     newElement29.appendChild(img);
     newElement29.appendChild(p);
     newElement29.appendChild(p1);
@@ -1949,7 +1949,7 @@ function mostrarNivelAtaqueTanques(tanques) {
     p1.classList.add('class-level');
     img.src = `${tanques[i].splash}`;
     p.innerHTML = `${tanques[i].name}`
-    p1.innerHTML = `NIVEL DE ATAQUE: ${tanques[i].info.attack}`;
+    p1.innerHTML = `ATTACK LEVEL: ${tanques[i].info.attack}`;
     newElement30.appendChild(img);
     newElement30.appendChild(p);
     newElement30.appendChild(p1);
@@ -1969,7 +1969,7 @@ function mostrarNivelDefensaTanques(tanques) {
     p1.classList.add('class-level');
     img.src = `${tanques[i].splash}`;
     p.innerHTML = `${tanques[i].name}`
-    p1.innerHTML = `NIVEL DE DEFENSA: ${tanques[i].info.defense}`
+    p1.innerHTML = `DEFENSE LEVEL: ${tanques[i].info.defense}`
     newElement31.appendChild(img);
     newElement31.appendChild(p);
     newElement31.appendChild(p1);
@@ -1989,7 +1989,7 @@ function mostrarNivelMagiaTanques(tanques) {
     p1.classList.add('class-level');
     img.src = `${tanques[i].splash}`;
     p.innerHTML = `${tanques[i].name}`
-    p1.innerHTML = `NIVEL DE MAGIA: ${tanques[i].info.magic}`;
+    p1.innerHTML = `MAGIC LEVEL: ${tanques[i].info.magic}`;
     newElement32.appendChild(img);
     newElement32.appendChild(p);
     newElement32.appendChild(p1);
@@ -2009,7 +2009,7 @@ function mostrarNivelDificultadTanques(tanques) {
     p1.classList.add('class-level');
     img.src = `${tanques[i].splash}`;
     p.innerHTML = `${tanques[i].name}`
-    p1.innerHTML = `NIVEL DE DIFICULTAD: ${tanques[i].info.difficulty}`;
+    p1.innerHTML = `DIFFICULTY LEVEL: ${tanques[i].info.difficulty}`;
     newElement33.appendChild(img);
     newElement33.appendChild(p);
     newElement33.appendChild(p1);

@@ -1,4 +1,4 @@
-import { acomodarTodosAz, acomodarTodosZa, filtrarAsesinos, filtrarTanques, nivelAtaqueAsesinos, nivelDificultadTanques} from '../src/data.js';
+import { acomodarTodosAz, acomodarTodosZa, filtrarAsesinos, filtrarTanques, nivelAtaqueAsesinos, nivelDificultadTanques } from '../src/data.js';
 
 //Test Historia de usuario N° 1
 
@@ -200,41 +200,7 @@ const traerTanques = [
   },
 ];
 
-// const asesinosNivelAtaque = [
-//   {
-
-//     name: 'Ahri',
-//     tags: ["Mage", "Assassin"],
-//     info: {
-//       attack: 3,
-//     },
-//   },
-// ];
-
-
-// const tanquesNivelDificultad = [
-//     {
-//       name: 'Galio',
-//       tags: ["Tank", "Mage"],
-//       info: {
-//         attack: 3,
-//         defense: 7,
-//         magic: 6,
-//         difficulty: 3
-//       },
-//     },
-//     {
-//       name: 'Aatrox',
-//       tags: ["Fighter", "Tank"],
-//       info: {
-//         attack: 8,
-//         defense: 4,
-//         magic: 3,
-//         difficulty: 4
-//       },
-//     },
-// ];
-
+//Testo HU 1
 
 describe('acomodarTodosAz', () => {
   it('is a function', () => {
@@ -265,10 +231,6 @@ describe('filtrarAsesinos', () => {
     expect(typeof nivelAtaqueAsesinos).toBe('function');
   });
 
-//   it('retorna nivel de ataque de asesinos', () => {
-//     expect(nivelAtaqueAsesinos(data.values)).toEqual(asesinosNivelAtaque);
-//   });
-
 });
 
 //Test Historia de usuario N° 3
@@ -285,9 +247,5 @@ describe('filtrarTanques', () => {
   it('is a function', () => {
     expect(typeof nivelDificultadTanques).toBe('function');
   });
-
-//   it('retorna niveles de dificultad de tanques', () => {
-//     expect(nivelDificultadTanques(data.values)).toEqual(tanquesNivelDificultad);
-//   });
 
 });
