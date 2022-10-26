@@ -61,7 +61,7 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 [![prototipo-hu3.png](https://i.postimg.cc/5yBQbzqg/prototipo-hu3.png)](https://postimg.cc/Zvq5LCQv)
 "Prototipo PC digital: historia de usuario 3"
 
-[![prototipo-mobile1.png](https://i.postimg.cc/XNyWrQbp/prototipo-mobile1.png)](https://postimg.cc/pyx47QyH)
+[![prototipo-mobile1.png](https://i.postimg.cc/sgkBQK6m/prototipo-mobile1.png)](https://postimg.cc/pmBV3Qt5)
 "Prototipo MOBILE digital: historia de usuario 1"
 
 [![prototipo-mobile2.png](https://i.postimg.cc/Qx2HBHwr/prototipo-mobile2.png)](https://postimg.cc/XpgVm7n2)
