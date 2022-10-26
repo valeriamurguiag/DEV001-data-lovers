@@ -74,7 +74,7 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 
 [![prototipo-mobile2.png](https://i.postimg.cc/d11Kqc2x/prototipo-mobile2.png)](https://postimg.cc/sBtLc80Y)
 
-"Prototipo MOBILE digital: historia de usuario 2"
+
 
 [![prototipo-mobile3.png](https://i.postimg.cc/XJp7sCzq/prototipo-mobile3.png)](https://postimg.cc/47RgdmZR)
 
