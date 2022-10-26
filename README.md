@@ -53,27 +53,40 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 ## 6. Imagen del prototipo final
 
 [![prototipo-hu1.png](https://i.postimg.cc/G2N9Rt1t/prototipo-hu1.png)](https://postimg.cc/ftcMjwyQ)
+
+
 "Prototipo PC digital: historia de usuario 1"
 
 [![prototipo-hu2.png](https://i.postimg.cc/pVhB31NV/prototipo-hu2.png)](https://postimg.cc/9z2T7bFs)
+
+
 "Prototipo PC digital: historia de usuario 2"
 
 [![prototipo-hu3.png](https://i.postimg.cc/5yBQbzqg/prototipo-hu3.png)](https://postimg.cc/Zvq5LCQv)
+
+
 "Prototipo PC digital: historia de usuario 3"
 
 [![prototipo-mobile1.png](https://i.postimg.cc/sgkBQK6m/prototipo-mobile1.png)](https://postimg.cc/pmBV3Qt5)
+
+
 "Prototipo MOBILE digital: historia de usuario 1"
 
-[![prototipo-mobile2.png](https://i.postimg.cc/Qx2HBHwr/prototipo-mobile2.png)](https://postimg.cc/XpgVm7n2)
+[![prototipo-mobile2.png](https://i.postimg.cc/d11Kqc2x/prototipo-mobile2.png)](https://postimg.cc/sBtLc80Y)
+
+
 "Prototipo MOBILE digital: historia de usuario 2"
 
-[![prototipo-mobile3.png](https://i.postimg.cc/5tn4m07y/prototipo-mobile3.png)](https://postimg.cc/WDqcN2Pc)
+[![prototipo-mobile3.png](https://i.postimg.cc/XJp7sCzq/prototipo-mobile3.png)](https://postimg.cc/47RgdmZR)
+
+
 "Prototipo MOBILE digital: historia de usuario 3"
 
 ## 7. Imagen del prototipo de baja fidelidad
 
 [![Prototipo-1-papel.jpg](https://i.postimg.cc/02y7PMm5/Prototipo-1-papel.jpg)](https://postimg.cc/SjHnGKDH)
 
-"Prototipo inicial en papel".
+
+"Prototipo inicial en papel"
 
 ***
