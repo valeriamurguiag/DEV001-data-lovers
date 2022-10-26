@@ -18,13 +18,16 @@ LoLovers trae a sus usuarios una plataforma para todos los amantes del conocido 
 
 
 ## 2. Imagen final del proyecto
-[![imagen-final.png](https://i.postimg.cc/mDZMpv22/imagen-final.png)](https://postimg.cc/67Syy1vD)
+[![imagen-final.png](https://i.postimg.cc/dVv3wgg2/imagen-final.png)](https://postimg.cc/MvPqY36H)
+
 "Historia de usuario 1"
 
-[![imagen-final2.png](https://i.postimg.cc/L4wvC3GK/imagen-final2.png)](https://postimg.cc/23d43hz2)
+[![imagen-final2.png](https://i.postimg.cc/7LFpyrWD/imagen-final2.png)](https://postimg.cc/gwKMvQpB)
+
 "Historia de usuario 2"
 
-[![imagen-final3.png](https://i.postimg.cc/44DbbNhX/imagen-final3.png)](https://postimg.cc/4n19XG50)
+[![imagen-final3.png](https://i.postimg.cc/BZMMTGB6/imagen-final3.png)](https://postimg.cc/QVKQDwPG)
+
 "Historia de usuario 3"
 
 
@@ -40,20 +43,22 @@ Al jugar League of Legends, los jugadores se encuentran con una amplia (e inclus
 
 Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs personajes/películas/deportistas para familiarizarme.”
 
-“Yo como usuaria María (20 años), quiero ver todos los personajes en orden alfabético para conocerlos ya que soy nueva jugadora.
-“Yo como usuario Luis (25 años), quiero poder ver todos los asesinos en orden de ataque mayor a menor para conocer sus características.”
-“Yo como usuario Eduardo (14 años), quiero poder ver los tanques con niveles de dificultad mayor a menor, ya que quiero empezar a jugar con diferentes personajes.”
+- “Yo como usuaria María (20 años), quiero ver todos los personajes en orden alfabético para conocerlos ya que soy nueva jugadora."
+
+- “Yo como usuario Luis (25 años), quiero poder ver todos los asesinos en orden de ataque mayor a menor para conocer sus características.”
+
+- “Yo como usuario Eduardo (14 años), quiero poder ver los tanques con niveles de dificultad mayor a menor, ya que quiero empezar a jugar con diferentes personajes.”
 
 
 ## 6. Imagen del prototipo final
 
-[![prototipo-hu1.png](https://i.postimg.cc/hGKbNySv/prototipo-hu1.png)](https://postimg.cc/pm1FFB5M)
+[![prototipo-hu1.png](https://i.postimg.cc/G2N9Rt1t/prototipo-hu1.png)](https://postimg.cc/ftcMjwyQ)
 "Prototipo PC digital: historia de usuario 1"
 
-[![prototipo-hu2.png](https://i.postimg.cc/1tkK794h/prototipo-hu2.png)](https://postimg.cc/qhGnzH8j)
+[![prototipo-hu2.png](https://i.postimg.cc/pVhB31NV/prototipo-hu2.png)](https://postimg.cc/9z2T7bFs)
 "Prototipo PC digital: historia de usuario 2"
 
-[![prototipo-hu3.png](https://i.postimg.cc/g06XS3hj/prototipo-hu3.png)](https://postimg.cc/jWtSCwZY)
+[![prototipo-hu3.png](https://i.postimg.cc/5yBQbzqg/prototipo-hu3.png)](https://postimg.cc/Zvq5LCQv)
 "Prototipo PC digital: historia de usuario 3"
 
 [![prototipo-mobile1.png](https://i.postimg.cc/XNyWrQbp/prototipo-mobile1.png)](https://postimg.cc/pyx47QyH)
