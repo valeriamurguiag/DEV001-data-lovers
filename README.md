@@ -59,7 +59,6 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 
 [![prototipo-hu2.png](https://i.postimg.cc/pVhB31NV/prototipo-hu2.png)](https://postimg.cc/9z2T7bFs)
 
-
 "Prototipo PC digital: historia de usuario 2"
 
 [![prototipo-hu3.png](https://i.postimg.cc/5yBQbzqg/prototipo-hu3.png)](https://postimg.cc/Zvq5LCQv)
@@ -73,7 +72,6 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 "Prototipo MOBILE digital: historia de usuario 1"
 
 [![prototipo-mobile2.png](https://i.postimg.cc/d11Kqc2x/prototipo-mobile2.png)](https://postimg.cc/sBtLc80Y)
-
 
 "Prototipo MOBILE digital: historia de usuario 2"
 
