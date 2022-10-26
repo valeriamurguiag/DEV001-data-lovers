@@ -67,7 +67,8 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 
 ## 7. Imagen del prototipo de baja fidelidad
 
-[![Prototipo-1-papel.jpg](https://i.postimg.cc/PJGV0bNq/Prototipo-1-papel.jpg)](https://postimg.cc/ygPTZZmq)
+[![Prototipo-1-papel.jpg](https://i.postimg.cc/02y7PMm5/Prototipo-1-papel.jpg)](https://postimg.cc/SjHnGKDH)
+
 "Prototipo inicial en papel".
 
 ***
