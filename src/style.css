@@ -18,17 +18,18 @@ body {
   font-size: 14px;
   text-shadow: 5px 4px 5px black;
   font-family: Trebuchet MS, Helvetica, sans-serif;
-}
-
-header {
   width: 100%;
-  background-image: url(img/Bilgewater\ \(Legends\ of\ Runeterra\).png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 100vh;
+  background-image: url("img/Bilgewater\ \(Legends\ of\ Runeterra\).png");
+  background-repeat:no-repeat;
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-nav {
+
+
+.class-nav {
   height: 100px;
   width: 100%;
   display: flex;
@@ -70,15 +71,15 @@ nav {
 .button {
 
   color: #fff;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 600;
   font-family: Trebuchet MS, Helvetica, sans-serif;
   background: none;
   border: none;
   text-shadow: 5px 4px 5px black;
   cursor: pointer;
-  text-align: justify;
-  text-align: center;
+  text-align: space-around;
+  text-align: space-around;
   display: flex;
 
 }
@@ -90,7 +91,7 @@ nav {
 
 .bar-btn {
   font-size: 25px;
-  color: #fff;
+  color: black;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -98,8 +99,8 @@ nav {
 .nav-menu {
   position: fixed;
   width: 100%;
-  height: 0vh;
-  top: 100px;
+  top: 120px;
+  margin-left: -30px;
   background: rgba(0, 0, 0, .95);
   text-align: center;
   transition: all .5s;
@@ -108,14 +109,15 @@ nav {
 .nav-menu li {
   display: none;
   line-height: 30px;
-  margin: 50px 0;
+  margin: 40px 0;
   transition: all .5s;
 }
 
 .nav-menu li button {
     color: #fff;
-    font-size: 16px;
+    font-size: 37px;
     font-weight: 600;
+    margin-top: 30px;
     font-family: Trebuchet MS, Helvetica, sans-serif;
     background: none;
     border: none;
@@ -130,51 +132,17 @@ nav {
 }
 
 #check {
-  display: none;
+  display:none;
 }
 
 #check:checked ~ .nav-menu {
-  height: 100vh;
+  height: 670px;
 }
 
 #check:checked ~ .nav-menu li {
   display: block;
 }
 
-@media screen and (min-width: 760px) {
-  .img {
-    margin-left: 50px;
-  }
-
-  nav {
-    height: 100px;
-  }
-
-  .bar-btn {
-    display: none;
-  }
-
-  .nav-menu {
-    position: relative;
-    height: 100px;
-    top: 0;
-    background: none;
-    transition: none;
-    text-align: center;
-  }
-
-  .nav-menu li {
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 50px;
-    transition: none;
-  }
-
-  .nav-menu li button {
-    font-size: 15px;
-  }
-
-}
 
 /* #menuSuperior {
   background-color: #3D3B3B;
@@ -194,22 +162,22 @@ nav {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: row wrap;
-  align-content: center;
+  align-content: space-around;
   flex-direction: row;
 }
 
 #menuCentral li {
   padding: 12px 20px;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   color: #fff;
   font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: row wrap;
-  align-content: center;
+  align-content: space-around;
   flex-direction: row;
 }
 
@@ -219,16 +187,18 @@ nav {
 
 #menuCentral {
   background: #3D3B3B;
-  width: 100%;
   height: auto;
   border-radius: 20px;
   margin-top: 190px;
   box-shadow: 5px 4px 5px black;
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-content: center;
-  flex-direction: row;
+  justify-content: space-around;
+  justify-items: space-around;
+  align-items: space-around;
+  align-content: space-around;
+  margin-right: 110px;
+  margin-left: 70px;
+  margin-bottom: 100px;
 }
 
 .ordenar {
@@ -240,9 +210,9 @@ nav {
   border-radius: 20px;
   box-shadow: 5px 4px 5px black;
   margin: 100px auto;
-  max-width: 30%;
+  max-width: 50%;
   padding: 4px 20px;
-  margin-bottom: -75px;
+  margin-bottom: -25px;
   margin-top: 40px;
   height: auto;
 }
@@ -261,20 +231,22 @@ nav {
 
 .titulo1 {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 63px;
+  font-size: 83px;
   text-align: center;
+  justify-content: center;
   color: white;
   background: #3D3B3B;
   margin: 100px auto;
   max-width: 750px;
   height: auto;
+  width: auto;
   border-radius: 15px;
   box-shadow: 5px 4px 5px black;
 }
 
 .selectOrden {
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 25px;
   color: #fff;
   background-color: #3D3B3B;
   border: none;
@@ -289,6 +261,10 @@ nav {
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 100px auto;
+  align-items: space-around;
+  align-content: space-around;
+  justify-content: space-around;
+  justify-items: space-around;
 }
 
 
@@ -347,14 +323,16 @@ nav {
 .menuHamburguesa {
   width: 30px;
   height: 30px;
+  margin-right: 85px;
+  margin-top: -35px;
   cursor: pointer;
 }
 
 .menuHamburguesa span {
   display: block;
-  width: 100%;
-  height: 2px;
-  background:#3D3B3B;
+  width: 60px;
+  height: 8px;
+  background: #1e1c1c;
   border-radius: 10px;
   margin-top: 6px;
   transform-origin: 0px 100%;
@@ -412,10 +390,9 @@ nav {
 
 .class-img {
   margin: 0;
-  width: 280px;
-  height: 200px;
+  width: 365px;
+  height: 250px;
   border-radius: 15px;
-
 }
 
 .class-imgSilvia {
