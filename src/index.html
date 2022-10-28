@@ -8,475 +8,487 @@
 </head>
 
 <body>
-  <nav id="menuSuperior">
-    <ul>
-      <li><img class="img" src="img/League of Legends logo gde.png" alt=""></li>
-      <li class="barra">
-        <button class="button" id="sobreJuego" click="mostrarSobreElJuego()">ABOUT THE GAME</button>
-      </li>
-      <li class="separador"> | </li>
-      <li class="barra">
-        <button class="button" id="campeones" click="mostrarCampeones()">CHAMPIONS</button>
-      </li>
-      <li class="separador"> | </li>
-      <li class="barra">
-        <button class="button" id="nuevosJugadores" click="mostrarNuevosJugadores()">NEW PLAYERS</button>
-      </li>
-      <li class="separador"> | </li>
-      <li class="barra">
-        <button class="button" id="estadisticas" click="botonEstadisticas()">STATISTICS</button>
-      </li>
-      <li class="separador"> | </li>
-      <li class="barra">
-        <button class="button" id="sobreNosotras" click="mostrarNosotras()">ABOUT US</button>
-      </li>
-    </ul>
-  </nav>
+  <header>
 
-  <div id="tituloPrincipal">
-    <br><br><br><br>
-    <h1 class="titulo1"> MEET THE <br> CHAMPIONS</h1>
-  </div>
+    <nav>
 
-  <div>
-    <nav id="menuCentral">
-      <ul>
-        <li class="barraCentral">
-          <button class="button" id="todos" click="mostrarTodos2()">ALL</button>
-        </li>
-        <li class="separador2"> | </li>
-        <li class="barraCentral">
-          <button class="button" id="asesinos" click="mostrarAsesinos2()">ASSASSINS</button>
-        </li>
-        <li class="separador2"> | </li>
-        <li class="barraCentral">
-          <button class="button" id="luchadores" click="mostrarLuchadores2()">FIGHTERS</button>
-        </li>
-        <li class="separador2"> | </li>
-        <li class="barraCentral">
-          <button class="button" id="magos" click="mostrarMagos2()">MAGES</button>
-        </li>
-        <li class="separador2"> | </li>
-        <li class="barraCentral">
-          <button class="button" id="tiradores" click="mostrarTiradores2()">MARKSMEN</button>
-        </li>
-        <li class="separador2"> | </li>
-        <li class="barraCentral">
-          <button class="button" id="apoyos" click="mostrarApoyos2()">SUPPORTS</button>
-        </li>
-        <li class="separador2"> | </li>
-        <li class="barraCentral">
-          <button class="button" id="tanques" click="mostrarTanques2()">TANKS</button>
-        </li>
+      <div>
+        <img src="img/League of Legends logo gde.png" alt="" class="img">
+      </div>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="bar-btn">
+        <div class="menuHamburguesa">
+
+          <span class="linea1"></span>
+          <span class="linea2"></span>
+          <span class="linea3"></span>
+
+        </div>
+
+      </label>
+
+      <ul class="nav-menu">
+        <li> <button id="sobreJuego" click="mostrarSobreElJuego()">ABOUT THE GAME</button> </li>
+
+        <li><button id="campeones" click="mostrarCampeones()">CHAMPIONS</button> </li>
+
+        <li> <button id="nuevosJugadores" click="mostrarNuevosJugadores()">NEW PLAYERS</button> </li>
+
+        <li> <button id="estadisticas" click="botonEstadisticas()">STATISTICS</button> </li>
+
+        <li> <button id="sobreNosotras" click="mostrarNosotras()">ABOUT US</button> </li>
+
       </ul>
     </nav>
-  </div>
 
-  <!--Botón de ordenado TODOS-->
-  <div id="ordenarTodos">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="ordenar" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT
-            </option>
-            <option class="ordenar" value="1">
-              UPWARD (A-Z)
-            </option>
-            <option class="ordenar" value="2">
-              DOWNWARD (Z-A)
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <!--Botón de niveles ASESINOS-->
-  <div id="ordenarNivelesAsesinos" style="display:none">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="nivelAsesinosSelect" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT BY LEVELS
-            </option>
-            <option class="ordenar" value="1">
-              ATTACK LEVEL
-            </option>
-            <option class="ordenar" value="2">
-              DEFENSE LEVEL
-            </option>
-            <option class="ordenar" value="3">
-              MAGIC LEVEL
-            </option>
-            <option class="ordenar" value="4">
-              DIFFICULTY LEVEL
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <!--Botón de niveles LUCHADORES-->
-  <div id="ordenarNivelesLuchadores" style="display:none">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="nivelLuchadoresSelect" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT BY LEVELS
-            </option>
-            <option class="ordenar" value="1">
-              ATTACK LEVEL
-            </option>
-            <option class="ordenar" value="2">
-              DEFENSE LEVEL
-            </option>
-            <option class="ordenar" value="3">
-              MAGIC LEVEL
-            </option>
-            <option class="ordenar" value="4">
-              DIFFICULTY LEVEL
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <!--Botón de niveles MAGOS-->
-  <div id="ordenarNivelesMagos" style="display:none">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="nivelMagosSelect" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT BY LEVELS
-            </option>
-            <option class="ordenar" value="1">
-              ATTACK LEVEL
-            </option>
-            <option class="ordenar" value="2">
-              DEFENSE LEVEL
-            </option>
-            <option class="ordenar" value="3">
-              MAGIC LEVEL
-            </option>
-            <option class="ordenar" value="4">
-              DIFFICULTY LEVEL
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <!--Botón de niveles TIRADORES-->
-  <div id="ordenarNivelesTiradores" style="display:none">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="nivelTiradoresSelect" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT BY LEVELS
-            </option>
-            <option class="ordenar" value="1">
-              ATTACK LEVEL
-            </option>
-            <option class="ordenar" value="2">
-              DEFENSE LEVEL
-            </option>
-            <option class="ordenar" value="3">
-              MAGIC LEVEL
-            </option>
-            <option class="ordenar" value="4">
-              DIFFICULTY LEVEL
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <!--Botón de niveles APOYOS-->
-  <div id="ordenarNivelesApoyos" style="display:none">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="nivelApoyosSelect" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT BY LEVELS
-            </option>
-            <option class="ordenar" value="1">
-              ATTACK LEVEL
-            </option>
-            <option class="ordenar" value="2">
-              DEFENSE LEVEL
-            </option>
-            <option class="ordenar" value="3">
-              MAGIC LEVEL
-            </option>
-            <option class="ordenar" value="4">
-              DIFFICULTY LEVEL
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <!--Botón de niveles TANQUES-->
-  <div id="ordenarNivelesTanques" style="display:none">
-    <nav class="ordenar">
-      <ul>
-        <li>
-          <select name="ordenar" id="nivelTanquesSelect" class="selectOrden">
-            <option class="ordenar" disabled selected>
-              SORT BY LEVELS
-            </option>
-            <option class="ordenar" value="1">
-              ATTACK LEVEL
-            </option>
-            <option class="ordenar" value="2">
-              DEFENSE LEVEL
-            </option>
-            <option class="ordenar" value="3">
-              MAGIC LEVEL
-            </option>
-            <option class="ordenar" value="4">
-              DIFFICULTY LEVEL
-            </option>
-          </select>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-
-  <section id="sobreJuegoDiv" class="sobreJuegoDiv" style="display:none">
+    <div id="tituloPrincipal">
+      <br><br><br><br>
+      <h1 class="titulo1"> MEET THE <br> CHAMPIONS</h1>
+    </div>
 
     <div>
-      <br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1 class="titulo1">WHAT IS LEAGUE <br> OF LEGENDS?</h1>
-
+      <nav id="menuCentral">
+        <ul>
+          <li class="barraCentral">
+            <button class="button" id="todos" click="mostrarTodos2()">ALL</button>
+          </li>
+          <li class="separador2"> | </li>
+          <li class="barraCentral">
+            <button class="button" id="asesinos" click="mostrarAsesinos2()">ASSASSINS</button>
+          </li>
+          <li class="separador2"> | </li>
+          <li class="barraCentral">
+            <button class="button" id="luchadores" click="mostrarLuchadores2()">FIGHTERS</button>
+          </li>
+          <li class="separador2"> | </li>
+          <li class="barraCentral">
+            <button class="button" id="magos" click="mostrarMagos2()">MAGES</button>
+          </li>
+          <li class="separador2"> | </li>
+          <li class="barraCentral">
+            <button class="button" id="tiradores" click="mostrarTiradores2()">MARKSMEN</button>
+          </li>
+          <li class="separador2"> | </li>
+          <li class="barraCentral">
+            <button class="button" id="apoyos" click="mostrarApoyos2()">SUPPORTS</button>
+          </li>
+          <li class="separador2"> | </li>
+          <li class="barraCentral">
+            <button class="button" id="tanques" click="mostrarTanques2()">TANKS</button>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="containerSobreJuego">
-      <h3>League of Legends is a team-based strategy game where two teams of five powerful 
-        champions face off to destroy the other's base. Choose from over 140 champions to 
-        make epic plays, secure kills, and take down towers as you battle your way to victory.</h3>
+    <!--Botón de ordenado TODOS-->
+    <div id="ordenarTodos">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="ordenar" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT
+              </option>
+              <option class="ordenar" value="1">
+                UPWARD (A-Z)
+              </option>
+              <option class="ordenar" value="2">
+                DOWNWARD (Z-A)
+              </option>
+            </select>
+          </li>
+        </ul>
+
+      </nav>
     </div>
-    <div class="class-gifSobreJuego">
-      <img class="gifSobrejuego" src="img/gif-sobreJuego.gif" alt="Gif batalla campeones">
+
+    <!--Botón de niveles ASESINOS-->
+    <div id="ordenarNivelesAsesinos" style="display:none">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="nivelAsesinosSelect" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT BY LEVELS
+              </option>
+              <option class="ordenar" value="1">
+                ATTACK LEVEL
+              </option>
+              <option class="ordenar" value="2">
+                DEFENSE LEVEL
+              </option>
+              <option class="ordenar" value="3">
+                MAGIC LEVEL
+              </option>
+              <option class="ordenar" value="4">
+                DIFFICULTY LEVEL
+              </option>
+            </select>
+          </li>
+        </ul>
+
+      </nav>
     </div>
-  </section>
 
-  <section id="nuevosJugadoresDiv" class="nuevosJugadoresDiv" style="display:none">
-    <div>
+    <!--Botón de niveles LUCHADORES-->
+    <div id="ordenarNivelesLuchadores" style="display:none">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="nivelLuchadoresSelect" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT BY LEVELS
+              </option>
+              <option class="ordenar" value="1">
+                ATTACK LEVEL
+              </option>
+              <option class="ordenar" value="2">
+                DEFENSE LEVEL
+              </option>
+              <option class="ordenar" value="3">
+                MAGIC LEVEL
+              </option>
+              <option class="ordenar" value="4">
+                DIFFICULTY LEVEL
+              </option>
+            </select>
+          </li>
+        </ul>
 
-      <br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1 class="titulo1">WELCOME <br> TO THE RIFT </h1>
+      </nav>
+    </div>
 
-      <div id="fundamentos">
-        <h1>LEARN THE BASICS</h1>
-        <br>
-        <h2>There's a lot to learn about League, so we'll start with the essentials. 
-          Explore the guide below to get the rundown on the most popular game mode.</h2>
-      </div>
-      <div class="class-gifGrieta">
-        <img class="gifGrieta" src="img/gif-grieta.gif" alt="Gif la Grieta">
-      </div>
-      <div class="containerVarios">
-        <h3>YOUR NEXUS
-          <br><br>
-          CLEAR THE PATH
-          <br><br>
-          Your team needs to clear at least one lane to get to the enemy Nexus. 
-          Blocking your path are defense structures called turrets and inhibitors. 
-          Each lane has three turrets and one inhibitor, and each Nexus is guarded by two turrets.
-        </h3>
-        <br>
-        <div class="class-gifNexo">
-          <img class="gifNexo" src="img/gif-nexo.gif.crdownload" alt="Gif Nexo">
-        </div>
+    <!--Botón de niveles MAGOS-->
+    <div id="ordenarNivelesMagos" style="display:none">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="nivelMagosSelect" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT BY LEVELS
+              </option>
+              <option class="ordenar" value="1">
+                ATTACK LEVEL
+              </option>
+              <option class="ordenar" value="2">
+                DEFENSE LEVEL
+              </option>
+              <option class="ordenar" value="3">
+                MAGIC LEVEL
+              </option>
+              <option class="ordenar" value="4">
+                DIFFICULTY LEVEL
+              </option>
+            </select>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <!--Botón de niveles TIRADORES-->
+    <div id="ordenarNivelesTiradores" style="display:none">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="nivelTiradoresSelect" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT BY LEVELS
+              </option>
+              <option class="ordenar" value="1">
+                ATTACK LEVEL
+              </option>
+              <option class="ordenar" value="2">
+                DEFENSE LEVEL
+              </option>
+              <option class="ordenar" value="3">
+                MAGIC LEVEL
+              </option>
+              <option class="ordenar" value="4">
+                DIFFICULTY LEVEL
+              </option>
+            </select>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <!--Botón de niveles APOYOS-->
+    <div id="ordenarNivelesApoyos" style="display:none">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="nivelApoyosSelect" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT BY LEVELS
+              </option>
+              <option class="ordenar" value="1">
+                ATTACK LEVEL
+              </option>
+              <option class="ordenar" value="2">
+                DEFENSE LEVEL
+              </option>
+              <option class="ordenar" value="3">
+                MAGIC LEVEL
+              </option>
+              <option class="ordenar" value="4">
+                DIFFICULTY LEVEL
+              </option>
+            </select>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <!--Botón de niveles TANQUES-->
+    <div id="ordenarNivelesTanques" style="display:none">
+      <nav class="ordenar">
+        <ul>
+          <li>
+            <select name="ordenar" id="nivelTanquesSelect" class="selectOrden">
+              <option class="ordenar" disabled selected>
+                SORT BY LEVELS
+              </option>
+              <option class="ordenar" value="1">
+                ATTACK LEVEL
+              </option>
+              <option class="ordenar" value="2">
+                DEFENSE LEVEL
+              </option>
+              <option class="ordenar" value="3">
+                MAGIC LEVEL
+              </option>
+              <option class="ordenar" value="4">
+                DIFFICULTY LEVEL
+              </option>
+            </select>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <section id="sobreJuegoDiv" class="sobreJuegoDiv" style="display:none">
+
+      <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="titulo1">WHAT IS LEAGUE <br> OF LEGENDS?</h1>
+
       </div>
 
-      <div class="containerVarios">
-        <br>
-        <h3>TURRETS
-          <br><br>
-          Turrets deal damage to enemy minions and champions, and provide limited vision 
-          from the Fog of War for their team. Attack these structures with minions ahead 
-          of you to avoid damage and charge ahead.
-        </h3>
-        <br><br>
-        <div class="class-gifTorretas">
-          <img class="gifTorretas" src="img/gif-torretas.gif" alt="Gif Torretas">
-        </div>
+      <div class="containerSobreJuego">
+        <h3>League of Legends is a team-based strategy game where two teams of five powerful
+          champions face off to destroy the other's base. Choose from over 140 champions to
+          make epic plays, secure kills, and take down towers as you battle your way to victory.</h3>
       </div>
-      <div class="containerVarios">
-        <br><br>
-        <h3>INHIBITOR
-          <br><br>
-          Each Inhibitor is protected by a Turret. When destroyed, super minions will 
-          spawn in that lane for several minutes. Afterward, the Inhibitor will respawn 
-          and Super Minions will stop spawning.
-        </h3>
-        <br>
-        <div class="class-gifInhibidores">
-          <img class="gifInhibidores" src="img/gif-inhibidores.gif" alt="Gif Inhibidores">
-        </div>
+      <div class="class-gifSobreJuego">
+        <img class="gifSobrejuego" src="img/gif-sobreJuego.gif" alt="Gif batalla campeones">
       </div>
+    </section>
 
-      <div class="containerVarios">
-        <br><br>
-        <h3>CHOOSE YOUR LANE
-          <br><br>
-          There are five positions that make up the recommended team comp for the game. 
-          Each lane lends itself to certain kinds of champions and roles—try them all or 
-          lock in to the lane that calls you.
-        </h3>
-        <br>
-        <div class="class-gifCalle">
-          <img class="gifCalle" src="img/gif-mapa.gif" alt="Gif Calle">
-        </div>
-      </div>
+    <section id="nuevosJugadoresDiv" class="nuevosJugadoresDiv" style="display:none">
+      <div>
 
-      <div class="containerVarios">
-        <h3>TOP LANE
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="titulo1">WELCOME <br> TO THE RIFT </h1>
+
+        <div id="fundamentos">
+          <h1>LEARN THE BASICS</h1>
           <br>
-          Champions in top lane are the tough solo fighters of the team. 
-          It's their job to protect their lane and focus on the enemy 
-          team's most powerful members.
+          <h2>There's a lot to learn about League, so we'll start with the essentials.
+            Explore the guide below to get the rundown on the most popular game mode.</h2>
+        </div>
+        <div class="class-gifGrieta">
+          <img class="gifGrieta" src="img/gif-grieta.gif" alt="Gif la Grieta">
+        </div>
+        <div class="containerVarios">
+          <h3>YOUR NEXUS
+            <br><br>
+            CLEAR THE PATH
+            <br><br>
+            Your team needs to clear at least one lane to get to the enemy Nexus.
+            Blocking your path are defense structures called turrets and inhibitors.
+            Each lane has three turrets and one inhibitor, and each Nexus is guarded by two turrets.
+          </h3>
+          <br>
+          <div class="class-gifNexo">
+            <img class="gifNexo" src="img/gif-nexo.gif.crdownload" alt="Gif Nexo">
+          </div>
+        </div>
+
+        <div class="containerVarios">
+          <br>
+          <h3>TURRETS
+            <br><br>
+            Turrets deal damage to enemy minions and champions, and provide limited vision
+            from the Fog of War for their team. Attack these structures with minions ahead
+            of you to avoid damage and charge ahead.
+          </h3>
           <br><br>
-          JUNGLE
-          <br>
-          Junglers live for the hunt. Stalking between lanes with stealth and skill, 
-          they keep a close eye on the most important neutral monsters and pounce the 
-          moment an opponent lets their guard down.
-        </h3>
-        <br>
-        <div class="class-gifJungla">
-          <img class="gifJungla" src="img/gif-jungla.gif" alt="Gif Jungla">
+          <div class="class-gifTorretas">
+            <img class="gifTorretas" src="img/gif-torretas.gif" alt="Gif Torretas">
+          </div>
         </div>
-      </div>
-
-      <div class="containerVarios">
-        <h3>MID LANE
-          <br>
-          Mid laners are your high burst damage champions who can do it all—solo 
-          and as a team. For them, combat is a dangerous dance where they're always 
-          looking for an opportunity to outplay their opponent.
+        <div class="containerVarios">
           <br><br>
-          BOT LANE
+          <h3>INHIBITOR
+            <br><br>
+            Each Inhibitor is protected by a Turret. When destroyed, super minions will
+            spawn in that lane for several minutes. Afterward, the Inhibitor will respawn
+            and Super Minions will stop spawning.
+          </h3>
           <br>
-          Bot lane champions are the dynamite of the team. As precious cargo, 
-          they need to be protected early on before amassing enough gold and 
-          experience to carry the team to victory.
-        </h3>
-        <br>
-        <div class="class-gifCalleInferior">
-          <img class="gifCalleInferior" src="img/gif-calleinferior.gif" alt="Gif Calle Inferior">
-        </div>
-      </div>
-
-      <div class="containerVarios">
-        <br><br>
-        <h3>SUPPORT
-          <br>
-          Support champions are team guardians. They help keep teammates alive and primarily 
-          focus on setting up kills, protecting their teammate in bot lane until they become stronger.
-        </h3>
-        <br><br>
-        <div class="class-gifApoyos">
-          <img class="gifApoyos" src="img/gif-apoyos.gif" alt="Gif Apoyos">
+          <div class="class-gifInhibidores">
+            <img class="gifInhibidores" src="img/gif-inhibidores.gif" alt="Gif Inhibidores">
+          </div>
         </div>
 
+        <div class="containerVarios">
+          <br><br>
+          <h3>CHOOSE YOUR LANE
+            <br><br>
+            There are five positions that make up the recommended team comp for the game.
+            Each lane lends itself to certain kinds of champions and roles—try them all or
+            lock in to the lane that calls you.
+          </h3>
+          <br>
+          <div class="class-gifCalle">
+            <img class="gifCalle" src="img/gif-mapa.gif" alt="Gif Calle">
+          </div>
+        </div>
+
+        <div class="containerVarios">
+          <h3>TOP LANE
+            <br>
+            Champions in top lane are the tough solo fighters of the team.
+            It's their job to protect their lane and focus on the enemy
+            team's most powerful members.
+            <br><br>
+            JUNGLE
+            <br>
+            Junglers live for the hunt. Stalking between lanes with stealth and skill,
+            they keep a close eye on the most important neutral monsters and pounce the
+            moment an opponent lets their guard down.
+          </h3>
+          <br>
+          <div class="class-gifJungla">
+            <img class="gifJungla" src="img/gif-jungla.gif" alt="Gif Jungla">
+          </div>
+        </div>
+
+        <div class="containerVarios">
+          <h3>MID LANE
+            <br>
+            Mid laners are your high burst damage champions who can do it all—solo
+            and as a team. For them, combat is a dangerous dance where they're always
+            looking for an opportunity to outplay their opponent.
+            <br><br>
+            BOT LANE
+            <br>
+            Bot lane champions are the dynamite of the team. As precious cargo,
+            they need to be protected early on before amassing enough gold and
+            experience to carry the team to victory.
+          </h3>
+          <br>
+          <div class="class-gifCalleInferior">
+            <img class="gifCalleInferior" src="img/gif-calleinferior.gif" alt="Gif Calle Inferior">
+          </div>
+        </div>
+
+        <div class="containerVarios">
+          <br><br>
+          <h3>SUPPORT
+            <br>
+            Support champions are team guardians. They help keep teammates alive and primarily
+            focus on setting up kills, protecting their teammate in bot lane until they become stronger.
+          </h3>
+          <br><br>
+          <div class="class-gifApoyos">
+            <img class="gifApoyos" src="img/gif-apoyos.gif" alt="Gif Apoyos">
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="sobreNosotrasDiv" class="sobreNosotrasDiv" style="display:none">
-    <div>
-      <br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1 class="titulo1">WHO <br> ARE WE? </h1>
-    </div>
-    <section id="containerNosotras" class="containerNosotras" style="display:none"></section>
-    <div class="container2">
-      <h3>We are Web Development students and we focus on Front-End Development.
-        We are passionate about creating valuable, functional and attractive projects for the users.
-      </h3>
-    </div>
-  </section>
-
-
-  <section id="estadisticasDiv" class="estadisticasDiv" style="display:none">
-    <div>
-      <br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1 class="titulo1">CHAMPIONS <br> STATISTICS </h1>
-    </div>
-    <div class="containerTextoyGrafico">
-      <h2 class="estadisticasTexto">1. Fighters: 66 <br><br> 2. Mages: 52 <br><br> 3. Tanks: 40 <br><br> 4.
-        Assassins: 33 <br><br> 5. Supports: 27 <br><br> 6. Marksmen: 24</h2>
-      <img class="class-grafico" src="img/grafico-categorias.png" alt="Gráfico por categorías">
-    </div>
-  </section>
+    <section id="sobreNosotrasDiv" class="sobreNosotrasDiv" style="display:none">
+      <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="titulo1">WHO <br> ARE WE? </h1>
+      </div>
+      <section id="containerNosotras" class="containerNosotras" style="display:none"></section>
+      <div class="container2">
+        <h3>We are Web Development students and we focus on Front-End Development.
+          We are passionate about creating valuable, functional and attractive projects for the users.
+        </h3>
+      </div>
+    </section>
 
 
-  <main class="contenedorImagenes">
-    <section id="container"></section>
-    <section id="containerAsesinos" style="display:none"></section>
-    <section id="containerLuchadores" style="display:none"></section>
-    <section id="containerMagos" style="display:none"></section>
-    <section id="containerTiradores" style="display:none"></section>
-    <section id="containerApoyos" style="display:none"></section>
-    <section id="containerTanques" style="display:none"></section>
-    <section id="containerTodosAz" style="display:none"></section>
-    <section id="containerTodosZa" style="display:none"></section>
+    <section id="estadisticasDiv" class="estadisticasDiv" style="display:none">
+      <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="titulo1">CHAMPIONS <br> STATISTICS </h1>
+      </div>
+      <div class="containerTextoyGrafico">
+        <h2 class="estadisticasTexto">1. Fighters: 66 <br><br> 2. Mages: 52 <br><br> 3. Tanks: 40 <br><br> 4.
+          Assassins: 33 <br><br> 5. Supports: 27 <br><br> 6. Marksmen: 24</h2>
+        <img class="class-grafico" src="img/grafico-categorias.png" alt="Gráfico por categorías">
+      </div>
+    </section>
 
-    <section id="containerNivelAtaqueAsesinos" style="display:none"></section>
-    <section id="containerNivelDefensaAsesinos" style="display:none"></section>
-    <section id="containerNivelMagiaAsesinos" style="display:none"></section>
-    <section id="containerNivelDificultadAsesinos" style="display:none"></section>
 
-    <section id="containerNivelAtaqueLuchadores" style="display:none"></section>
-    <section id="containerNivelDefensaLuchadores" style="display:none"></section>
-    <section id="containerNivelMagiaLuchadores" style="display:none"></section>
-    <section id="containerNivelDificultadLuchadores" style="display:none"></section>
+    <main class="contenedorImagenes">
+      <section id="container"></section>
+      <section id="containerAsesinos" style="display:none"></section>
+      <section id="containerLuchadores" style="display:none"></section>
+      <section id="containerMagos" style="display:none"></section>
+      <section id="containerTiradores" style="display:none"></section>
+      <section id="containerApoyos" style="display:none"></section>
+      <section id="containerTanques" style="display:none"></section>
+      <section id="containerTodosAz" style="display:none"></section>
+      <section id="containerTodosZa" style="display:none"></section>
 
-    <section id="containerNivelAtaqueMagos" style="display:none"></section>
-    <section id="containerNivelDefensaMagos" style="display:none"></section>
-    <section id="containerNivelMagiaMagos" style="display:none"></section>
-    <section id="containerNivelDificultadMagos" style="display:none"></section>
+      <section id="containerNivelAtaqueAsesinos" style="display:none"></section>
+      <section id="containerNivelDefensaAsesinos" style="display:none"></section>
+      <section id="containerNivelMagiaAsesinos" style="display:none"></section>
+      <section id="containerNivelDificultadAsesinos" style="display:none"></section>
 
-    <section id="containerNivelAtaqueTiradores" style="display:none"></section>
-    <section id="containerNivelDefensaTiradores" style="display:none"></section>
-    <section id="containerNivelMagiaTiradores" style="display:none"></section>
-    <section id="containerNivelDificultadTiradores" style="display:none"></section>
+      <section id="containerNivelAtaqueLuchadores" style="display:none"></section>
+      <section id="containerNivelDefensaLuchadores" style="display:none"></section>
+      <section id="containerNivelMagiaLuchadores" style="display:none"></section>
+      <section id="containerNivelDificultadLuchadores" style="display:none"></section>
 
-    <section id="containerNivelAtaqueApoyos" style="display:none"></section>
-    <section id="containerNivelDefensaApoyos" style="display:none"></section>
-    <section id="containerNivelMagiaApoyos" style="display:none"></section>
-    <section id="containerNivelDificultadApoyos" style="display:none"></section>
+      <section id="containerNivelAtaqueMagos" style="display:none"></section>
+      <section id="containerNivelDefensaMagos" style="display:none"></section>
+      <section id="containerNivelMagiaMagos" style="display:none"></section>
+      <section id="containerNivelDificultadMagos" style="display:none"></section>
 
-    <section id="containerNivelAtaqueTanques" style="display:none"></section>
-    <section id="containerNivelDefensaTanques" style="display:none"></section>
-    <section id="containerNivelMagiaTanques" style="display:none"></section>
-    <section id="containerNivelDificultadTanques" style="display:none"></section>
+      <section id="containerNivelAtaqueTiradores" style="display:none"></section>
+      <section id="containerNivelDefensaTiradores" style="display:none"></section>
+      <section id="containerNivelMagiaTiradores" style="display:none"></section>
+      <section id="containerNivelDificultadTiradores" style="display:none"></section>
 
-  </main>
+      <section id="containerNivelAtaqueApoyos" style="display:none"></section>
+      <section id="containerNivelDefensaApoyos" style="display:none"></section>
+      <section id="containerNivelMagiaApoyos" style="display:none"></section>
+      <section id="containerNivelDificultadApoyos" style="display:none"></section>
 
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
+      <section id="containerNivelAtaqueTanques" style="display:none"></section>
+      <section id="containerNivelDefensaTanques" style="display:none"></section>
+      <section id="containerNivelMagiaTanques" style="display:none"></section>
+      <section id="containerNivelDificultadTanques" style="display:none"></section>
+
+    </main>
+
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+
+  </header>
+
 </body>
 
 </html>

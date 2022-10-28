@@ -348,6 +348,9 @@ const ataqueAsesinos = [
     tags: ["Assassin", "Fighter"],
     info: {
       attack: 5,
+      defense: 3,
+      magic: 7,
+      difficulty: 8
     },
   },
 
@@ -356,6 +359,9 @@ const ataqueAsesinos = [
     tags: ["Mage", "Assassin"],
     info: {
       attack: 3,
+      defense: 4,
+      magic: 8,
+      difficulty: 5
     },
   },
 ];
@@ -603,7 +609,7 @@ describe('nivelDificultadTanques', () => {
 
 // Test de Niveles de ataque, defensa, magia y dificultad  (toEqual)
 
-it('retorna nivel de ataque de asesinos', () => { ataqueAsesinos.sort((a, b) => {
+it('retorna nivel de ataque de asesinos', () => { data.info.sort((a, b) => {
     if (a.info.attack > b.info.attack) {
       return -1;
     } else if (a.info.attack < b.info.attack) {
