@@ -37,37 +37,6 @@ nav {
   align-items: center;
 }
 
-/* #menuSuperior ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-content: center;
-  flex-direction: row;
-}
-
-#menuSuperior li {
-  float: left;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-content: center;
-  padding: 0 20px;
-  font-family: sans-serif;
-  font-size: 14px;
-  color: #fff;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  flex-direction: row;
-} */
-
-/* .barra {
-  margin-top: 30px;
-} */
-
 .button {
 
   color: #fff;
@@ -87,6 +56,13 @@ nav {
 .img {
   width: 220px;
   margin-left: 20px;
+}
+
+@media only screen
+and (max-device-width: 768px) {
+  .img {
+    width: 300px;
+  }
 }
 
 .bar-btn {
@@ -109,13 +85,13 @@ nav {
 .nav-menu li {
   display: none;
   line-height: 30px;
-  margin: 50px 0;
+  margin: 80px 0;
   transition: all .5s;
 }
 
 .nav-menu li button {
     color: #fff;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
     font-family: Trebuchet MS, Helvetica, sans-serif;
     background: none;
@@ -135,7 +111,7 @@ nav {
 }
 
 #check:checked ~ .nav-menu {
-  height: 450px;
+  height: 650px;
   margin-left: -30px;
 }
 
@@ -178,19 +154,6 @@ and (min-device-width: 768px) {
   }
 
 }
-
-/* #menuSuperior {
-  background-color: #3D3B3B;
-  width: 100% auto;
-  height: 100% auto;
-  box-shadow: 5px 4px 5px black;
-  opacity: 90%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-content: center;
-  flex-direction: row;
-} */
 
 #menuCentral ul {
   list-style: none;
@@ -235,7 +198,6 @@ and (min-device-width: 768px) {
 }
 
 
-
 @media only screen
 and (max-device-width: 768px) {
 
@@ -265,14 +227,6 @@ and (max-device-width: 768px) {
   margin-bottom: -75px;
   margin-top: 40px;
   height: auto;
-}
-
-@media only screen
-and (max-device-width: 768px) {
- 
-  .ordenar {
-    max-width: 60%;
-  }
 }
 
 .ordenar li {
@@ -308,6 +262,24 @@ and (max-device-width: 768px) {
   border: none;
   text-shadow: 5px 4px 5px black;
   cursor: pointer;
+
+}
+
+@media only screen
+and (max-device-width: 768px) {
+ 
+  .ordenar {
+    max-width: 60%;
+    margin-bottom: -45px;
+    margin-top: 60px;
+  }
+  .selectOrden {
+    font-size: 30px;
+  }
+
+  .titulo1 {
+    font-size: 70px;
+  }
 
 }
 
