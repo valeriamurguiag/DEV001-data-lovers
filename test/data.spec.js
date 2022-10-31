@@ -1,12 +1,12 @@
 import {
   filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques,
   acomodarTodosAz, acomodarTodosZa,
-  nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos,
-  nivelAtaqueLuchadores, nivelDefensaLuchadores, nivelMagiaLuchadores, nivelDificultadLuchadores,
-  nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos,
-  nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
-  nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
-  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques
+  nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos
+  // nivelAtaqueLuchadores, nivelDefensaLuchadores, nivelMagiaLuchadores, nivelDificultadLuchadores,
+  // nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos,
+  // nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
+  // nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
+  // nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques
 } from '../src/data.js';
 
 const data = [
@@ -348,39 +348,6 @@ describe('filtrarAsesinos', () => {
   it('is a function', () => {
     expect(typeof filtrarAsesinos).toBe('function');
   });
-});
-
-describe('filtrarLuchadores', () => {
-  it('is a function', () => {
-    expect(typeof filtrarLuchadores).toBe('function');
-  });
-});
-
-describe('filtrarMagos', () => {
-  it('is a function', () => {
-    expect(typeof filtrarMagos).toBe('function');
-  });
-});
-
-describe('filtrarTiradores', () => {
-  it('is a function', () => {
-    expect(typeof filtrarTiradores).toBe('function');
-  });
-
-  describe('filtrarApoyos', () => {
-    it('is a function', () => {
-      expect(typeof filtrarApoyos).toBe('function');
-    });
-
-  });
-
-  describe('filtrarTanques', () => {
-    it('is a function', () => {
-      expect(typeof filtrarTanques).toBe('function');
-    });
-
-  });
-
 
   // Test de filter (toEqual)
 
@@ -435,153 +402,6 @@ describe('nivelAtaqueAsesinos', () => {
   it('is a function', () => {
     expect(typeof nivelAtaqueAsesinos).toBe('function');
   });
-});
-
-describe('nivelDefensaAsesinos', () => {
-  it('is a function', () => {
-    expect(typeof nivelDefensaAsesinos).toBe('function');
-  });
-});
-
-describe('nivelMagiaAsesinos', () => {
-  it('is a function', () => {
-    expect(typeof nivelMagiaAsesinos).toBe('function');
-  });
-});
-
-describe('nivelDificultadAsesinos', () => {
-  it('is a function', () => {
-    expect(typeof nivelDificultadAsesinos).toBe('function');
-  });
-});
-
-describe('nivelAtaqueLuchadores', () => {
-  it('is a function', () => {
-    expect(typeof nivelAtaqueLuchadores).toBe('function');
-  });
-});
-
-describe('nivelDefensaLuchadores', () => {
-  it('is a function', () => {
-    expect(typeof nivelDefensaLuchadores).toBe('function');
-  });
-});
-
-describe('nivelMagiaLuchadores', () => {
-  it('is a function', () => {
-    expect(typeof nivelMagiaLuchadores).toBe('function');
-  });
-});
-
-describe('nivelDificultadLuchadores', () => {
-  it('is a function', () => {
-    expect(typeof nivelDificultadLuchadores).toBe('function');
-  });
-});
-
-describe('nivelAtaqueMagos', () => {
-  it('is a function', () => {
-    expect(typeof nivelAtaqueMagos).toBe('function');
-  });
-});
-
-describe('nivelDefensaMagos', () => {
-  it('is a function', () => {
-    expect(typeof nivelDefensaMagos).toBe('function');
-  });
-});
-
-describe('nivelMagiaMagos', () => {
-  it('is a function', () => {
-    expect(typeof nivelMagiaMagos).toBe('function');
-  });
-});
-
-describe('nivelDificultadMagos', () => {
-  it('is a function', () => {
-    expect(typeof nivelDificultadMagos).toBe('function');
-  });
-});
-
-describe('nivelAtaqueTiradores', () => {
-  it('is a function', () => {
-    expect(typeof nivelAtaqueTiradores).toBe('function');
-  });
-});
-
-describe('nivelDefensaTiradores', () => {
-  it('is a function', () => {
-    expect(typeof nivelDefensaTiradores).toBe('function');
-  });
-});
-
-describe('nivelMagiaTiradores', () => {
-  it('is a function', () => {
-    expect(typeof nivelMagiaTiradores).toBe('function');
-  });
-});
-
-describe('nivelDificultadTiradores', () => {
-  it('is a function', () => {
-    expect(typeof nivelDificultadTiradores).toBe('function');
-  });
-});
-
-describe('nivelAtaqueApoyos', () => {
-  it('is a function', () => {
-    expect(typeof nivelAtaqueApoyos).toBe('function');
-  });
-
-});
-
-describe('nivelDefensaApoyos', () => {
-  it('is a function', () => {
-    expect(typeof nivelDefensaApoyos).toBe('function');
-  });
-
-});
-
-describe('nivelMagiaApoyos', () => {
-  it('is a function', () => {
-    expect(typeof nivelMagiaApoyos).toBe('function');
-  });
-
-});
-
-describe('nivelDificultadApoyos', () => {
-  it('is a function', () => {
-    expect(typeof nivelDificultadApoyos).toBe('function');
-  });
-
-});
-
-describe('nivelAtaqueTanques', () => {
-  it('is a function', () => {
-    expect(typeof nivelAtaqueTanques).toBe('function');
-  });
-
-});
-
-describe('nivelDefensaTanques', () => {
-  it('is a function', () => {
-    expect(typeof nivelDefensaTanques).toBe('function');
-  });
-
-});
-
-describe('nivelMagiaTanques', () => {
-  it('is a function', () => {
-    expect(typeof nivelMagiaTanques).toBe('function');
-  });
-
-});
-
-describe('nivelDificultadTanques', () => {
-  it('is a function', () => {
-    expect(typeof nivelDificultadTanques).toBe('function');
-  });
-
-});
 
 // Test de Niveles de ataque, defensa, magia y dificultad  (toEqual)
 
@@ -635,5 +455,170 @@ it('retorna nivel de ataque de asesinos', () => {
   ];
   expect(nivelAtaqueAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
   });
-  
 
+  it('retorna nivel de defensa de asesinos', () => { 
+  
+    const asesinosAscendente = [
+    
+      {
+        name: 'Ahri',
+        tags: ["Mage", "Assassin"],
+        info: {
+          attack: 3,
+          defense: 4,
+          magic: 8,
+          difficulty: 5
+        },
+      },
+      {
+        name: 'Ekko',
+        tags: ["Assassin", "Fighter"],
+        info: {
+          attack: 5,
+          defense: 3,
+          magic: 7,
+          difficulty: 8
+        },
+      },
+    ];
+    
+    const ataqueAsesinos = [
+
+      {
+        name: 'Ahri',
+        tags: ["Mage", "Assassin"],
+        info: {
+          attack: 3,
+          defense: 4,
+          magic: 8,
+          difficulty: 5
+        },
+      },
+
+      {
+        name: 'Ekko',
+        tags: ["Assassin", "Fighter"],
+        info: {
+          attack: 5,
+          defense: 3,
+          magic: 7,
+          difficulty: 8
+        },
+      },
+  
+    ];
+    expect(nivelDefensaAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+    });
+
+    it('retorna nivel de magia de asesinos', () => { 
+  
+      const asesinosAscendente = [
+      
+        {
+          name: 'Ahri',
+          tags: ["Mage", "Assassin"],
+          info: {
+            attack: 3,
+            defense: 4,
+            magic: 8,
+            difficulty: 5
+          },
+        },
+        {
+          name: 'Ekko',
+          tags: ["Assassin", "Fighter"],
+          info: {
+            attack: 5,
+            defense: 3,
+            magic: 7,
+            difficulty: 8
+          },
+        },
+      ];
+      
+      const ataqueAsesinos = [
+  
+        {
+          name: 'Ahri',
+          tags: ["Mage", "Assassin"],
+          info: {
+            attack: 3,
+            defense: 4,
+            magic: 8,
+            difficulty: 5
+          },
+        },
+  
+        {
+          name: 'Ekko',
+          tags: ["Assassin", "Fighter"],
+          info: {
+            attack: 5,
+            defense: 3,
+            magic: 7,
+            difficulty: 8
+          },
+        },
+    
+      ];
+      expect(nivelMagiaAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+      });
+
+      it('retorna nivel de dificultad de asesinos', () => { 
+  
+        const asesinosAscendente = [
+        
+          {
+            name: 'Ahri',
+            tags: ["Mage", "Assassin"],
+            info: {
+              attack: 3,
+              defense: 4,
+              magic: 8,
+              difficulty: 5
+            },
+          },
+          {
+            name: 'Ekko',
+            tags: ["Assassin", "Fighter"],
+            info: {
+              attack: 5,
+              defense: 3,
+              magic: 7,
+              difficulty: 8
+            },
+          },
+        ];
+        
+        const ataqueAsesinos = [
+
+          {
+            name: 'Ekko',
+            tags: ["Assassin", "Fighter"],
+            info: {
+              attack: 5,
+              defense: 3,
+              magic: 7,
+              difficulty: 8
+            },
+          },
+    
+          {
+            name: 'Ahri',
+            tags: ["Mage", "Assassin"],
+            info: {
+              attack: 3,
+              defense: 4,
+              magic: 8,
+              difficulty: 5
+            },
+          },
+      
+        ];
+        expect(nivelDificultadAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+        });
+
+
+
+  
+  });
