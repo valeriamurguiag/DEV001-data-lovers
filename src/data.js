@@ -416,7 +416,7 @@ function conteoTipos(champions) {
   }, {})
 }
 conteoTipos(arrObject)
-console.log(conteoTipos(arrObject));
+
 
 export {
   filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques,
