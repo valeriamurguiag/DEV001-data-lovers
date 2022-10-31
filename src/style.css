@@ -141,7 +141,8 @@ nav {
   display: block;
 }
 
-@media screen and (min-width: 760px) {
+@media only screen
+and (min-device-width: 700px) {
   .img {
     margin-left: 50px;
   }
@@ -231,6 +232,19 @@ nav {
   flex-direction: row;
 }
 
+
+
+@media only screen
+and (max-device-width: 700px) {
+
+#menuCentral li {
+  padding: 12px 8px;
+  font-family: sans-serif;
+  font-size: 8px;
+}
+
+}
+
 .ordenar {
   display: flex;
   text-align: center;
@@ -284,13 +298,14 @@ nav {
 }
 
 .contenedorImagenes {
+
   display: flex;
+  justify-content: space-around;
   max-width: 90%;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 100px auto;
 }
-
 
 .container2 {
   max-width: 700px;
@@ -415,7 +430,6 @@ nav {
   width: 280px;
   height: 200px;
   border-radius: 15px;
-
 }
 
 .class-imgSilvia {
