@@ -2213,7 +2213,7 @@ function mostrarSilvia() {
   img.classList.add('class-imgSilvia');
   p.classList.add('class-name');
   img.src = "https://i.postimg.cc/Wz8LXfgp/foto-silvia.jpg"
-  p.innerHTML = `Silvia Falcon`;
+  p.innerHTML = `Silvia <br> Falcon`;
   newElement34.appendChild(img);
   newElement34.appendChild(p);
   containerNosotras.appendChild(newElement34);
@@ -2228,7 +2228,7 @@ function mostrarValeria() {
   img.classList.add('class-imgValeria');
   p.classList.add('class-name');
   img.src = "https://i.postimg.cc/GhMnDVbq/foto-valeria.jpg"
-  p.innerHTML = `Valeria Murguia`;
+  p.innerHTML = `Valeria <br> Murguia`;
   newElement35.appendChild(img);
   newElement35.appendChild(p);
   containerNosotras.appendChild(newElement35);
