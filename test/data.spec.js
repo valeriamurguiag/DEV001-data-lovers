@@ -1,12 +1,12 @@
 import {
   filtrarAsesinos, filtrarLuchadores, filtrarMagos, filtrarTiradores, filtrarApoyos, filtrarTanques,
   acomodarTodosAz, acomodarTodosZa,
-  nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos
-  // nivelAtaqueLuchadores, nivelDefensaLuchadores, nivelMagiaLuchadores, nivelDificultadLuchadores,
-  // nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos,
-  // nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
-  // nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos,
-  // nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques
+  nivelAtaqueAsesinos, nivelDefensaAsesinos, nivelMagiaAsesinos, nivelDificultadAsesinos, 
+  nivelAtaqueLuchadores, nivelDefensaLuchadores, nivelMagiaLuchadores, nivelDificultadLuchadores,
+  nivelAtaqueMagos, nivelDefensaMagos, nivelMagiaMagos, nivelDificultadMagos,
+  nivelAtaqueTiradores, nivelDefensaTiradores, nivelMagiaTiradores, nivelDificultadTiradores,
+  nivelAtaqueApoyos, nivelDefensaApoyos, nivelMagiaApoyos, nivelDificultadApoyos, 
+  nivelAtaqueTanques, nivelDefensaTanques, nivelMagiaTanques, nivelDificultadTanques
 } from '../src/data.js';
 
 const data = [
@@ -403,11 +403,11 @@ describe('nivelAtaqueAsesinos', () => {
     expect(typeof nivelAtaqueAsesinos).toBe('function');
   });
 
-// Test de Niveles de ataque, defensa, magia y dificultad  (toEqual)
+// Test de Niveles de ataque, defensa, magia y dificultad - ASESINOS (toEqual)
 
 it('retorna nivel de ataque de asesinos', () => { 
   
-  const asesinosAscendente = [
+  const asesinosAtaqueAscendente = [
   
     {
       name: 'Ahri',
@@ -453,12 +453,12 @@ it('retorna nivel de ataque de asesinos', () => {
       },
     },
   ];
-  expect(nivelAtaqueAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+  expect(nivelAtaqueAsesinos(asesinosAtaqueAscendente)).toEqual(ataqueAsesinos)
   });
 
   it('retorna nivel de defensa de asesinos', () => { 
   
-    const asesinosAscendente = [
+    const asesinosDefensaAscendente = [
     
       {
         name: 'Ahri',
@@ -482,7 +482,7 @@ it('retorna nivel de ataque de asesinos', () => {
       },
     ];
     
-    const ataqueAsesinos = [
+    const defensaAsesinos = [
 
       {
         name: 'Ahri',
@@ -507,23 +507,13 @@ it('retorna nivel de ataque de asesinos', () => {
       },
   
     ];
-    expect(nivelDefensaAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+    expect(nivelDefensaAsesinos(asesinosDefensaAscendente)).toEqual(defensaAsesinos)
     });
 
     it('retorna nivel de magia de asesinos', () => { 
   
-      const asesinosAscendente = [
-      
-        {
-          name: 'Ahri',
-          tags: ["Mage", "Assassin"],
-          info: {
-            attack: 3,
-            defense: 4,
-            magic: 8,
-            difficulty: 5
-          },
-        },
+      const asesinosMagiaAscendente = [
+
         {
           name: 'Ekko',
           tags: ["Assassin", "Fighter"],
@@ -534,9 +524,19 @@ it('retorna nivel de ataque de asesinos', () => {
             difficulty: 8
           },
         },
+        {
+          name: 'Ahri',
+          tags: ["Mage", "Assassin"],
+          info: {
+            attack: 3,
+            defense: 4,
+            magic: 8,
+            difficulty: 5
+          },
+        },
       ];
       
-      const ataqueAsesinos = [
+      const magiaAsesinos = [
   
         {
           name: 'Ahri',
@@ -561,12 +561,12 @@ it('retorna nivel de ataque de asesinos', () => {
         },
     
       ];
-      expect(nivelMagiaAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+      expect(nivelMagiaAsesinos(asesinosMagiaAscendente)).toEqual(magiaAsesinos)
       });
 
       it('retorna nivel de dificultad de asesinos', () => { 
   
-        const asesinosAscendente = [
+        const asesinosDificultadAscendente = [
         
           {
             name: 'Ahri',
@@ -590,7 +590,7 @@ it('retorna nivel de ataque de asesinos', () => {
           },
         ];
         
-        const ataqueAsesinos = [
+        const dificultadAsesinos = [
 
           {
             name: 'Ekko',
@@ -615,10 +615,1062 @@ it('retorna nivel de ataque de asesinos', () => {
           },
       
         ];
-        expect(nivelDificultadAsesinos(asesinosAscendente)).toEqual(ataqueAsesinos)
+        expect(nivelDificultadAsesinos(asesinosDificultadAscendente)).toEqual(dificultadAsesinos)
         });
 
+        // Test de Niveles de ataque, defensa, magia y dificultad - LUCHADORES (toEqual)
 
-
+        it('retorna nivel de ataque de luchadores', () => { 
   
+          const luchadoresAtaqueAscendente = [
+          
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+          ];
+          
+          const ataqueLuchadores = [
+      
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+          ];
+          expect(nivelAtaqueLuchadores(luchadoresAtaqueAscendente)).toEqual(ataqueLuchadores)
+          });
+
+          it('retorna nivel de defensa de luchadores', () => { 
+  
+            const luchadoresDefensaAscendente = [
+            
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+            ];
+            
+            const defensaLuchadores = [
+        
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+            ];
+            expect(nivelDefensaLuchadores(luchadoresDefensaAscendente)).toEqual(defensaLuchadores)
+            });
+
+            //
+            it('retorna nivel de magia de luchadores', () => { 
+  
+              const luchadoresMagiaAscendente = [
+              
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+              ];
+              
+              const magiaLuchadores = [
+          
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+              ];
+              expect(nivelMagiaLuchadores(luchadoresMagiaAscendente)).toEqual(magiaLuchadores)
+              });
+
+              it('retorna nivel de dificultad de luchadores', () => { 
+  
+                const luchadoresDificultadAscendente = [
+                
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                ];
+                
+                const dificultadLuchadores = [
+            
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                ];
+                expect(nivelDificultadLuchadores(luchadoresDificultadAscendente)).toEqual(dificultadLuchadores)
+                });
+
+        // Test de Niveles de ataque, defensa, magia y dificultad - MAGOS (toEqual)
+
+        it('retorna nivel de ataque de magos', () => { 
+  
+          const magosAtaqueAscendente = [
+          
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+          ];
+          
+          const ataqueMagos = [
+      
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+          ];
+          expect(nivelAtaqueMagos(magosAtaqueAscendente)).toEqual(ataqueMagos)
+          });
+
+          it('retorna nivel de defensa de magos', () => { 
+  
+            const magosDefensaAscendente = [
+            
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+            ];
+            
+            const defensaMagos = [
+        
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+            ];
+            expect(nivelDefensaMagos(magosDefensaAscendente)).toEqual(defensaMagos)
+            });
+
+            //
+            it('retorna nivel de magia de magos', () => { 
+  
+              const magosMagiaAscendente = [
+              
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+              ];
+              
+              const magiaMagos = [
+          
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+              ];
+              expect(nivelMagiaMagos(magosMagiaAscendente)).toEqual(magiaMagos)
+              });
+
+              it('retorna nivel de dificultad de magos', () => { 
+  
+                const magosDificultadAscendente = [
+                
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                ];
+                
+                const dificultadMagos = [
+            
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                ];
+                expect(nivelDificultadMagos(magosDificultadAscendente)).toEqual(dificultadMagos)
+                });
+
+        // Test de Niveles de ataque, defensa, magia y dificultad - TIRADORES (toEqual)
+
+        it('retorna nivel de ataque de tiradores', () => { 
+  
+          const tiradoresAtaqueAscendente = [
+          
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+          ];
+          
+          const ataqueTiradores = [
+      
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+          ];
+          expect(nivelAtaqueTiradores(tiradoresAtaqueAscendente)).toEqual(ataqueTiradores)
+          });
+
+          it('retorna nivel de defensa de tiradores', () => { 
+  
+            const tiradoresDefensaAscendente = [
+            
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+            ];
+            
+            const defensaTiradores = [
+        
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+            ];
+            expect(nivelDefensaTiradores(tiradoresDefensaAscendente)).toEqual(defensaTiradores)
+            });
+
+            //
+            it('retorna nivel de magia de tiradores', () => { 
+  
+              const tiradoresMagiaAscendente = [
+              
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+              ];
+              
+              const magiaTiradores = [
+          
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+              ];
+              expect(nivelMagiaTiradores(tiradoresMagiaAscendente)).toEqual(magiaTiradores)
+              });
+
+              it('retorna nivel de dificultad de tiradores', () => { 
+  
+                const tiradoresDificultadAscendente = [
+                
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                ];
+                
+                const dificultadTiradores = [
+            
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                ];
+                expect(nivelDificultadTiradores(tiradoresDificultadAscendente)).toEqual(dificultadTiradores)
+                });
+
+        // Test de Niveles de ataque, defensa, magia y dificultad - APOYOS (toEqual)
+
+        it('retorna nivel de ataque de apoyos', () => { 
+  
+          const apoyosAtaqueAscendente = [
+          
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+          ];
+          
+          const ataqueApoyos = [
+      
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+          ];
+          expect(nivelAtaqueApoyos(apoyosAtaqueAscendente)).toEqual(ataqueApoyos)
+          });
+
+          it('retorna nivel de defensa de apoyos', () => { 
+  
+            const apoyosDefensaAscendente = [
+            
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+            ];
+            
+            const defensaApoyos = [
+        
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+            ];
+            expect(nivelDefensaApoyos(apoyosDefensaAscendente)).toEqual(defensaApoyos)
+            });
+
+            //
+            it('retorna nivel de magia de apoyos', () => { 
+  
+              const apoyosMagiaAscendente = [
+              
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+              ];
+              
+              const magiaApoyos = [
+          
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+              ];
+              expect(nivelMagiaApoyos(apoyosMagiaAscendente)).toEqual(magiaApoyos)
+              });
+
+              it('retorna nivel de dificultad de apoyos', () => { 
+  
+                const apoyosDificultadAscendente = [
+                
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                ];
+                
+                const dificultadApoyos = [
+            
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                ];
+                expect(nivelDificultadApoyos(apoyosDificultadAscendente)).toEqual(dificultadApoyos)
+                });
+
+        // Test de Niveles de ataque, defensa, magia y dificultad - TANQUES (toEqual)
+
+        it('retorna nivel de ataque de tanques', () => { 
+  
+          const tanquesAtaqueAscendente = [
+          
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+          ];
+          
+          const ataqueTanques = [
+      
+            {
+              name: 'Aatrox',
+              tags: ['Fighter', 'Tank'],
+              info: {
+                attack: 8,
+                defense: 4,
+                magic: 3,
+                difficulty: 4
+              },
+            },
+            {
+              name: 'Ekko',
+              tags: ["Assassin", "Fighter"],
+              info: {
+                attack: 5,
+                defense: 3,
+                magic: 7,
+                difficulty: 8
+              },
+            },
+          ];
+          expect(nivelAtaqueTanques(tanquesAtaqueAscendente)).toEqual(ataqueTanques)
+          });
+
+          it('retorna nivel de defensa de tanques', () => { 
+  
+            const tanquesDefensaAscendente = [
+            
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+            ];
+            
+            const defensaTanques = [
+        
+              {
+                name: 'Aatrox',
+                tags: ['Fighter', 'Tank'],
+                info: {
+                  attack: 8,
+                  defense: 4,
+                  magic: 3,
+                  difficulty: 4
+                },
+              },
+              {
+                name: 'Ekko',
+                tags: ["Assassin", "Fighter"],
+                info: {
+                  attack: 5,
+                  defense: 3,
+                  magic: 7,
+                  difficulty: 8
+                },
+              },
+            ];
+            expect(nivelDefensaTanques(tanquesDefensaAscendente)).toEqual(defensaTanques)
+            });
+
+            //
+            it('retorna nivel de magia de tanques', () => { 
+  
+              const tanquesMagiaAscendente = [
+              
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+              ];
+              
+              const magiaTanques = [
+          
+                {
+                  name: 'Ekko',
+                  tags: ["Assassin", "Fighter"],
+                  info: {
+                    attack: 5,
+                    defense: 3,
+                    magic: 7,
+                    difficulty: 8
+                  },
+                },
+                {
+                  name: 'Aatrox',
+                  tags: ['Fighter', 'Tank'],
+                  info: {
+                    attack: 8,
+                    defense: 4,
+                    magic: 3,
+                    difficulty: 4
+                  },
+                },
+              ];
+              expect(nivelMagiaTanques(tanquesMagiaAscendente)).toEqual(magiaTanques)
+              });
+
+              it('retorna nivel de dificultad de tanques', () => { 
+  
+                const tanquesDificultadAscendente = [
+                
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                ];
+                
+                const dificultadTanques = [
+            
+                  {
+                    name: 'Ekko',
+                    tags: ["Assassin", "Fighter"],
+                    info: {
+                      attack: 5,
+                      defense: 3,
+                      magic: 7,
+                      difficulty: 8
+                    },
+                  },
+                  {
+                    name: 'Aatrox',
+                    tags: ['Fighter', 'Tank'],
+                    info: {
+                      attack: 8,
+                      defense: 4,
+                      magic: 3,
+                      difficulty: 4
+                    },
+                  },
+                ];
+                expect(nivelDificultadTanques(tanquesDificultadAscendente)).toEqual(dificultadTanques)
+                });
+
   });
