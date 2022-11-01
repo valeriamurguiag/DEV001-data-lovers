@@ -58,6 +58,13 @@ nav {
   margin-left: 20px;
 }
 
+.img-logo {
+  width: 55px;
+  height: 45px;
+  margin-left: 30px;
+  margin-top: 7px;
+}
+
 @media only screen
 and (max-device-width: 768px) {
   .img {
@@ -779,6 +786,12 @@ and (max-device-width: 768px){
   margin-left: -40px;
 }
 
+
+.pieDePagina {
+  display: flex;
+  flex-direction: row;
+}
+
 .estadisticasDiv {
   display: flex;
   justify-content: center;
@@ -793,4 +806,11 @@ and (max-device-width: 768px){
   height: 300em;
   margin-right: -40px;
   margin-left: -40px;
+}
+
+.class-pieDePagina {
+  height: 100px;
+  width: 105%;
+  margin-left: -35px;
+  background-color: black;
 }
