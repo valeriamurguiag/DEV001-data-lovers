@@ -11,7 +11,6 @@
 }
 
 body {
-  margin: 30px;
   justify-content: center;
   align-items: center;
   color: black;
@@ -295,7 +294,7 @@ and (max-device-width: 768px) {
 
 .contenedorImagenes {
   display: flex;
-  max-width: 90%;
+  max-width: 80%;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 100px auto;
@@ -310,7 +309,7 @@ and (max-device-width: 768px) {
 
   .contenedorImagenes {
     width: 100%;
-    margin-left: 80px;
+    margin-left: 110px;
 
   }
 }
@@ -444,7 +443,7 @@ and (max-device-width: 768px){
 }
 
 .class-divNosotras {
-  background-color: rgb(6, 28, 37);
+  background-color: rgb(26, 28, 29);
   display: inline-block;
   margin-top: 1%;
   cursor: pointer;
@@ -454,7 +453,7 @@ and (max-device-width: 768px){
   align-items: center;
   border-radius: 18px;
   width: 310px;
-  height: auto;
+  height: 430px;
 }
 
 @media only screen 
@@ -509,14 +508,32 @@ and (max-device-width: 768px) {
 }
 
 .class-name {
-  font-size: 16px;
+  font-size: 21px;
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bolder;
   text-align: center;
+  background-color: rgb(26, 28, 29);
   margin-top: -0.2em;
   padding: 0.10em;
   text-transform: uppercase;
-  color: #fff;
+  color:  rgba(243, 168, 5, 0.842);
+  padding: 6% 8%;
+  padding-top: 2%;
+  padding-right: 8%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+}
+
+.class-name2 {
+  font-size: 15px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bolder;
+  text-align: center;
+  background-color: rgb(26, 28, 29);
+  margin-top: -0.2em;
+  padding: 0.10em;
+  text-transform: uppercase;
+  color:  rgba(243, 168, 5, 0.842);
   padding: 6% 8%;
   padding-top: 2%;
   padding-right: 8%;
@@ -535,9 +552,10 @@ and (max-device-width: 768px){
 .class-level {
   font-size: 13px;
   font-family: sans-serif;
+  line-height: 20px;
   text-align: center;
   justify-content: center;
-  margin-top: -0.2em;
+  margin-top: 15px;
   padding: 0.10em;
   text-transform: uppercase;
   color: #fff;
@@ -786,12 +804,6 @@ and (max-device-width: 768px){
   margin-left: -40px;
 }
 
-
-.pieDePagina {
-  display: flex;
-  flex-direction: row;
-}
-
 .estadisticasDiv {
   display: flex;
   justify-content: center;
@@ -808,9 +820,32 @@ and (max-device-width: 768px){
   margin-left: -40px;
 }
 
-.class-pieDePagina {
-  height: 100px;
-  width: 105%;
-  margin-left: -35px;
-  background-color: black;
+.gitSilvia {
+  width: 65px;
+  height: 50px;
+  margin-left: 120px;
+  margin-top: 5px;
+}
+
+.gitValeria {
+  width: 65px;
+  height: 50px;
+  margin-left: 120px;
+  margin-top: 5px;
+}
+
+.class-btn {
+    border-radius: 15px;
+    background-color: #c5b951;
+    border: black;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

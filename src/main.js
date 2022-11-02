@@ -12,7 +12,7 @@ import {
 } from './data.js';
 
 const allChampion = data.data;
-export const arrObject = Object.values(allChampion);
+const arrObject = Object.values(allChampion);
 
 //Mostrar TODOS
 const container = document.getElementById('container');
@@ -23,18 +23,29 @@ const mostrarTodos = (arr) => {
     const newElement = document.createElement('div');
     const img = document.createElement('img');
     const p = document.createElement('p');
+    const p2 = document.createElement('p');
+    const p3 = document.createElement('p');
     newElement.classList.add('class-divData');
     img.classList.add('class-img');
     p.classList.add('class-name');
+    p2.classList.add('class-name2');
+    p3.classList.add('class-level');
     img.src = `${champion.splash}`;
     p.innerHTML = `${champion.name}`;
+    p2.innerHTML = `${champion.title}`;
+    p3.innerHTML = `ATTACK LEVEL: ${champion.info.attack} <br> DEFENSE LEVEL: ${champion.info.defense} <br> MAGIC LEVEL: ${champion.info.magic} <br> DIFFICULTY LEVEL: ${champion.info.difficulty} <br> `;
     newElement.appendChild(img);
     newElement.appendChild(p);
+    newElement.appendChild(p2);
+    newElement.appendChild(p3);
     container.appendChild(newElement);
   });
 };
 
 mostrarTodos(arrObject);
+
+
+
 
 //Añadir evento al click de TODOS
 todos.addEventListener("click", mostrarTodos2);
@@ -676,7 +687,7 @@ function mostrarTodosAz(todosAz) {
   }
 }
 
-export const todosAzMostrados = acomodarTodosAz(arrObject);
+const todosAzMostrados = acomodarTodosAz(arrObject);
 mostrarTodosAz(todosAzMostrados);
 
 function mostrarTodosZa(todosZa) {
@@ -695,7 +706,7 @@ function mostrarTodosZa(todosZa) {
   }
 }
 
-export const todosZaMostrados = acomodarTodosZa(arrObject);
+const todosZaMostrados = acomodarTodosZa(arrObject);
 mostrarTodosZa(todosZaMostrados);
 
 ordenar.addEventListener('change', () => {
@@ -1406,12 +1417,6 @@ nivelMagosSelect.addEventListener("change", () => {
     document.getElementById('containerNivelDificultadMagos').style.display = "block";
   }
 });
-
-
-
-/////////////////////////////////
-
-
 
 // Mostrar niveles TIRADORES
 const containerNivelAtaqueTiradores = document.getElementById('containerNivelAtaqueTiradores');
@@ -2201,39 +2206,7 @@ nivelTanquesSelect.addEventListener("change", () => {
 });
 
 //Mostrar NOSOTRAS
-const containerNosotras = document.getElementById('containerNosotras');
 const nosotras = document.getElementById('sobreNosotras');
-
-
-function mostrarSilvia() {
-  const newElement34 = document.createElement('div');
-  const img = document.createElement('img');
-  const p = document.createElement('p');
-  newElement34.classList.add('class-divNosotras');
-  img.classList.add('class-imgSilvia');
-  p.classList.add('class-name');
-  img.src = "https://i.postimg.cc/Wz8LXfgp/foto-silvia.jpg"
-  p.innerHTML = `Silvia <br> Falcon`;
-  newElement34.appendChild(img);
-  newElement34.appendChild(p);
-  containerNosotras.appendChild(newElement34);
-}
-mostrarSilvia();
-
-function mostrarValeria() {
-  const newElement35 = document.createElement('div');
-  const img = document.createElement('img');
-  const p = document.createElement('p');
-  newElement35.classList.add('class-divNosotras');
-  img.classList.add('class-imgValeria');
-  p.classList.add('class-name');
-  img.src = "https://i.postimg.cc/GhMnDVbq/foto-valeria.jpg"
-  p.innerHTML = `Valeria <br> Murguia`;
-  newElement35.appendChild(img);
-  newElement35.appendChild(p);
-  containerNosotras.appendChild(newElement35);
-}
-mostrarValeria();
 
 nosotras.addEventListener("click", () => {
   document.getElementById('container').style.display = "none";
