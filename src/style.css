@@ -68,6 +68,7 @@ nav {
 and (max-device-width: 768px) {
   .img {
     width: 300px;
+    margin-top: 50px;
   }
 
 }
@@ -403,8 +404,8 @@ and (max-device-width: 768px){
 
 .menuHamburguesa span {
   display: block;
-  width: 50px;
-  height: 5px;
+  width: 60px;
+  height: 8px;
   background: black;
   border-radius: 10px;
   margin-top: 6px;
@@ -543,8 +544,16 @@ and (max-device-width: 768px) {
 
 @media only screen 
 and (max-device-width: 768px){
+  .class-name2 {
+    font-size: 22px;
+  
+  }
+}
+
+@media only screen 
+and (max-device-width: 768px){
   .class-name {
-    font-size: 30px;
+    font-size: 39px;
   
   }
 }
@@ -564,6 +573,15 @@ and (max-device-width: 768px){
   padding-right: 8%;
   padding-bottom: 2%;
   padding-left: 8%;
+}
+
+@media only screen 
+and (max-device-width: 768px){
+  .class-level {
+    font-size: 26px;
+    line-height: 1.5;
+    padding-bottom: 8%;
+  }
 }
 
 .sobreJuegoDiv {
