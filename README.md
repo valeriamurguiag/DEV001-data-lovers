@@ -35,7 +35,7 @@ LoLovers trae a sus usuarios una plataforma para todos los amantes del conocido 
 
 "Vista mobile: historia de usuario 1"
 
-[![imagen-final1-mobile.png](https://i.postimg.cc/Pf7FQf8s/imagen-final1-mobile.png)](https://postimg.cc/LhzTHpTN)
+[![imagen-final1-mobile.png](https://i.postimg.cc/rwXn7hJf/imagen-final1-mobile.png)](https://postimg.cc/JGx5k5SX)
 
 "Vista mobile: historia de usuario 2"
 
