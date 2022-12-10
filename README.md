@@ -4,11 +4,12 @@
 
 * [1. Resumen del proyecto](#2-resumen-del-proyecto)
 * [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
-* [3. Investigación UX: Quiénes son los usuarios y los objetivos en relación con el producto](#2-investigación-ux-quiénes-son-los-usuarios-y-los-objetivos-en-relación-con-el-producto)
-* [4. Investigación UX: Cómo el producto soluciona los problemas/necesidades de dichos usuarios](#4-investigación-ux-cómo-el-producto-soluciona-los-problemasnecesidades-de-dichos-usuarios)
-* [5. Historias de usuarios](#5-historias-de-usuarios)
-* [6. Imagen del prototipo final](#6-imagen-del-prototipo-final)
-* [7. Imagen del prototipo de baja fidelidad](#6-imagen-del-prototipo-de-baja-fidelidad)
+* [3. Imagen final del proyecto: Vista Mobile](#7-imagen-final-del-proyecto-vista-mobile)
+* [4. Investigación UX: Quiénes son los usuarios y los objetivos en relación con el producto](#2-investigación-ux-quiénes-son-los-usuarios-y-los-objetivos-en-relación-con-el-producto)
+* [5. Investigación UX: Cómo el producto soluciona los problemas/necesidades de dichos usuarios](#4-investigación-ux-cómo-el-producto-soluciona-los-problemasnecesidades-de-dichos-usuarios)
+* [6. Historias de usuarios](#5-historias-de-usuarios)
+* [7. Imagen del prototipo final](#6-imagen-del-prototipo-final)
+* [8. Imagen del prototipo de baja fidelidad](#6-imagen-del-prototipo-de-baja-fidelidad)
 
 ***
 
@@ -30,16 +31,28 @@ LoLovers trae a sus usuarios una plataforma para todos los amantes del conocido 
 
 [![imagen-final3-1.png](https://i.postimg.cc/YSk895cP/imagen-final3-1.png)](https://postimg.cc/NKJRCPj8)
 
+## 3. Imagen final del proyecto: Vista Mobile
 
-## 3. Investigación UX: Quiénes son los usuarios y los objetivos en relación con el producto
+"Vista mobile: historia de usuario 1"
+
+[![imagen-final1-mobile.png](https://i.postimg.cc/rwXn7hJf/imagen-final1-mobile.png)](https://postimg.cc/JGx5k5SX)
+
+"Vista mobile: historia de usuario 2"
+
+
+"Vista mobile: historia de usuario 3"
+
+
+
+## 4. Investigación UX: Quiénes son los usuarios y los objetivos en relación con el producto
 
 Este proyecto está dirigido a todas las personas, sin importar su edad o género, que se caracterizan por dedicarse con gran pasión e interés a los videojuegos. 
 
-## 4. Investigación UX: Cómo el producto soluciona los problemas/necesidades de dichos usuarios
+## 5. Investigación UX: Cómo el producto soluciona los problemas/necesidades de dichos usuarios
 
 Al jugar League of Legends, los jugadores se encuentran con una amplia (e incluso abrumadora) gama de opciones, esto debido a que el videojuego cuenta con más de 140 campeones. LoLovers recolecta toda la data necesaria para que el usuario pueda ver, filtrar, comparar y elegir su campeón favorito en su próxima partida. De la misma manera, es una herramienta útil para todos aquellos que se identifican como nuevos jugadores, ayudándolos a familiarizarse con los personajes que pueden elegir.
 
-## 5. Historias de usuarios
+## 6. Historias de usuarios
 
 Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs personajes/películas/deportistas para familiarizarme.”
 
@@ -50,7 +63,7 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 - “Yo como usuario Eduardo (14 años), quiero poder ver los tanques con niveles de dificultad mayor a menor, ya que quiero empezar a jugar con diferentes personajes.”
 
 
-## 6. Imagen del prototipo final
+## 7. Imagen del prototipo final
 
 [![prototipo-hu1.png](https://i.postimg.cc/G2N9Rt1t/prototipo-hu1.png)](https://postimg.cc/ftcMjwyQ)
 
@@ -80,7 +93,7 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 
 "Prototipo MOBILE digital: historia de usuario 3"
 
-## 7. Imagen del prototipo de baja fidelidad
+## 8. Imagen del prototipo de baja fidelidad
 
 [![Prototipo-1-papel.jpg](https://i.postimg.cc/02y7PMm5/Prototipo-1-papel.jpg)](https://postimg.cc/SjHnGKDH)
 
