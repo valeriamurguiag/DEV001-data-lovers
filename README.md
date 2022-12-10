@@ -17,18 +17,18 @@
 LoLovers trae a sus usuarios una plataforma para todos los amantes del conocido videojuego multijugador “League of Legends”. En una misma página, LoLovers comparte los roles de cada campeón, sus niveles de ataque y distintos tipos de habilidades para que el jugador pueda elegir el campeón que va a competir en su partida.
 
 
-## 2. Imagen final del proyecto
-[![imagen-final.png](https://i.postimg.cc/dVv3wgg2/imagen-final.png)](https://postimg.cc/MvPqY36H)
+## 2. Imagen final del proyecto / "Historia de usuario 1"
+[![imagen-final1.png](https://i.postimg.cc/x858Yb28/imagen-final1.png)](https://postimg.cc/sGBs4x1C)
 
-"Historia de usuario 1"
-
-[![imagen-final2.png](https://i.postimg.cc/7LFpyrWD/imagen-final2.png)](https://postimg.cc/gwKMvQpB)
+[![imagen-final11.png](https://i.postimg.cc/8cmfyzPd/imagen-final11.png)](https://postimg.cc/y3WNxBRW)
 
 "Historia de usuario 2"
 
-[![imagen-final3.png](https://i.postimg.cc/BZMMTGB6/imagen-final3.png)](https://postimg.cc/QVKQDwPG)
+[![imagen-final2-1.png](https://i.postimg.cc/Y9TpNfzJ/imagen-final2-1.png)](https://postimg.cc/gXqFmh5D)
 
 "Historia de usuario 3"
+
+[![imagen-final3-1.png](https://i.postimg.cc/YSk895cP/imagen-final3-1.png)](https://postimg.cc/NKJRCPj8)
 
 
 ## 3. Investigación UX: Quiénes son los usuarios y los objetivos en relación con el producto
