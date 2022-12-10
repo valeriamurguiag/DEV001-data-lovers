@@ -554,7 +554,7 @@ and (max-device-width: 768px){
 and (max-device-width: 768px){
   .class-name {
     font-size: 39px;
-  
+    margin-top: 15px;
   }
 }
 
