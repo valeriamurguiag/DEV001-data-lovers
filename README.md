@@ -17,6 +17,8 @@
 
 LoLovers trae a sus usuarios una plataforma para todos los amantes del conocido videojuego multijugador “League of Legends”. En una misma página, LoLovers comparte los roles de cada campeón, sus niveles de ataque y distintos tipos de habilidades para que el jugador pueda elegir el campeón que va a competir en su partida.
 
+Link: https://silvibibi.github.io/DEV001-data-lovers/
+
 
 ## 2. Imagen final del proyecto / "Historia de usuario 1"
 [![imagen-final1.png](https://i.postimg.cc/x858Yb28/imagen-final1.png)](https://postimg.cc/sGBs4x1C)
