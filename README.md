@@ -97,7 +97,7 @@ Ejemplo: “Yo como usuario [visitante del sitio] quiero poder VER todos lxs per
 
 "Prototipo MOBILE digital: historia de usuario 3"
 
-## 8. Imagen del prototipo de baja fidelidad
+## 8. Prototipo de baja fidelidad
 
 [![Prototipo-1-papel.jpg](https://i.postimg.cc/02y7PMm5/Prototipo-1-papel.jpg)](https://postimg.cc/SjHnGKDH)
 
